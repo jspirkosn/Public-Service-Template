@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_catalog">
+    <m2m_sp_portal_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <sc_catalog display_value="311 Catalog">b5a15ea81b6fa810e0f943f28d4bcbcb</sc_catalog>
+        <sp_portal display_value="UCSF Campus Life Services">5eee29a61b236010e0f943f28d4bcbcf</sp_portal>
+        <sys_class_name>m2m_sp_portal_catalog</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-21 23:20:05</sys_created_on>
+        <sys_id>9207f7171bab6010e0f943f28d4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>311 Catalog.UCSF Campus Life Services</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>m2m_sp_portal_catalog_9207f7171bab6010e0f943f28d4bcb9c</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-21 23:20:05</sys_updated_on>
+    </m2m_sp_portal_catalog>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_csm_ec_engmnt_center_module">
+    <sn_csm_ec_engmnt_center_module action="INSERT_OR_UPDATE">
+        <authentication_type>none</authentication_type>
+        <edit_module>ca94cbd473412010d43171ef64f6a7fb</edit_module>
+        <enable_behaviour_tracking>false</enable_behaviour_tracking>
+        <enable_browser_notification>true</enable_browser_notification>
+        <enable_full_height_expand>true</enable_full_height_expand>
+        <enable_icon_notification>true</enable_icon_notification>
+        <enable_notification_sound>true</enable_notification_sound>
+        <icon_horizontal_padding>50</icon_horizontal_padding>
+        <icon_vertical_padding>50</icon_vertical_padding>
+        <launch_icon_position>right</launch_icon_position>
+        <launcher_icon display_value="launcher-icon.png">1a3aa6a553586010eafcddeeff7b12c5</launcher_icon>
+        <logo display_value="New_Design_ICON_18p5.png">0faf65a61b236010e0f943f28d4bcb25</logo>
+        <name>UCSF Campus Life Services</name>
+        <portal display_value="UCSF Campus Life Services">5eee29a61b236010e0f943f28d4bcbcf</portal>
+        <primary_module_color>#052049</primary_module_color>
+        <primary_text_color>#FFFFFF</primary_text_color>
+        <secondary_module_color>#E9EBF7</secondary_module_color>
+        <secondary_text_color>#000000</secondary_text_color>
+        <short_description>UCSF Campus Life Services</short_description>
+        <source_code><![CDATA[<script src="https://jspirkodemo.service-now.com/scripts/sn_csm_ec.js"></script>
+<script>
+SN_CSM_EC.init({
+	moduleID: "https://jspirkodemo.service-now.com/#29ee29a61b236010e0f943f28d4bcbca",
+	loadFeature: SN_CSM_EC.loadEMFeature()
+});
+</script>]]></source_code>
+        <status>active</status>
+        <sys_class_name>sn_csm_ec_engmnt_center_module</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>29ee29a61b236010e0f943f28d4bcbca</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>UCSF Campus Life Services</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sn_csm_ec_engmnt_center_module_29ee29a61b236010e0f943f28d4bcbca</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-21 23:20:40</sys_updated_on>
+        <tertiary_module_color>#B5DDE5</tertiary_module_color>
+        <tertiary_text_color>#000000</tertiary_text_color>
+        <title>Customer Support</title>
+        <website_urls>https://campuslifeservices.ucsf.edu</website_urls>
+    </sn_csm_ec_engmnt_center_module>
+</record_update>
