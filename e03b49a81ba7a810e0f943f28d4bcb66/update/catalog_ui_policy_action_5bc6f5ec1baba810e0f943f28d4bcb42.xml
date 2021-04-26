@@ -22,7 +22,7 @@
         <table/>
         <ui_policy display_value="Hide Fields">8e46b9ac1baba810e0f943f28d4bcb40</ui_policy>
         <variable>mobile</variable>
-        <variable_set display_value="Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set>
+        <variable_set display_value="311 Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set>
         <visible>false</visible>
     </catalog_ui_policy_action>
 </record_update>

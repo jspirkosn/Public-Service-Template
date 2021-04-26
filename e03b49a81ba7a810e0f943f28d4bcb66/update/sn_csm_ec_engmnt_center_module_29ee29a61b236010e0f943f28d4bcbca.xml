@@ -11,9 +11,9 @@
         <icon_vertical_padding>50</icon_vertical_padding>
         <launch_icon_position>right</launch_icon_position>
         <launcher_icon display_value="launcher-icon.png">1a3aa6a553586010eafcddeeff7b12c5</launcher_icon>
-        <logo display_value="New_Design_ICON_18p5.png">0faf65a61b236010e0f943f28d4bcb25</logo>
+        <logo/>
         <name>UCSF Campus Life Services</name>
-        <portal display_value="UCSF Campus Life Services">5eee29a61b236010e0f943f28d4bcbcf</portal>
+        <portal display_value="">5eee29a61b236010e0f943f28d4bcbcf</portal>
         <primary_module_color>#052049</primary_module_color>
         <primary_text_color>#FFFFFF</primary_text_color>
         <secondary_module_color>#E9EBF7</secondary_module_color>
