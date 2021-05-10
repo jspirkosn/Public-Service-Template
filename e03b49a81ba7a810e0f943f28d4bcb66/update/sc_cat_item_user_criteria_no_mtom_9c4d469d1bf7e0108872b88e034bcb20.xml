@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Report wild animal encounter">db1d069d1bf7e0108872b88e034bcbca</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-27 20:45:46</sys_created_on>
+        <sys_id>9c4d469d1bf7e0108872b88e034bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Report wild animal encounter.SNC External</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_9c4d469d1bf7e0108872b88e034bcb20</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-27 20:45:46</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+</record_update>
