@@ -415,7 +415,7 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="311 Match Catalog to Service Portfolio">667a7f321bf7a8108872b88e034bcb56</action_type>
+        <action_type display_value="Public Service Catalog to Service Portfolio">667a7f321bf7a8108872b88e034bcb56</action_type>
         <action_type_parent/>
         <comment/>
         <compiled_snapshot>667a7f321bf7a8108872b88e034bcb56</compiled_snapshot>
@@ -1044,7 +1044,7 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="311 Match Catalog to Service Portfolio">667a7f321bf7a8108872b88e034bcb56</action_type>
+        <action_type display_value="Public Service Catalog to Service Portfolio">667a7f321bf7a8108872b88e034bcb56</action_type>
         <action_type_parent display_value="Public Service Catalog to Service Portfolio">b2f1cb261bffe410e0f943f28d4bcba6</action_type_parent>
         <comment/>
         <compiled_snapshot>667a7f321bf7a8108872b88e034bcb56</compiled_snapshot>

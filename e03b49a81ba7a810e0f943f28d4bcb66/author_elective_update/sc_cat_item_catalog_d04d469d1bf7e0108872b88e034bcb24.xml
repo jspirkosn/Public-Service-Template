@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Report wild animal encounter">db1d069d1bf7e0108872b88e034bcbca</sc_cat_item>
+        <sc_catalog display_value="311 Catalog">b5a15ea81b6fa810e0f943f28d4bcbcb</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-27 20:45:46</sys_created_on>
+        <sys_id>d04d469d1bf7e0108872b88e034bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>311 Catalog.Report wild animal encounter</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_d04d469d1bf7e0108872b88e034bcb24</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-27 20:45:46</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_catalog_d04d469d1bf7e0108872b88e034bcb24</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Report wild animal encounter">db1d069d1bf7e0108872b88e034bcbca</sc_cat_item><sc_catalog display_value="311 Catalog">b5a15ea81b6fa810e0f943f28d4bcbcb</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-04-27 20:45:46</sys_created_on><sys_id>d04d469d1bf7e0108872b88e034bcb24</sys_id><sys_mod_count>0</sys_mod_count><sys_name>311 Catalog.Report wild animal encounter</sys_name><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_catalog_d04d469d1bf7e0108872b88e034bcb24</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-04-27 20:45:46</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-287366843</payload_hash>
+        <record_name>311 Catalog.Report wild animal encounter</record_name>
+        <reverted_from/>
+        <source>313bd1551bb3e0108872b88e034bcb84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-27 20:45:47</sys_created_on>
+        <sys_id>d84d0a9d1bf7e0108872b88e034bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1791514accf0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-27 20:45:47</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>d04d0a9d2af7e01099c35c5cf25ff6d8</update_guid>
+        <update_guid_history>d04d0a9d2af7e01099c35c5cf25ff6d8:-287366843</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="311 Catalog.Report wild animal encounter">ee403c5f1b1c3c108872b88e034bcbbc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-28 15:38:51</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>120c3577a6e54d2086fbedd176033b24</sys_id>
+        <sys_metadata>d04d469d1bf7e0108872b88e034bcb24</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>311 Catalog.Report wild animal encounter</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent display_value="">db1d069d1bf7e0108872b88e034bcbca</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_d04d469d1bf7e0108872b88e034bcb24</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_d04d469d1bf7e0108872b88e034bcb24">d84d0a9d1bf7e0108872b88e034bcbd8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-28 15:38:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
