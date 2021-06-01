@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
     <sp_instance action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <class_name/>
         <color>default</color>
         <css/>
@@ -10,23 +10,23 @@
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">fcd312ac1b6fa810e0f943f28d4bcb86</sp_column>
-        <sp_widget display_value="SC Categories">4c03cba0cb11020000f8d856634c9ce1</sp_widget>
+        <sp_column display_value="1">8547cd1c1be034508872b88e034bcb87</sp_column>
+        <sp_widget display_value="Public login redirect">db7b09141b2434508872b88e034bcbb7</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2021-04-13 03:03:35</sys_created_on>
-        <sys_id>58e39aac1b6fa810e0f943f28d4bcbee</sys_id>
+        <sys_created_on>2021-05-31 20:19:04</sys_created_on>
+        <sys_id>33acc1941b2434508872b88e034bcbd7</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>Category</sys_name>
+        <sys_name/>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
-        <sys_update_name>sp_instance_58e39aac1b6fa810e0f943f28d4bcbee</sys_update_name>
+        <sys_update_name>sp_instance_33acc1941b2434508872b88e034bcbd7</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-30 00:03:07</sys_updated_on>
-        <title>Category</title>
+        <sys_updated_on>2021-05-31 21:16:43</sys_updated_on>
+        <title/>
         <url/>
         <widget_parameters/>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=58e39aac1b6fa810e0f943f28d4bcbee"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=33acc1941b2434508872b88e034bcbd7"/>
 </record_update>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>// &#13;
+// SASS Variables used in the Service Portal stylesheets&#13;
+// Lines starting with // are comments&#13;
+// Colors must use HEX color format (#000000)&#13;
+//&#13;
+&#13;
+$sp-logo-margin-x: 15px !default;&#13;
+$sp-homepage-bg: #fff !default;&#13;
+$sp-tagline-color: black !default;&#13;
+&#13;
+//### Colors ###&#13;
+$primary:			#cf1d25 !default;&#13;
+$success:			#5cb85c !default;&#13;
+$warning:			#f0ad4e !default;&#13;
+$danger:			#cf1d25 !default;&#13;
+$info:				#428bca !default;&#13;
+$gray-light:		#edf1f2 !default;&#13;
+$gray-dark:			#3a3f51 !default;&#13;
+&#13;
+$state-info-text:	$info !default;&#13;
+$state-success-text: $success !default;&#13;
+&#13;
+//### Typography ###&#13;
+$text-color:		#717171 !default;&#13;
+$sp-tagline-color:	black !default;&#13;
+$text-muted:		#bdc0c4 !default;&#13;
+&#13;
+&#13;
+//### Navbar ###&#13;
+$navbar-default-bg: 	#f8f8f8 !default;&#13;
+&#13;
+//### Inverted Navbar ###&#13;
+$navbar-inverse-bg:	#000000 !default;&#13;
+$navbar-inverse-link-color: #ffffff !default;&#13;
+$navbar-inverse-link-hover-color: #cf1d25 !default;&#13;
+&#13;
+//### Components ###&#13;
+$body-bg:			#fefefe !default;</css_variables>
+        <footer/>
+        <footer_fixed>true</footer_fixed>
+        <header display_value="CSP Stock Header ">c60d8fabc332120071d07bfaa2d3aebb</header>
+        <name>Public</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-29 23:41:16</sys_created_on>
+        <sys_id>ce38ef271bdcfc108872b88e034bcb2e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Public</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sp_theme_ce38ef271bdcfc108872b88e034bcb2e</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-30 07:06:24</sys_updated_on>
+    </sp_theme>
+</record_update>

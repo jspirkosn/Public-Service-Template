@@ -134,7 +134,7 @@
         <script><![CDATA[(function() {
 	// This is the ESRI key that will get passed to the client controller
 	// Go here and to sign up for a dev account and get an API key: https://developers.arcgis.com/
-	data.apiKey = "AAPKb0ae250f6cbf4369a43c56fff74de7f8_uNDILUsEgYYsDzH_j4OeR4mlLUQYVt92pKUPw-BkHSRN6DHFyQc_CSHspaZX4WR";
+	data.apiKey = "AAPKb9f308fa84c44386a5715197180ae4dcCikbjBoCFj1HTybUKIXgD27478cpHpGN2C5ZwIMvZsO839ziiwYpAxKzEbf7dYDa";
 	
 	// Lookup the service offering that the record producer is attached to
 	// This follows guidelines set in ServiceNow's Common Service Data Model (CSDM)
@@ -193,14 +193,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-12 22:30:54</sys_created_on>
         <sys_id>c275dda81be7a810e0f943f28d4bcb11</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>ESRI Map Leaflet</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>sp_widget_c275dda81be7a810e0f943f28d4bcb11</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-04-13 03:47:03</sys_updated_on>
+        <sys_updated_on>2021-05-31 19:13:03</sys_updated_on>
         <template><![CDATA[<div id="map"></div>]]></template>
     </sp_widget>
 </record_update>

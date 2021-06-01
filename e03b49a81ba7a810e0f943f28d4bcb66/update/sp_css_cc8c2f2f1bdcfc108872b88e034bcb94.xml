@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css">
+    <sp_css action="INSERT_OR_UPDATE">
+        <css>.body {&#13;
+  font-size: 12px;&#13;
+  font-family: "SantaMonicaSharp", sans-serif;&#13;
+  color: #2f2d2c;&#13;
+}&#13;
+&#13;
+.sp-tagline-color {&#13;
+    color: #025fb8;&#13;
+    font-weight: 800 !important;&#13;
+}&#13;
+&#13;
+#tabpanel_ &gt; div:nth-child(1) &gt; div.col-xs-9 &gt; h2 {&#13;
+  font-size: 30px;&#13;
+  font-weight: 600;&#13;
+}&#13;
+&#13;
+.text-muted {&#13;
+  color: #2f2d2c;&#13;
+}&#13;
+&#13;
+.v28a01ae41bdf2050f4a196441a4bcb93 .navbar-brand img, .v28a01ae41bdf2050f4a196441a4bcb93 .navbar-brand span {&#13;
+  margin-top: 10px !important;&#13;
+  max-height: 68px !important;&#13;
+}&#13;
+&#13;
+&#13;
+.panel-default &gt; .panel-heading {&#13;
+  color: #fff;&#13;
+  background-color: #005EB8;&#13;
+  border-color: #ddd;&#13;
+  border-top-right-radius: 20px;&#13;
+  border-top-left-radius: 20px;&#13;
+  height: 70px;&#13;
+&#13;
+}&#13;
+&#13;
+.panel-title {&#13;
+  font-size: 30px; &#13;
+  font-weight: 600;&#13;
+}&#13;
+&#13;
+.panel {&#13;
+  border-radius: 1rem !important;&#13;
+}&#13;
+&#13;
+.category-widget {&#13;
+  border: unset !important;&#13;
+}&#13;
+&#13;
+.panel-footer {&#13;
+  background-color: #0091da;&#13;
+  border-top: 1px solid #1499dd;&#13;
+  border-bottom-right-radius: 1rem;&#13;
+  border-bottom-left-radius: 1rem;&#13;
+  .text-muted {&#13;
+    color: #fff;&#13;
+    font-weight: 600;&#13;
+  }&#13;
+}&#13;
+}&#13;
+&#13;
+.page-0e23ae5f1b83a810f4a196441a4bcbb4 #homepage-search div[widget] .input-group input[name="q"] {&#13;
+  height: 60px !important;&#13;
+  border-radius: 30px 0 0 30px !important;&#13;
+  padding-left:30px !important;&#13;
+}&#13;
+&#13;
+.page-0e23ae5f1b83a810f4a196441a4bcbb4 #homepage-search div[widget] .input-group .input-group-btn &gt; button {&#13;
+  height: 60px !important;&#13;
+  border-radius: 0px 30px 30px 0px !important;&#13;
+}&#13;
+&#13;
+@media only screen and (max-width: 600px) {&#13;
+.body {&#13;
+  margin-top: 15px;&#13;
+  }&#13;
+&#13;
+  .panel-title {&#13;
+    font-size: 25px;&#13;
+    font-weight: 600;&#13;
+}&#13;
+  &#13;
+}</css>
+        <name>Public Portal CSS</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-29 23:59:57</sys_created_on>
+        <sys_id>cc8c2f2f1bdcfc108872b88e034bcb94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Public Portal CSS</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sp_css_cc8c2f2f1bdcfc108872b88e034bcb94</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-29 23:59:57</sys_updated_on>
+    </sp_css>
+</record_update>

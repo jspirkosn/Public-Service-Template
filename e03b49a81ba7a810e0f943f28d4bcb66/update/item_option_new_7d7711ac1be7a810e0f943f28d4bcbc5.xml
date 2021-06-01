@@ -85,7 +85,7 @@
         <use_reference_qualifier>simple</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
-        <variable_set display_value="ESRI Map">1d33d5e41be7a810e0f943f28d4bcbd7</variable_set>
+        <variable_set display_value="Public Map">1d33d5e41be7a810e0f943f28d4bcbd7</variable_set>
         <variable_width/>
         <visibility>1</visibility>
         <visible_bundle>true</visible_bundle>
