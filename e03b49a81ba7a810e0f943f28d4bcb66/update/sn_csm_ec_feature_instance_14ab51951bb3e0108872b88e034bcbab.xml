@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_csm_ec_feature_instance">
+    <sn_csm_ec_feature_instance action="INSERT_OR_UPDATE">
+        <enabled>false</enabled>
+        <feature display_value="Walk-up">930b1d51876b10109eb0578c87cb0b20</feature>
+        <launch_description/>
+        <launch_message/>
+        <messenger_module/>
+        <order>550</order>
+        <sub_title>Find a store near you and book an appointment</sub_title>
+        <sys_class_name>sn_csm_ec_feature_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:08:57</sys_created_on>
+        <sys_id>14ab51951bb3e0108872b88e034bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sn_csm_ec_feature_instance_14ab51951bb3e0108872b88e034bcbab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:08:57</sys_updated_on>
+        <title>Schedule a store visit</title>
+        <visible_for_guest>true</visible_for_guest>
+        <visible_for_user>true</visible_for_user>
+    </sn_csm_ec_feature_instance>
+</record_update>

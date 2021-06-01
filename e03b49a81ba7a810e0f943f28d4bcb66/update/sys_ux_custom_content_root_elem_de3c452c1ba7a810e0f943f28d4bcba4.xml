@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_custom_content_root_elem">
+    <sys_ux_custom_content_root_elem action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability>single</applicability>
+        <applicable_page display_value="311 Template">ed3cc12c1ba7a810e0f943f28d4bcba4</applicable_page>
+        <attrs/>
+        <children/>
+        <component display_value="sn-workspace-list-module">430c13c072108799d48a4d0306fd9f80</component>
+        <is_root>true</is_root>
+        <layout/>
+        <macroponent/>
+        <macroponent_config/>
+        <name>Lists Module Content</name>
+        <order>100</order>
+        <page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</page>
+        <parent/>
+        <parent_slot/>
+        <picker display_value="Primary Content Option Picker">123c9bbd73c8330075e8f358caf6a791</picker>
+        <picker_condition/>
+        <placeholder display_value="Workspace Module Primary Content">123513475300330030c3ddeeff7b122f</placeholder>
+        <sys_class_name>sys_ux_custom_content_root_elem</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-12 21:50:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de3c452c1ba7a810e0f943f28d4bcba4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Lists Module Content</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_ux_custom_content_root_elem_de3c452c1ba7a810e0f943f28d4bcba4</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-12 21:50:31</sys_updated_on>
+        <tree_root/>
+    </sys_ux_custom_content_root_elem>
+    <sys_variable_value action="delete_multiple" query="document_key=de3c452c1ba7a810e0f943f28d4bcba4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_ux_custom_content_root_elem</document>
+        <document_key>de3c452c1ba7a810e0f943f28d4bcba4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-12 21:50:31</sys_created_on>
+        <sys_id>963c452c1ba7a810e0f943f28d4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-12 21:50:31</sys_updated_on>
+        <value>list</value>
+        <variable display_value="module_id">1be7ac060f603300bb57f4a1ff767e52</variable>
+    </sys_variable_value>
+</record_update>

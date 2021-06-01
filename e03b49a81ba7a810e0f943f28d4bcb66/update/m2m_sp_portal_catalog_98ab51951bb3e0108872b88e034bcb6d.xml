@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_catalog">
+    <m2m_sp_portal_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <sc_catalog display_value="Consumer Service">0f910a2ac3112200b12d9f2974d3ae3c</sc_catalog>
+        <sp_portal display_value="">5eee29a61b236010e0f943f28d4bcbcf</sp_portal>
+        <sys_class_name>m2m_sp_portal_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:08:57</sys_created_on>
+        <sys_id>98ab51951bb3e0108872b88e034bcb6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Consumer Service.</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>m2m_sp_portal_catalog_98ab51951bb3e0108872b88e034bcb6d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:08:57</sys_updated_on>
+    </m2m_sp_portal_catalog>
+</record_update>

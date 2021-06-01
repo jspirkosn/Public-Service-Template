@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_csm_ec_feature_instance">
+    <sn_csm_ec_feature_instance action="DELETE">
+        <enabled>false</enabled>
+        <feature display_value="Walk-up">930b1d51876b10109eb0578c87cb0b20</feature>
+        <launch_description/>
+        <launch_message/>
+        <messenger_module display_value="New module 1">29ee29a61b236010e0f943f28d4bcbca</messenger_module>
+        <order>550</order>
+        <sub_title>Find a store near you and book an appointment</sub_title>
+        <sys_class_name>sn_csm_ec_feature_instance</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:58</sys_created_on>
+        <sys_id>83ee21e61b236010e0f943f28d4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sn_csm_ec_feature_instance_83ee21e61b236010e0f943f28d4bcbea</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-19 05:29:58</sys_updated_on>
+        <title>Schedule a store visit</title>
+        <visible_for_guest>true</visible_for_guest>
+        <visible_for_user>true</visible_for_user>
+    </sn_csm_ec_feature_instance>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sn_csm_ec_feature_instance_83ee21e61b236010e0f943f28d4bcbea</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_csm_ec_feature_instance"><sn_csm_ec_feature_instance action="INSERT_OR_UPDATE"><enabled>false</enabled><feature display_value="Walk-up">930b1d51876b10109eb0578c87cb0b20</feature><launch_description/><launch_message/><messenger_module display_value="New module 1">29ee29a61b236010e0f943f28d4bcbca</messenger_module><order>550</order><sub_title>Find a store near you and book an appointment</sub_title><sys_class_name>sn_csm_ec_feature_instance</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-04-19 05:29:58</sys_created_on><sys_id>83ee21e61b236010e0f943f28d4bcbea</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sn_csm_ec_feature_instance_83ee21e61b236010e0f943f28d4bcbea</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-04-19 05:29:58</sys_updated_on><title>Schedule a store visit</title><visible_for_guest>true</visible_for_guest><visible_for_user>true</visible_for_user></sn_csm_ec_feature_instance></record_update>]]></payload>
+        <payload_hash>1973200281</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>383b49a81ba7a810e0f943f28d4bcb6a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:58</sys_created_on>
+        <sys_id>c7ee21e61b236010e0f943f28d4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178e89b59b60000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-19 05:29:58</sys_updated_on>
+        <type>Feature Instance</type>
+        <update_guid>cfee21e657236010f0f66ad4e5d727ea</update_guid>
+        <update_guid_history>cfee21e657236010f0f66ad4e5d727ea:1973200281</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">bb9b51951bb3e0108872b88e034bcb27</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:08:55</sys_created_on>
+        <sys_db_object display_value="" name="sn_csm_ec_feature_instance">sn_csm_ec_feature_instance</sys_db_object>
+        <sys_id>5543723d2833431a90493ed414512f59</sys_id>
+        <sys_metadata>83ee21e61b236010e0f943f28d4bcbea</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sn_csm_ec_feature_instance_83ee21e61b236010e0f943f28d4bcbea</sys_update_name>
+        <sys_update_version display_value="sn_csm_ec_feature_instance_83ee21e61b236010e0f943f28d4bcbea">c7ee21e61b236010e0f943f28d4bcbeb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:08:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

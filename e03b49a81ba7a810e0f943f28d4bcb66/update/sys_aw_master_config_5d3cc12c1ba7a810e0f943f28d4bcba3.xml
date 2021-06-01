@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_aw_master_config">
+    <sys_aw_master_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <brand_color/>
+        <compiled_page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</compiled_page>
+        <compiled_page_registry display_value="311 Template">ed3cc12c1ba7a810e0f943f28d4bcba4</compiled_page_registry>
+        <description>A template for citizen Engagement</description>
+        <global_search display_value="Workspace search settings">97a574ea53c0130084acddeeff7b12a6</global_search>
+        <global_search_data display_value="311 Template Search Context Config">d93cc12c1ba7a810e0f943f28d4bcba1</global_search_data>
+        <hide_search_results_count>false</hide_search_results_count>
+        <name>311 Template</name>
+        <navigation_type>tab</navigation_type>
+        <notifications_enabled>true</notifications_enabled>
+        <primary_color/>
+        <search_enabled>true</search_enabled>
+        <sys_class_name>sys_aw_master_config</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-12 21:50:27</sys_created_on>
+        <sys_id>5d3cc12c1ba7a810e0f943f28d4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>311 Template</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_aw_master_config_5d3cc12c1ba7a810e0f943f28d4bcba3</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-12 21:50:27</sys_updated_on>
+        <user_preference_controls_enabled>true</user_preference_controls_enabled>
+        <workspace_logo/>
+        <workspace_url>311_template</workspace_url>
+    </sys_aw_master_config>
+</record_update>

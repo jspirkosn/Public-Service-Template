@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_aw_renderer">
+    <sys_aw_renderer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <custom_renderer display_value="sn-kpi-details">83cf0f8b463bf6bebf4b746923ed321f</custom_renderer>
+        <custom_renderer_tag>sn-kpi-details</custom_renderer_tag>
+        <macroponent/>
+        <module_flag>false</module_flag>
+        <renderer_type/>
+        <sys_class_name>sys_aw_renderer</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-12 21:50:32</sys_created_on>
+        <sys_id>2e3c852c1ba7a810e0f943f28d4bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_aw_renderer_2e3c852c1ba7a810e0f943f28d4bcb0e</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-12 21:50:32</sys_updated_on>
+        <table/>
+        <type_ext display_value="sn-kpi-details-renderer">55857ace5f530010ed3926e6ee731377</type_ext>
+        <workspace_config display_value="311 Template">5d3cc12c1ba7a810e0f943f28d4bcba3</workspace_config>
+        <workspace_module/>
+    </sys_aw_renderer>
+</record_update>

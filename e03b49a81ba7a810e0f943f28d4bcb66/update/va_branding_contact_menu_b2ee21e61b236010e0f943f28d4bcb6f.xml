@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="va_branding_contact_menu">
+    <va_branding_contact_menu action="INSERT_OR_UPDATE">
+        <branding display_value="UCSF Campus Life Services">36ee21e61b236010e0f943f28d4bcb67</branding>
+        <display_default_icon>true</display_default_icon>
+        <display_wait_time>true</display_wait_time>
+        <icon>7aee21e61b236010e0f943f28d4bcb6f</icon>
+        <label>Call Support (Daily 5AM - 11 PM)</label>
+        <order>2</order>
+        <sys_class_name>va_branding_contact_menu</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:56</sys_created_on>
+        <sys_id>b2ee21e61b236010e0f943f28d4bcb6f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>va_branding_contact_menu_b2ee21e61b236010e0f943f28d4bcb6f</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-19 05:29:56</sys_updated_on>
+        <type>Phone</type>
+        <value>1-800-245-6000</value>
+        <visible>true</visible>
+    </va_branding_contact_menu>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <encryption_context/>
+        <file_name>image</file_name>
+        <hash>5126f91b3afbb9dc9be1b117df26836bd291e2f80c58310361789feaa821d13b</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>4496</size_bytes>
+        <size_compressed>2330</size_compressed>
+        <state>available</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:56</sys_created_on>
+        <sys_id>7aee21e61b236010e0f943f28d4bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-19 05:29:56</sys_updated_on>
+        <table_name>ZZ_YYva_branding_contact_menu</table_name>
+        <table_sys_id>b2ee21e61b236010e0f943f28d4bcb6f</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="7aee21e61b236010e0f943f28d4bcb6f">7aee21e61b236010e0f943f28d4bcb6f</sys_attachment>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:56</sys_created_on>
+        <sys_id>beee21e61b236010e0f943f28d4bcb6f</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>3096</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="7aee21e61b236010e0f943f28d4bcb6f">7aee21e61b236010e0f943f28d4bcb6f</sys_attachment>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:56</sys_created_on>
+        <sys_id>32ee21e61b236010e0f943f28d4bcb70</sys_id>
+    </sys_attachment_doc>
+</record_update>

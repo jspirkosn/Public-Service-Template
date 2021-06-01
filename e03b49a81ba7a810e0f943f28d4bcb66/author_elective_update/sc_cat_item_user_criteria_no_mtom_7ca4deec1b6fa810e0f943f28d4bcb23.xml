@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="Report Grafitti">7b745eec1b6fa810e0f943f28d4bcbc1</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-13 03:06:53</sys_created_on>
+        <sys_id>7ca4deec1b6fa810e0f943f28d4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Report Grafitti.SNC External</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_7ca4deec1b6fa810e0f943f28d4bcb23</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-13 03:06:53</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_7ca4deec1b6fa810e0f943f28d4bcb23</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Report Grafitti">7b745eec1b6fa810e0f943f28d4bcbc1</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-04-13 03:06:53</sys_created_on><sys_id>7ca4deec1b6fa810e0f943f28d4bcb23</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Report Grafitti.SNC External</sys_name><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_7ca4deec1b6fa810e0f943f28d4bcb23</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-04-13 03:06:53</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>364339826</payload_hash>
+        <record_name>Report Grafitti.SNC External</record_name>
+        <reverted_from/>
+        <source>647dd7321b032010e0f943f28d4bcbc9</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2021-03-26 11:39:56</sys_created_on>
+        <sys_id>8c0896601ba3e4108872b88e034bcb8a</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>1786e556ee00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>4c08966038a3e410eb04ac876543af8a</update_guid>
+        <update_guid_history>4c08966038a3e410eb04ac876543af8a:364339826</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Report Grafitti.SNC External">0c0896601ba3e4108872b88e034bcb8e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-13 03:21:35</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>0adf72f8080946d08cccfc0e526d6764</sys_id>
+        <sys_metadata>7ca4deec1b6fa810e0f943f28d4bcb23</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Report Grafitti.SNC External</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_7ca4deec1b6fa810e0f943f28d4bcb23</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_7ca4deec1b6fa810e0f943f28d4bcb23">8c0896601ba3e4108872b88e034bcb8a</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-13 03:21:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

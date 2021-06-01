@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_source">
+    <sys_search_source action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <name>Cases</name>
+        <source_table>sn_customerservice_case</source_table>
+        <sys_class_name>sys_search_source</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-12 21:50:29</sys_created_on>
+        <sys_id>3d3c452c1ba7a810e0f943f28d4bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cases</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_search_source_3d3c452c1ba7a810e0f943f28d4bcb4d</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-12 21:50:29</sys_updated_on>
+    </sys_search_source>
+    <sys_translated_text action="delete_multiple" query="documentkey=3d3c452c1ba7a810e0f943f28d4bcb4d"/>
+</record_update>

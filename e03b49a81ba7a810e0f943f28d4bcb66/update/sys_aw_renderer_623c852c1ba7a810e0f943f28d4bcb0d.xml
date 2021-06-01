@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_aw_renderer">
+    <sys_aw_renderer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <custom_renderer display_value="sn-knowledge-discussion-wrapper">72799ecde4d1ac5180318bc017e3d71f</custom_renderer>
+        <custom_renderer_tag>sn-knowledge-discussion-wrapper</custom_renderer_tag>
+        <macroponent/>
+        <module_flag>false</module_flag>
+        <renderer_type/>
+        <sys_class_name>sys_aw_renderer</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-12 21:50:32</sys_created_on>
+        <sys_id>623c852c1ba7a810e0f943f28d4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_aw_renderer_623c852c1ba7a810e0f943f28d4bcb0d</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-12 21:50:32</sys_updated_on>
+        <table>kb_template_how_to</table>
+        <type_ext display_value="record">56a1aaa10f513300bb57f4a1ff767ede</type_ext>
+        <workspace_config display_value="311 Template">5d3cc12c1ba7a810e0f943f28d4bcba3</workspace_config>
+        <workspace_module/>
+    </sys_aw_renderer>
+</record_update>

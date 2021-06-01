@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="DELETE">
+        <operation>write</operation>
+        <source_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-25 19:32:14</sys_created_on>
+        <sys_id>86382ba41b37e0108872b88e034bcba0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>sc_cat_item_subscribe_no_mtom</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_scope_privilege_86382ba41b37e0108872b88e034bcba0</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-25 19:35:32</sys_updated_on>
+        <target_name>sc_cat_item_subscribe_no_mtom</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sys_scope_privilege_86382ba41b37e0108872b88e034bcba0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>write</operation><source_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-04-25 19:32:14</sys_created_on><sys_id>86382ba41b37e0108872b88e034bcba0</sys_id><sys_mod_count>1</sys_mod_count><sys_name>sc_cat_item_subscribe_no_mtom</sys_name><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sys_scope_privilege_86382ba41b37e0108872b88e034bcba0</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-04-25 19:35:32</sys_updated_on><target_name>sc_cat_item_subscribe_no_mtom</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+        <payload_hash>493339048</payload_hash>
+        <record_name>sc_cat_item_subscribe_no_mtom</record_name>
+        <reverted_from/>
+        <source>383b49a81ba7a810e0f943f28d4bcb6a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-25 19:35:32</sys_created_on>
+        <sys_id>7ff9ef681b37e0108872b88e034bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1790a87a5560000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-25 19:35:32</sys_updated_on>
+        <type>Cross scope privilege</type>
+        <update_guid>37f9ef684637e010c9e102c95fc68a0c</update_guid>
+        <update_guid_history>37f9ef684637e010c9e102c95fc68a0c:493339048,e33967282f37e0105144c4ef4de7d3c5:-1653034706</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-25 19:37:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_scope_privilege">sys_scope_privilege</sys_db_object>
+        <sys_id>3fa786cc17d24b74918b955a220efe90</sys_id>
+        <sys_metadata>86382ba41b37e0108872b88e034bcba0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sc_cat_item_subscribe_no_mtom</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sys_scope_privilege_86382ba41b37e0108872b88e034bcba0</sys_update_name>
+        <sys_update_version display_value="sys_scope_privilege_86382ba41b37e0108872b88e034bcba0">7ff9ef681b37e0108872b88e034bcb0c</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-25 19:37:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

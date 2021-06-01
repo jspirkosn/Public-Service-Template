@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="va_branding_contact_menu">
+    <va_branding_contact_menu action="INSERT_OR_UPDATE">
+        <branding display_value="UCSF Campus Life Services">36ee21e61b236010e0f943f28d4bcb67</branding>
+        <display_default_icon>true</display_default_icon>
+        <display_wait_time>true</display_wait_time>
+        <icon>beee21e61b236010e0f943f28d4bcb6b</icon>
+        <label>Contact Live Agent</label>
+        <order>1</order>
+        <sys_class_name>va_branding_contact_menu</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:56</sys_created_on>
+        <sys_id>3aee21e61b236010e0f943f28d4bcb6a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>va_branding_contact_menu_3aee21e61b236010e0f943f28d4bcb6a</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-19 05:29:56</sys_updated_on>
+        <type>Chat</type>
+        <value/>
+        <visible>true</visible>
+    </va_branding_contact_menu>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <encryption_context/>
+        <file_name>image</file_name>
+        <hash>56386897315907b0c1d225ad68f88ee99c2a0d8457c7c1b4cdcddd093b403058</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>4421</size_bytes>
+        <size_compressed>2074</size_compressed>
+        <state>available</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:56</sys_created_on>
+        <sys_id>beee21e61b236010e0f943f28d4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-19 05:29:56</sys_updated_on>
+        <table_name>ZZ_YYva_branding_contact_menu</table_name>
+        <table_sys_id>3aee21e61b236010e0f943f28d4bcb6a</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="beee21e61b236010e0f943f28d4bcb6b">beee21e61b236010e0f943f28d4bcb6b</sys_attachment>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:56</sys_created_on>
+        <sys_id>feee21e61b236010e0f943f28d4bcb6d</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2752</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="beee21e61b236010e0f943f28d4bcb6b">beee21e61b236010e0f943f28d4bcb6b</sys_attachment>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:56</sys_created_on>
+        <sys_id>f6ee21e61b236010e0f943f28d4bcb6e</sys_id>
+    </sys_attachment_doc>
+</record_update>

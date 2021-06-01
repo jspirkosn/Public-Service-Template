@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_content_placeholder_elem">
+    <sys_ux_content_placeholder_elem action="INSERT_OR_UPDATE">
+        <attrs/>
+        <children/>
+        <component/>
+        <is_root>false</is_root>
+        <layout/>
+        <limit>1</limit>
+        <macroponent/>
+        <macroponent_config/>
+        <name>Landing Page Placeholder</name>
+        <order>0</order>
+        <page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</page>
+        <parent display_value="Home Module Content">023c452c1ba7a810e0f943f28d4bcb90</parent>
+        <parent_slot/>
+        <picker/>
+        <picker_condition/>
+        <sys_class_name>sys_ux_content_placeholder_elem</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-12 21:50:32</sys_created_on>
+        <sys_id>6e3c852c1ba7a810e0f943f28d4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Landing Page Placeholder</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_ux_content_placeholder_elem_6e3c852c1ba7a810e0f943f28d4bcb15</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-12 21:50:32</sys_updated_on>
+        <tree_root display_value="Home Module Content">023c452c1ba7a810e0f943f28d4bcb90</tree_root>
+    </sys_ux_content_placeholder_elem>
+    <sys_variable_value action="delete_multiple" query="document_key=6e3c852c1ba7a810e0f943f28d4bcb15"/>
+</record_update>

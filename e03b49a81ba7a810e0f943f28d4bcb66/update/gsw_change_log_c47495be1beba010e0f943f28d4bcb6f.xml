@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
+    <gsw_change_log action="INSERT_OR_UPDATE">
+        <change_date>2021-04-19 22:12:44</change_date>
+        <changed_by display_value="John Spirko">01d3d6631b119850e0f943f28d4bcbb0</changed_by>
+        <content display_value="Agent Workspace Guided Setup">a869052fdb081300c47f5f135e961910</content>
+        <related_change_log_entry/>
+        <related_task_entry/>
+        <sys_class_name>gsw_change_log</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 22:12:44</sys_created_on>
+        <sys_id>c47495be1beba010e0f943f28d4bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2021-04-19 22:12:44</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>gsw_change_log_c47495be1beba010e0f943f28d4bcb6f</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-19 22:12:44</sys_updated_on>
+        <type>1</type>
+    </gsw_change_log>
+</record_update>

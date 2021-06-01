@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="DELETE">
+        <css_variables>$primary-color: #4F52BE;
+$secondary-color: #E9EBF7;
+$tertiary-color: #B5DDE5;
+$primary-area-text-color: #FFFFFF;
+$secondary-area-text-color: #000000;
+$tertiary-area-text-color: #000000;
+$background-color: #f9f9f9;
+$surface-color: #ffffff;
+$heading-color: #161b1c;
+$heading-font-size: 24px;
+$section-heading-size: 20px;
+$section-heading-color: #161b1c;
+$mainfont-size: 18px;
+$mainfont-color: #425051;
+$maintext-color: #161b1c;
+$maintext-font-size: 16px;
+$metadata-color: #425051;
+$metadata-font-size: 12px;
+$tertiary-text-color: #637274;
+$tertiary-font-size: 12px;
+$links-color: #4f52be;
+$links-text-size: 12px;
+$icon-color: $primary-color;
+$primary-action-label-size: $maintext-font-size;
+$min-height: 64px;
+$brand-primary: $primary-color;
+$btn-primary-color: $primary-color;
+$ec-footer-btn-padding: 8px 24px;
+$ec-footer-btn-width: auto;
+$ec-footer-container-padding: 24px;
+$primary-catalog-text-color: rgb(0, 0, 0);
+$card-border-color: rgb(217, 217, 217);
+$card-border-radius: 4px;
+$card-margin: 6px;
+</css_variables>
+        <default>false</default>
+        <enable_ais>true</enable_ais>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="cwf_em_home">2a762d3d53ae5010be19ddeeff7b1272</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page display_value="session_timeout">dcb6ce8587e020109eb0578c87cb0bfb</login_page>
+        <logo/>
+        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <search_application display_value="Engagement Messenger AI Search Config">49ce08f890c86810f8773b6c07752e1c</search_application>
+        <search_results_configuration display_value="EC Search">6262cb8898bbd010f87779d8cd2ec87e</search_results_configuration>
+        <sp_chat_queue/>
+        <sp_rectangle_menu/>
+        <sqanda_knowledge_base/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:31:08</sys_created_on>
+        <sys_id>05b0ad9d1bb3e0108872b88e034bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New module 1</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sp_portal_05b0ad9d1bb3e0108872b88e034bcbfb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:31:08</sys_updated_on>
+        <theme display_value="CWF Engagement Messenger Theme">f2c5a93d53ae5010be19ddeeff7b125c</theme>
+        <title>New module 1</title>
+        <ts_index_group/>
+        <url_suffix>cdb0ad9d1bb3e0108872b88e034bcbfa</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="DELETE" query="documentkey=05b0ad9d1bb3e0108872b88e034bcbfb"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sp_portal_05b0ad9d1bb3e0108872b88e034bcbfb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal"><sp_portal action="INSERT_OR_UPDATE"><css_variables>$primary-color: #4F52BE;
+$secondary-color: #E9EBF7;
+$tertiary-color: #B5DDE5;
+$primary-area-text-color: #FFFFFF;
+$secondary-area-text-color: #000000;
+$tertiary-area-text-color: #000000;
+$background-color: #f9f9f9;
+$surface-color: #ffffff;
+$heading-color: #161b1c;
+$heading-font-size: 24px;
+$section-heading-size: 20px;
+$section-heading-color: #161b1c;
+$mainfont-size: 18px;
+$mainfont-color: #425051;
+$maintext-color: #161b1c;
+$maintext-font-size: 16px;
+$metadata-color: #425051;
+$metadata-font-size: 12px;
+$tertiary-text-color: #637274;
+$tertiary-font-size: 12px;
+$links-color: #4f52be;
+$links-text-size: 12px;
+$icon-color: $primary-color;
+$primary-action-label-size: $maintext-font-size;
+$min-height: 64px;
+$brand-primary: $primary-color;
+$btn-primary-color: $primary-color;
+$ec-footer-btn-padding: 8px 24px;
+$ec-footer-btn-width: auto;
+$ec-footer-container-padding: 24px;
+$primary-catalog-text-color: rgb(0, 0, 0);
+$card-border-color: rgb(217, 217, 217);
+$card-border-radius: 4px;
+$card-margin: 6px;
+</css_variables><default>false</default><enable_ais>true</enable_ais><hide_portal_name>false</hide_portal_name><homepage display_value="cwf_em_home">2a762d3d53ae5010be19ddeeff7b1272</homepage><icon/><kb_knowledge_base/><kb_knowledge_page/><login_page display_value="session_timeout">dcb6ce8587e020109eb0578c87cb0bfb</login_page><logo/><notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page><quick_start_config/><sc_catalog/><sc_catalog_page/><sc_category_page/><search_application display_value="Engagement Messenger AI Search Config">49ce08f890c86810f8773b6c07752e1c</search_application><search_results_configuration display_value="EC Search">6262cb8898bbd010f87779d8cd2ec87e</search_results_configuration><sp_chat_queue/><sp_rectangle_menu/><sqanda_knowledge_base/><sys_class_name>sp_portal</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-04-27 17:31:08</sys_created_on><sys_id>05b0ad9d1bb3e0108872b88e034bcbfb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>New module 1</sys_name><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sp_portal_05b0ad9d1bb3e0108872b88e034bcbfb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-04-27 17:31:08</sys_updated_on><theme display_value="CWF Engagement Messenger Theme">f2c5a93d53ae5010be19ddeeff7b125c</theme><title>New module 1</title><ts_index_group/><url_suffix>cdb0ad9d1bb3e0108872b88e034bcbfa</url_suffix></sp_portal><sys_translated_text action="delete_multiple" query="documentkey=05b0ad9d1bb3e0108872b88e034bcbfb"/></record_update>]]></payload>
+        <payload_hash>861505932</payload_hash>
+        <record_name>New module 1</record_name>
+        <reverted_from/>
+        <source>313bd1551bb3e0108872b88e034bcb84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:31:08</sys_created_on>
+        <sys_id>d5b0ad9d1bb3e0108872b88e034bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179146279270000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:31:08</sys_updated_on>
+        <type>Service Portal</type>
+        <update_guid>ddb0ad9d56b3e0105d40781f3faa5efe</update_guid>
+        <update_guid_history>ddb0ad9d56b3e0105d40781f3faa5efe:861505932</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="New module 1">9dc0e9dd1bb3e0108872b88e034bcb46</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:31:25</sys_created_on>
+        <sys_db_object display_value="" name="sp_portal">sp_portal</sys_db_object>
+        <sys_id>38e52823f43f4da19941dcba5ae21b49</sys_id>
+        <sys_metadata>05b0ad9d1bb3e0108872b88e034bcbfb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New module 1</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sp_portal_05b0ad9d1bb3e0108872b88e034bcbfb</sys_update_name>
+        <sys_update_version display_value="sp_portal_05b0ad9d1bb3e0108872b88e034bcbfb">d5b0ad9d1bb3e0108872b88e034bcbff</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:31:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>sdfa</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>sdfa</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-10 23:50:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bf4475251b0c3050e0f943f28d4bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sdfa</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_bf4475251b0c3050e0f943f28d4bcb6c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-10 23:50:58</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=bf4475251b0c3050e0f943f28d4bcb6c"/>
+    <sys_variable_value action="DELETE" query="document_key=bf4475251b0c3050e0f943f28d4bcb6c"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sys_hub_action_type_definition_bf4475251b0c3050e0f943f28d4bcb6c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>public</access><acls/><action_template/><active>true</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><copied_from/><copied_from_name/><description/><ih_action>false</ih_action><internal_name>sdfa</internal_name><label_cache/><latest_snapshot/><master_snapshot/><name>sdfa</name><natlang/><outputs/><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-05-10 23:50:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bf4475251b0c3050e0f943f28d4bcb6c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sdfa</sys_name><sys_overrides/><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sys_hub_action_type_definition_bf4475251b0c3050e0f943f28d4bcb6c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-05-10 23:50:58</sys_updated_on><system_level>false</system_level><type/></sys_hub_action_type_definition><sys_translated_text action="delete_multiple" query="documentkey=bf4475251b0c3050e0f943f28d4bcb6c"/><sys_variable_value action="delete_multiple" query="document_key=bf4475251b0c3050e0f943f28d4bcb6c"/></record_update>]]></payload>
+        <payload_hash>-342512589</payload_hash>
+        <record_name>sdfa</record_name>
+        <reverted_from/>
+        <source>313bd1551bb3e0108872b88e034bcb84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-10 23:50:58</sys_created_on>
+        <sys_id>085475251b0c3050e0f943f28d4bcba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17958b0e5270000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-10 23:50:58</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>cc547525f40c305062b28c228e7241a4</update_guid>
+        <update_guid_history>cc547525f40c305062b28c228e7241a4:-342512589</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-28 22:00:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>00d8e57d51f04bec80769da131ee5790</sys_id>
+        <sys_metadata>bf4475251b0c3050e0f943f28d4bcb6c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sdfa</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_bf4475251b0c3050e0f943f28d4bcb6c</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_bf4475251b0c3050e0f943f28d4bcb6c">085475251b0c3050e0f943f28d4bcba5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-28 22:00:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

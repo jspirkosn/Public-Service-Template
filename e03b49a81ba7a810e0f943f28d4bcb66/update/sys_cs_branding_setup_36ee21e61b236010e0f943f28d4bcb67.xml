@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_branding_setup">
+    <sys_cs_branding_setup action="INSERT_OR_UPDATE">
+        <agent_bubble_bg_color>#E9EBF7</agent_bubble_bg_color>
+        <agent_bubble_font_color>#000000</agent_bubble_font_color>
+        <bg_color>#ffffff</bg_color>
+        <bot_bubble_bg_color>#E9EBF7</bot_bubble_bg_color>
+        <bot_bubble_font_color>#000000</bot_bubble_font_color>
+        <branding_key>29ee29a61b236010e0f943f28d4bcbca</branding_key>
+        <branding_name>UCSF Campus Life Services</branding_name>
+        <bubble_bg_color>#B5DDE5</bubble_bg_color>
+        <bubble_font_color>#000000</bubble_font_color>
+        <button_bg_color>#ffffff</button_bg_color>
+        <category_bg_color>#efeff4</category_bg_color>
+        <category_font_color>#6d6d72</category_font_color>
+        <contact_live_agent>true</contact_live_agent>
+        <disabled_link_color>#B8B8B8</disabled_link_color>
+        <header_bg_color>#E9EBF7</header_bg_color>
+        <header_font_color>#000000</header_font_color>
+        <header_label>Current chat</header_label>
+        <input_bg_color>#fafafa</input_bg_color>
+        <link_color>#406770</link_color>
+        <load_animation_color>#293e40</load_animation_color>
+        <menu_icon_color>#000000</menu_icon_color>
+        <menu_title>Contact Support</menu_title>
+        <msg_delay>500</msg_delay>
+        <notification_bg>#efeff4</notification_bg>
+        <notification_txt>#0F78C4</notification_txt>
+        <phone_call>true</phone_call>
+        <send_email>true</send_email>
+        <seperator_color>#B8B8B8</seperator_color>
+        <support_email>support@example.com</support_email>
+        <support_email_label>Send Email to Customer Support</support_email_label>
+        <support_hours_label>Contact Live Agent</support_hours_label>
+        <support_phone>1-800-245-6000</support_phone>
+        <support_phone_label>Call Support (Daily 5AM - 11 PM)</support_phone_label>
+        <sys_class_name>sys_cs_branding_setup</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>36ee21e61b236010e0f943f28d4bcb67</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>UCSF Campus Life Services</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_cs_branding_setup_36ee21e61b236010e0f943f28d4bcb67</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-19 05:34:09</sys_updated_on>
+        <system_message_color>#666666</system_message_color>
+        <timestamp_color>#767676</timestamp_color>
+        <type_presence_delay>1000</type_presence_delay>
+        <va_logo>baee21e61b236010e0f943f28d4bcb98</va_logo>
+        <va_profile display_value="EC Virtual Agent">775bdec453812010b595ddeeff7b128b</va_profile>
+    </sys_cs_branding_setup>
+</record_update>

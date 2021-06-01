@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Report Vandalism">80bd78301bbfe0108872b88e034bcb5d</sc_cat_item>
+        <sc_category display_value="Report Graffiti">729db0301bbfe0108872b88e034bcb26</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-26 01:42:36</sys_created_on>
+        <sys_id>f00e34701bbfe0108872b88e034bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Report Graffiti.Report Vandalism</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_category_f00e34701bbfe0108872b88e034bcbba</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-26 01:42:36</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_category_f00e34701bbfe0108872b88e034bcbba</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Report Vandalism">80bd78301bbfe0108872b88e034bcb5d</sc_cat_item><sc_category display_value="Report Graffiti">729db0301bbfe0108872b88e034bcb26</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-04-26 01:42:36</sys_created_on><sys_id>f00e34701bbfe0108872b88e034bcbba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Report Graffiti.Report Vandalism</sys_name><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_category_f00e34701bbfe0108872b88e034bcbba</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-04-26 01:42:36</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1487099805</payload_hash>
+        <record_name>Report Graffiti.Report Vandalism</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-26 01:42:36</sys_created_on>
+        <sys_id>cd0e74701bbfe0108872b88e034bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1790bd7b6ad0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-26 01:42:36</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>c50e74708bbfe010ea70876347651ad7</update_guid>
+        <update_guid_history>c50e74708bbfe010ea70876347651ad7:-1487099805</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Report Graffiti.Report Vandalism">7aef85381b3324108872b88e034bcba7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-26 03:00:49</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>9b1f1160a1764453b33de8cee28f9161</sys_id>
+        <sys_metadata>f00e34701bbfe0108872b88e034bcbba</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Report Graffiti.Report Vandalism</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_f00e34701bbfe0108872b88e034bcbba</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_f00e34701bbfe0108872b88e034bcbba">cd0e74701bbfe0108872b88e034bcbd7</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-26 03:00:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

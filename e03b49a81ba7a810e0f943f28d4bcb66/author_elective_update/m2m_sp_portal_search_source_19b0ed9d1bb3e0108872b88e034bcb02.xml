@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_search_source">
+    <m2m_sp_portal_search_source action="DELETE">
+        <order>100</order>
+        <sp_portal display_value="New module 1">05b0ad9d1bb3e0108872b88e034bcbfb</sp_portal>
+        <sp_search_source display_value="Catalogs">c96eb1686721220023c82e08f585efff</sp_search_source>
+        <sys_class_name>m2m_sp_portal_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:31:08</sys_created_on>
+        <sys_id>19b0ed9d1bb3e0108872b88e034bcb02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New module 1.Catalogs</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>m2m_sp_portal_search_source_19b0ed9d1bb3e0108872b88e034bcb02</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:31:08</sys_updated_on>
+    </m2m_sp_portal_search_source>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>m2m_sp_portal_search_source_19b0ed9d1bb3e0108872b88e034bcb02</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_search_source"><m2m_sp_portal_search_source action="INSERT_OR_UPDATE"><order>100</order><sp_portal display_value="New module 1">05b0ad9d1bb3e0108872b88e034bcbfb</sp_portal><sp_search_source display_value="Catalogs">c96eb1686721220023c82e08f585efff</sp_search_source><sys_class_name>m2m_sp_portal_search_source</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-04-27 17:31:08</sys_created_on><sys_id>19b0ed9d1bb3e0108872b88e034bcb02</sys_id><sys_mod_count>0</sys_mod_count><sys_name>New module 1.Catalogs</sys_name><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>m2m_sp_portal_search_source_19b0ed9d1bb3e0108872b88e034bcb02</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-04-27 17:31:08</sys_updated_on></m2m_sp_portal_search_source></record_update>]]></payload>
+        <payload_hash>-1641026102</payload_hash>
+        <record_name>New module 1.Catalogs</record_name>
+        <reverted_from/>
+        <source>313bd1551bb3e0108872b88e034bcb84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:31:08</sys_created_on>
+        <sys_id>ddb0ed9d1bb3e0108872b88e034bcb03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179146279bb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:31:08</sys_updated_on>
+        <type>Search Source</type>
+        <update_guid>d5b0ed9d48b3e0105d012cda8ca83203</update_guid>
+        <update_guid_history>d5b0ed9d48b3e0105d012cda8ca83203:-1641026102</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="New module 1.Catalogs">11c0e9dd1bb3e0108872b88e034bcb34</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:31:25</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_portal_search_source">m2m_sp_portal_search_source</sys_db_object>
+        <sys_id>64a2686e6bc749e79e8de77bcf53d7b1</sys_id>
+        <sys_metadata>19b0ed9d1bb3e0108872b88e034bcb02</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New module 1.Catalogs</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>m2m_sp_portal_search_source_19b0ed9d1bb3e0108872b88e034bcb02</sys_update_name>
+        <sys_update_version display_value="m2m_sp_portal_search_source_19b0ed9d1bb3e0108872b88e034bcb02">ddb0ed9d1bb3e0108872b88e034bcb03</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:31:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_csm_ec_feature_instance">
+    <sn_csm_ec_feature_instance action="DELETE">
+        <enabled>true</enabled>
+        <feature display_value="Cases">cbfa5d51876b10109eb0578c87cb0be2</feature>
+        <launch_description>Tell us your issue to submit a help ticket.</launch_description>
+        <launch_message>Create a ticket</launch_message>
+        <messenger_module display_value="New module 1">29ee29a61b236010e0f943f28d4bcbca</messenger_module>
+        <order>500</order>
+        <sub_title>This includes your help tickets and requests.</sub_title>
+        <sys_class_name>sn_csm_ec_feature_instance</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:58</sys_created_on>
+        <sys_id>0fee21e61b236010e0f943f28d4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sn_csm_ec_feature_instance_0fee21e61b236010e0f943f28d4bcbeb</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-19 05:29:58</sys_updated_on>
+        <title>Track all your tickets</title>
+        <visible_for_guest>false</visible_for_guest>
+        <visible_for_user>true</visible_for_user>
+    </sn_csm_ec_feature_instance>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sn_csm_ec_feature_instance_0fee21e61b236010e0f943f28d4bcbeb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_csm_ec_feature_instance"><sn_csm_ec_feature_instance action="INSERT_OR_UPDATE"><enabled>true</enabled><feature display_value="Cases">cbfa5d51876b10109eb0578c87cb0be2</feature><launch_description>Tell us your issue to submit a help ticket.</launch_description><launch_message>Create a ticket</launch_message><messenger_module display_value="New module 1">29ee29a61b236010e0f943f28d4bcbca</messenger_module><order>500</order><sub_title>This includes your help tickets and requests.</sub_title><sys_class_name>sn_csm_ec_feature_instance</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-04-19 05:29:58</sys_created_on><sys_id>0fee21e61b236010e0f943f28d4bcbeb</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sn_csm_ec_feature_instance_0fee21e61b236010e0f943f28d4bcbeb</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-04-19 05:29:58</sys_updated_on><title>Track all your tickets</title><visible_for_guest>false</visible_for_guest><visible_for_user>true</visible_for_user></sn_csm_ec_feature_instance></record_update>]]></payload>
+        <payload_hash>1283915256</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>383b49a81ba7a810e0f943f28d4bcb6a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:58</sys_created_on>
+        <sys_id>d3ee61e61b236010e0f943f28d4bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178e89b5afc0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-19 05:29:58</sys_updated_on>
+        <type>Feature Instance</type>
+        <update_guid>dbee61e6a4236010adc5a597879bc356</update_guid>
+        <update_guid_history>dbee61e6a4236010adc5a597879bc356:1283915256</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">2f9b51951bb3e0108872b88e034bcb02</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:08:54</sys_created_on>
+        <sys_db_object display_value="" name="sn_csm_ec_feature_instance">sn_csm_ec_feature_instance</sys_db_object>
+        <sys_id>207838c2ea4c45789ba762990aaa5240</sys_id>
+        <sys_metadata>0fee21e61b236010e0f943f28d4bcbeb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sn_csm_ec_feature_instance_0fee21e61b236010e0f943f28d4bcbeb</sys_update_name>
+        <sys_update_version display_value="sn_csm_ec_feature_instance_0fee21e61b236010e0f943f28d4bcbeb">d3ee61e61b236010e0f943f28d4bcb57</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:08:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

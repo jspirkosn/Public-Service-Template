@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include">
+    <m2m_sp_dependency_js_include action="INSERT_OR_UPDATE">
+        <order>300</order>
+        <sp_dependency display_value="ESRI Leaflet Includes">6965d22c1b63e4108872b88e034bcb6b</sp_dependency>
+        <sp_js_include display_value="https://unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js">dff59a6c1b63e4108872b88e034bcbf5</sp_js_include>
+        <sys_class_name>m2m_sp_dependency_js_include</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-13 03:13:14</sys_created_on>
+        <sys_id>bd16de6c1b63e4108872b88e034bcb46</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ESRI Leaflet Includes.https://unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>m2m_sp_dependency_js_include_bd16de6c1b63e4108872b88e034bcb46</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-13 03:40:39</sys_updated_on>
+    </m2m_sp_dependency_js_include>
+</record_update>

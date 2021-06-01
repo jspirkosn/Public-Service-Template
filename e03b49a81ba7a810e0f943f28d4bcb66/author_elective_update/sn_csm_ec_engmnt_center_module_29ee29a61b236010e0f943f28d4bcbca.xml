@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_csm_ec_engmnt_center_module">
+    <sn_csm_ec_engmnt_center_module action="DELETE">
+        <authentication_type>none</authentication_type>
+        <edit_module>ca94cbd473412010d43171ef64f6a7fb</edit_module>
+        <enable_behaviour_tracking>false</enable_behaviour_tracking>
+        <enable_browser_notification>false</enable_browser_notification>
+        <enable_full_height_expand>true</enable_full_height_expand>
+        <enable_icon_notification>false</enable_icon_notification>
+        <enable_notification_sound>true</enable_notification_sound>
+        <icon_horizontal_padding>50</icon_horizontal_padding>
+        <icon_vertical_padding>50</icon_vertical_padding>
+        <launch_icon_position>right</launch_icon_position>
+        <launcher_icon display_value="launcher-icon.png">1a3aa6a553586010eafcddeeff7b12c5</launcher_icon>
+        <logo/>
+        <name>UCSF Campus Life Services</name>
+        <portal display_value="">5eee29a61b236010e0f943f28d4bcbcf</portal>
+        <primary_module_color>#052049</primary_module_color>
+        <primary_text_color>#FFFFFF</primary_text_color>
+        <secondary_module_color>#E9EBF7</secondary_module_color>
+        <secondary_text_color>#000000</secondary_text_color>
+        <short_description>UCSF Campus Life Services</short_description>
+        <source_code><![CDATA[<script src="https://jspirkodemo.service-now.com/scripts/sn_csm_ec.js"></script>
+<script>
+SN_CSM_EC.init({
+	moduleID: "https://jspirkodemo.service-now.com/#29ee29a61b236010e0f943f28d4bcbca",
+	loadFeature: SN_CSM_EC.loadEMFeature()
+});
+</script>]]></source_code>
+        <status>inactive</status>
+        <sys_class_name>sn_csm_ec_engmnt_center_module</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>29ee29a61b236010e0f943f28d4bcbca</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>UCSF Campus Life Services</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sn_csm_ec_engmnt_center_module_29ee29a61b236010e0f943f28d4bcbca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:30:22</sys_updated_on>
+        <tertiary_module_color>#B5DDE5</tertiary_module_color>
+        <tertiary_text_color>#000000</tertiary_text_color>
+        <title>Customer Support</title>
+        <website_urls>https://campuslifeservices.ucsf.edu</website_urls>
+    </sn_csm_ec_engmnt_center_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sn_csm_ec_engmnt_center_module_29ee29a61b236010e0f943f28d4bcbca</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_csm_ec_engmnt_center_module"&gt;&lt;sn_csm_ec_engmnt_center_module action="INSERT_OR_UPDATE"&gt;&lt;authentication_type&gt;none&lt;/authentication_type&gt;&lt;edit_module&gt;ca94cbd473412010d43171ef64f6a7fb&lt;/edit_module&gt;&lt;enable_behaviour_tracking&gt;false&lt;/enable_behaviour_tracking&gt;&lt;enable_browser_notification&gt;false&lt;/enable_browser_notification&gt;&lt;enable_full_height_expand&gt;true&lt;/enable_full_height_expand&gt;&lt;enable_icon_notification&gt;false&lt;/enable_icon_notification&gt;&lt;enable_notification_sound&gt;true&lt;/enable_notification_sound&gt;&lt;icon_horizontal_padding&gt;50&lt;/icon_horizontal_padding&gt;&lt;icon_vertical_padding&gt;50&lt;/icon_vertical_padding&gt;&lt;launch_icon_position&gt;right&lt;/launch_icon_position&gt;&lt;launcher_icon display_value="launcher-icon.png"&gt;1a3aa6a553586010eafcddeeff7b12c5&lt;/launcher_icon&gt;&lt;logo/&gt;&lt;name&gt;UCSF Campus Life Services&lt;/name&gt;&lt;portal display_value=""&gt;5eee29a61b236010e0f943f28d4bcbcf&lt;/portal&gt;&lt;primary_module_color&gt;#052049&lt;/primary_module_color&gt;&lt;primary_text_color&gt;#FFFFFF&lt;/primary_text_color&gt;&lt;secondary_module_color&gt;#E9EBF7&lt;/secondary_module_color&gt;&lt;secondary_text_color&gt;#000000&lt;/secondary_text_color&gt;&lt;short_description&gt;UCSF Campus Life Services&lt;/short_description&gt;&lt;source_code&gt;&lt;![CDATA[&lt;script src="https://jspirkodemo.service-now.com/scripts/sn_csm_ec.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+SN_CSM_EC.init({
+	moduleID: "https://jspirkodemo.service-now.com/#29ee29a61b236010e0f943f28d4bcbca",
+	loadFeature: SN_CSM_EC.loadEMFeature()
+});
+&lt;/script&gt;]]&gt;&lt;/source_code&gt;&lt;status&gt;inactive&lt;/status&gt;&lt;sys_class_name&gt;sn_csm_ec_engmnt_center_module&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-19 05:29:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;29ee29a61b236010e0f943f28d4bcbca&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;UCSF Campus Life Services&lt;/sys_name&gt;&lt;sys_package display_value="311 Template" source="x_snc_311_template"&gt;e03b49a81ba7a810e0f943f28d4bcb66&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="311 Template"&gt;e03b49a81ba7a810e0f943f28d4bcb66&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_csm_ec_engmnt_center_module_29ee29a61b236010e0f943f28d4bcbca&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-27 17:30:22&lt;/sys_updated_on&gt;&lt;tertiary_module_color&gt;#B5DDE5&lt;/tertiary_module_color&gt;&lt;tertiary_text_color&gt;#000000&lt;/tertiary_text_color&gt;&lt;title&gt;Customer Support&lt;/title&gt;&lt;website_urls&gt;https://campuslifeservices.ucsf.edu&lt;/website_urls&gt;&lt;/sn_csm_ec_engmnt_center_module&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1010227072</payload_hash>
+        <record_name>UCSF Campus Life Services</record_name>
+        <reverted_from/>
+        <source>313bd1551bb3e0108872b88e034bcb84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:30:22</sys_created_on>
+        <sys_id>8e80ed9d1bb3e0108872b88e034bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1791461c7420000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:30:22</sys_updated_on>
+        <type>Engagement Messenger Module</type>
+        <update_guid>c280ed9d74b3e01084656d9e6c80f0c4</update_guid>
+        <update_guid_history>c280ed9d74b3e01084656d9e6c80f0c4:1010227072,874c55d5d2b3e010ed7f691d5ab5daff:72645403,c122193c3233241067ad7a3722710c6d:0,f227b3574fab60101e3d15a39dc676f9:-595398481,f5273b5708ab601061dfded5abb8a3b9:-1029818348,7d1784be0de3a010e47817528f138052:-595398481,041740fe41e3a010cf8e63f2fd8311e4:-1029818348,64b14ea2b2276010033f72dde0f8bdee:-595398481,685a356a89e36010fdf7d7c514cec7a9:-1307372266,c16075aaf62360109b6e482be70ec72e:1911580859,10efe1eade2360105721fd39faa0435e:-1063291488,90efe1ea8b2360103dc0e477b74ec22a:-1818924217,dfee61e64823601067a4113383c80357:1346849841</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="UCSF Campus Life Services">e490e1dd1bb3e0108872b88e034bcbb0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:30:33</sys_created_on>
+        <sys_db_object display_value="" name="sn_csm_ec_engmnt_center_module">sn_csm_ec_engmnt_center_module</sys_db_object>
+        <sys_id>45d7cf23cc734f18b6a4087bf5c7a440</sys_id>
+        <sys_metadata>29ee29a61b236010e0f943f28d4bcbca</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UCSF Campus Life Services</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sn_csm_ec_engmnt_center_module_29ee29a61b236010e0f943f28d4bcbca</sys_update_name>
+        <sys_update_version display_value="sn_csm_ec_engmnt_center_module_29ee29a61b236010e0f943f28d4bcbca">8e80ed9d1bb3e0108872b88e034bcbc4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:30:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

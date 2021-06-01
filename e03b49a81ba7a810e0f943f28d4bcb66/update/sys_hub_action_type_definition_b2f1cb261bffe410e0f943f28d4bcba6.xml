@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>311_match_catalog_to_service_portfolio</internal_name>
+        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"sc_cat_item_category"},{"name":"{{action.triggercategory}}","label":"action➛variable","type":"action","ref":"sc_cat_item_category"},{"name":"{{action.trigger_category}}","label":"action➛Trigger Catalog Category","type":"action","ref":"sc_cat_item_category"},{"name":"{{action.taxonomy_layer}}","label":"action➛Taxonomy Layer Definition","type":"action","ref":""},{"name":"{{action.application_service}}","label":"action➛Application Service","type":"action","ref":""}]</label_cache>
+        <master_snapshot>667a7f321bf7a8108872b88e034bcb56</master_snapshot>
+        <name>Public Service Catalog to Service Portfolio</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-01 21:48:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b2f1cb261bffe410e0f943f28d4bcba6</sys_id>
+        <sys_mod_count>138</sys_mod_count>
+        <sys_name>Public Service Catalog to Service Portfolio</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_b2f1cb261bffe410e0f943f28d4bcba6</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-28 23:55:11</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=b2f1cb261bffe410e0f943f28d4bcba6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b2f1cb261bffe410e0f943f28d4bcba6"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=b2f1cb261bffe410e0f943f28d4bcba6^sys_idNOT INc63b43e21b332810e0f943f28d4bcbc9"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Public Service Catalog to Service Portfolio">b2f1cb261bffe410e0f943f28d4bcba6</action>
+        <cid>5a6f457b-10d6-4f1f-b0c0-76705549d75a</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-01 22:28:54</sys_created_on>
+        <sys_id>c63b43e21b332810e0f943f28d4bcbc9</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-28 23:55:10</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c63b43e21b332810e0f943f28d4bcbc9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c63b43e21b332810e0f943f28d4bcbc9</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-01 22:28:55</sys_created_on>
+        <sys_id>0e3b43e21b332810e0f943f28d4bcbe1</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-28 23:55:10</sys_updated_on>
+        <value>// The main purpose of this Action is to copy a catalog taxomomy into a service taxonomy
+// Assumptions
+//   1. the Catalog Category has a parent Catagory (this is pre-validated in flow)
+//   2. This mapping will be created based on a category being added to a record producer 
+//     LEVEL 1: Parent Catalog Category --&gt; Service Portfolio Taxonomy Node
+//     LEVEL 2: Catalog Item Category --&gt; Business Service (classified under Taxonomy Node)
+//     LEVEL 3: Record Producer --&gt; Service Offering (classified under Business Service)
+// Use Cases
+//   1. Create all levels of objects and realtionships
+//     -- Happens when the first Record Producer for the Parent Catalog Category and Catalog Item Category
+//   2. Create one or more levels of the service structure
+//     -- Happens when a new record producer is put under a pre-existing Parnet and/or Child Catalog Category
+//     -- In this case the Taxonomy Node and/or Business Service Should already exist
+//   3. A Record Producer changes names and no longer maps to the name of the Service Offering
+//     -- This case is handled by ... 
+//	     -- removing the linkage between the Record Producer and Service Offering
+//       -- creating a new Service Offering that matches the name of the Record Producer
+//       -- associating the new Service Offering with the Record Producer
+//       NOTE: The old Service Offering, wiht the old name, is not deleted  
+//   4. A Record Producer has more than 1 category
+//     -- This case is **not** handled ...
+//       -- The scipt will only take the first category so this can cause problems
+//       -- Be sure to manually check the service portfolio to understand how the scipt behaved 
+//   5. A Record Producer's is moved to a differnet Catalog Category
+//     -- This case is **not** handled at this time ...
+//       -- Manually handling would entail changing the parent of the offering to match the catalog category 
+//       -- A second option would be to delete the existing service offering before moving the Record Producer
+// 
+
+(function execute(inputs, outputs) {
+  
+  // Get or create a taxonomy node the matches the parent catalog category 
+    
+  var taxNodeId = getTaxNode(inputs.triggerCat.sc_category.parent.title, inputs.taxLayer);
+  gs.error("TaxNode ID is: " + taxNodeId);
+  
+  // Get or create a Business Service the matches the catalog category 
+  var busSvcId = getBusService(inputs.triggerCat.sc_category.title, taxNodeId);
+  
+  gs.error("Bus Svc id is: " + busSvcId);
+  
+  // Get or create a Service Offering the matches the record producer 
+  var svcOffId = getSvcOffering(inputs.triggerCat.sc_cat_item.name, busSvcId); 
+
+  gs.info("Svc Off id is: " + svcOffId);
+  
+  // Create the CMDB Dependencies to the Service Offering
+  createOffDepend(svcOffId, busSvcId, inputs.application_service);
+  
+  // Create the association of the Service Offering to Catalog Item
+  assocOfferingCatItem(inputs.triggerCat.sc_cat_item.sys_id, svcOffId);
+
+  function getTaxNode (nodeName, taxLayerDef) {
+	var taxNode = new GlideRecord('spm_taxonomy_node');
+	taxNode.addQuery('name',nodeName);
+	taxNode.addQuery('spm_taxonomy_layer',taxLayerDef);
+	taxNode.query();
+	
+	if (taxNode.getRowCount() == 0) {
+	  taxNode.initialize();
+	  taxNode.spm_service_portfolio = taxLayerDef.spm_service_portfolio.sys_id;
+	  taxNode.name = nodeName;
+	  taxNode.spm_taxonomy_layer = taxLayerDef.sys_id;
+	  return taxNode.insert();	
+	} else {
+	  taxNode.next();
+	  return taxNode.sys_id;
+	}
+	
+  }
+
+  function getBusService (svcName, taxNode) {
+
+	var newSvc = new GlideRecord('cmdb_ci_service');
+	newSvc.addQuery('category', 'Business Service');
+    newSvc.addQuery('spm_taxonomy_node', taxNode);
+	newSvc.addQuery('name',svcName);
+	newSvc.query();
+	
+	if (newSvc.getRowCount() == 0) {
+	  newSvc.initialize();
+	  newSvc.spm_service_portfolio = taxNode.spm_service_portfolio;
+	  newSvc.name = svcName;
+      newSvc.service_classification = 'Business Service';
+	  newSvc.spm_taxonomy_node = taxNode;
+	  newSvc.sys_class_name = 'cmdb_ci_service';
+	  newSvc.used_for = 'Production';
+	  return newSvc.insert();	
+	} else {
+	  newSvc.next();
+	  return newSvc.sys_id;
+	}
+  }
+
+  function getSvcOffering (offName, parentSvc) {
+    
+	var newOff = new GlideRecord('service_offering');
+	newOff.addQuery('parent', parentSvc);
+	newOff.addQuery('name',offName);
+	newOff.query();
+	    
+	if (newOff.getRowCount() == 0) {
+      gs.info("Creating SO ");
+	  newOff.initialize();
+	  newOff.parent = parentSvc;
+	  newOff.name = offName;
+      newOff.service_classification = 'Business Service';
+	  return newOff.insert();	
+	} else {
+	  newOff.next();
+	  return newOff.sys_id;
+	}
+  }
+
+  function createOffDepend (svcOffId, busSvcId, appSvcId) {
+    var newDpnd = new GlideRecord('cmdb_rel_ci');
+	// Create dependency to Parent Business Service
+	newDpnd.addQuery('parent', busSvcId);
+	newDpnd.addQuery('child',svcOffId);
+	newDpnd.query();
+	
+	if (newDpnd.getRowCount() == 0) {
+	  newDpnd.initialize();
+	  newDpnd.parent = busSvcId;
+	  newDpnd.child = svcOffId;
+	  newDpnd.type.setDisplayValue("Contains::Contained by");
+	  newDpnd.insert();	
+	} 
+	
+    gs.info("app service id: " + appSvcId.sys_id);
+    
+    // Create dependency to Application Service
+	newDpnd.initialize();
+	newDpnd.addQuery('parent', svcOffId);
+	newDpnd.addQuery('child',appSvcId.sys_id);
+	newDpnd.query();
+    
+    gs.info("row count: " + newDpnd.getRowCount());
+	
+	if (newDpnd.getRowCount() == 0) {
+	  newDpnd.initialize();
+	  newDpnd.parent = svcOffId;
+	  newDpnd.child = appSvcId.sys_id;
+	  newDpnd.type.setDisplayValue("Depends on::Used by");
+	  newDpnd.insert();	
+	} 
+	
+  }
+
+  function assocOfferingCatItem (catItemId, svcOffId) {
+	var newAssoc = new GlideRecord('sc_cat_item_subscribe_no_mtom');
+	newAssoc.addQuery('sc_cat_item', catItemId);
+	newAssoc.addQuery('service_offering',svcOffId);
+	newAssoc.query();
+	
+	if (newAssoc.getRowCount() == 0) {
+	  newAssoc.initialize();
+	  newAssoc.sc_cat_item = catItemId;
+	  newAssoc.service_offering = svcOffId;
+	  return newAssoc.insert();	
+	} else {
+	  newAssoc.next();
+	  return newAssoc.sys_id;
+	}
+  }
+  
+  
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c63b43e21b332810e0f943f28d4bcbc9</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 04:50:37</sys_created_on>
+        <sys_id>a192ecf21b3b2810e0f943f28d4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 04:50:37</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c63b43e21b332810e0f943f28d4bcbc9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 04:50:37</sys_created_on>
+        <sys_id>ad92ecf21b3b2810e0f943f28d4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 04:50:37</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c63b43e21b332810e0f943f28d4bcbc9</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 04:50:37</sys_created_on>
+        <sys_id>e992ecf21b3b2810e0f943f28d4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 04:50:37</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c63b43e21b332810e0f943f28d4bcbc9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>c63b43e21b332810e0f943f28d4bcbc9</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 04:50:37</sys_created_on>
+        <sys_id>e992ecf21b3b2810e0f943f28d4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 04:50:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application_service</field>
+        <id>c63b43e21b332810e0f943f28d4bcbc9</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 21:35:11</sys_created_on>
+        <sys_id>f48840c71b3ba8108872b88e034bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 21:35:11</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c63b43e21b332810e0f943f28d4bcbc9</table>
+        <value>{{action.application_service}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection</field>
+        <id>c63b43e21b332810e0f943f28d4bcbc9</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 04:50:37</sys_created_on>
+        <sys_id>2592ecf21b3b2810e0f943f28d4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 04:50:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>c63b43e21b332810e0f943f28d4bcbc9</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 04:50:37</sys_created_on>
+        <sys_id>ad92ecf21b3b2810e0f943f28d4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 04:50:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>c63b43e21b332810e0f943f28d4bcbc9</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-01 22:28:55</sys_created_on>
+        <sys_id>863b43e21b332810e0f943f28d4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-01 22:28:55</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>taxLayer</field>
+        <id>c63b43e21b332810e0f943f28d4bcbc9</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-01 22:28:55</sys_created_on>
+        <sys_id>4e3b43e21b332810e0f943f28d4bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-01 22:28:55</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c63b43e21b332810e0f943f28d4bcbc9</table>
+        <value>{{action.taxonomy_layer}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>triggerCat</field>
+        <id>c63b43e21b332810e0f943f28d4bcbc9</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-01 22:28:55</sys_created_on>
+        <sys_id>023b43e21b332810e0f943f28d4bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-01 22:28:55</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c63b43e21b332810e0f943f28d4bcbc9</table>
+        <value>{{action.trigger_category}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=c63b43e21b332810e0f943f28d4bcbc9^sys_idNOT IN0e3b43e21b332810e0f943f28d4bcbd1,423b43e21b332810e0f943f28d4bcbd8,f88840c71b3ba8108872b88e034bcb9c"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>triggerCat</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">c63b43e21b332810e0f943f28d4bcbc9</model>
+        <model_id>c63b43e21b332810e0f943f28d4bcbc9</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c63b43e21b332810e0f943f28d4bcbc9</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_cat_item_category">sc_cat_item_category</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-01 22:28:55</sys_created_on>
+        <sys_id>0e3b43e21b332810e0f943f28d4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-01 22:28:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>taxLayer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">c63b43e21b332810e0f943f28d4bcbc9</model>
+        <model_id>c63b43e21b332810e0f943f28d4bcbc9</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c63b43e21b332810e0f943f28d4bcbc9</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="spm_taxonomy_layer_definition">spm_taxonomy_layer_definition</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-01 22:28:55</sys_created_on>
+        <sys_id>423b43e21b332810e0f943f28d4bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-01 22:28:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>application_service</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">c63b43e21b332810e0f943f28d4bcbc9</model>
+        <model_id>c63b43e21b332810e0f943f28d4bcbc9</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c63b43e21b332810e0f943f28d4bcbc9</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmdb_ci_service_auto">cmdb_ci_service_auto</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 21:35:11</sys_created_on>
+        <sys_id>f88840c71b3ba8108872b88e034bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 21:35:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_action_input action="delete_multiple" query="model=b2f1cb261bffe410e0f943f28d4bcba6^sys_idNOT IN68831c0f1bf72010e0f943f28d4bcb3d,ac831c0f1bf72010e0f943f28d4bcb29,f4831c0f1bf72010e0f943f28d4bcb5c"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=c3689d75-f162-4621-9bd6-49240921d9ac</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>spm_taxonomy_layer_definition</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>taxonomy_layer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Taxonomy Layer Definition</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Public Service Catalog to Service Portfolio">b2f1cb261bffe410e0f943f28d4bcba6</model>
+        <model_id>b2f1cb261bffe410e0f943f28d4bcba6</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_b2f1cb261bffe410e0f943f28d4bcba6</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="spm_taxonomy_layer_definition">spm_taxonomy_layer_definition</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 22:23:14</sys_created_on>
+        <sys_id>68831c0f1bf72010e0f943f28d4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 22:23:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=22ce8ca8-fe63-4fb2-bf7c-997dc4b5368e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_cat_item_category</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>trigger_category</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Trigger Catalog Category</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Public Service Catalog to Service Portfolio">b2f1cb261bffe410e0f943f28d4bcba6</model>
+        <model_id>b2f1cb261bffe410e0f943f28d4bcba6</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_b2f1cb261bffe410e0f943f28d4bcba6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_cat_item_category">sc_cat_item_category</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 22:23:13</sys_created_on>
+        <sys_id>ac831c0f1bf72010e0f943f28d4bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 22:23:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=74330b6d-6525-4285-a3e9-c7a81a3e859f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>cmdb_ci_service_auto</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>application_service</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Application Service</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Public Service Catalog to Service Portfolio">b2f1cb261bffe410e0f943f28d4bcba6</model>
+        <model_id>b2f1cb261bffe410e0f943f28d4bcba6</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_b2f1cb261bffe410e0f943f28d4bcba6</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmdb_ci_service_auto">cmdb_ci_service_auto</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 22:23:14</sys_created_on>
+        <sys_id>f4831c0f1bf72010e0f943f28d4bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 22:23:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_b2f1cb261bffe410e0f943f28d4bcba6^sys_idNOT IN28831c0f1bf72010e0f943f28d4bcb30,34831c0f1bf72010e0f943f28d4bcb6e,ec831c0f1bf72010e0f943f28d4bcb42"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>trigger_category</element>
+        <help/>
+        <hint/>
+        <label>Trigger Catalog Category</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_b2f1cb261bffe410e0f943f28d4bcba6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 22:23:13</sys_created_on>
+        <sys_id>28831c0f1bf72010e0f943f28d4bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 22:23:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>application_service</element>
+        <help/>
+        <hint/>
+        <label>Application Service</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_b2f1cb261bffe410e0f943f28d4bcba6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 22:23:14</sys_created_on>
+        <sys_id>34831c0f1bf72010e0f943f28d4bcb6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 22:23:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>taxonomy_layer</element>
+        <help/>
+        <hint/>
+        <label>Taxonomy Layer Definition</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_b2f1cb261bffe410e0f943f28d4bcba6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 22:23:14</sys_created_on>
+        <sys_id>ec831c0f1bf72010e0f943f28d4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 22:23:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=b2f1cb261bffe410e0f943f28d4bcba6^sys_idNOT INdb7abf321bf7a8108872b88e034bcb39"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Public Service Catalog to Service Portfolio">b2f1cb261bffe410e0f943f28d4bcba6</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"db7abf321bf7a8108872b88e034bcb39","name":"plan"}}</plan>
+        <snapshot>3631aed31b587c108872b88e034bcbd2</snapshot>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>db7abf321bf7a8108872b88e034bcb39</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-28 23:52:19</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>311_match_catalog_to_service_portfolio</internal_name>
+        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"sc_cat_item_category"},{"name":"{{action.triggercategory}}","label":"action➛variable","type":"action","ref":"sc_cat_item_category"},{"name":"{{action.trigger_category}}","label":"action➛Trigger Catalog Category","type":"action","ref":"sc_cat_item_category"},{"name":"{{action.taxonomy_layer}}","label":"action➛Taxonomy Layer Definition","type":"action","ref":""},{"name":"{{action.application_service}}","label":"action➛Application Service","type":"action","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Public Service Catalog to Service Portfolio</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Public Service Catalog to Service Portfolio">b2f1cb261bffe410e0f943f28d4bcba6</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>667a7f321bf7a8108872b88e034bcb56</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-28 23:52:17</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=667a7f321bf7a8108872b88e034bcb56"/>
+    <sys_variable_value action="delete_multiple" query="document_key=667a7f321bf7a8108872b88e034bcb56"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=667a7f321bf7a8108872b88e034bcb56^sys_idNOT INb67a7f321bf7a8108872b88e034bcbdd"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Public Service Catalog to Service Portfolio">667a7f321bf7a8108872b88e034bcb56</action>
+        <cid>5a6f457b-10d6-4f1f-b0c0-76705549d75a</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>b67a7f321bf7a8108872b88e034bcbdd</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-28 23:52:18</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b67a7f321bf7a8108872b88e034bcbdd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b67a7f321bf7a8108872b88e034bcbdd</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>0b7a7f321bf7a8108872b88e034bcbf5</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-28 23:52:18</sys_updated_on>
+        <value>// The main purpose of this Action is to copy a catalog taxomomy into a service taxonomy
+// Assumptions
+//   1. the Catalog Category has a parent Catagory (this is pre-validated in flow)
+//   2. This mapping will be created based on a category being added to a record producer 
+//     LEVEL 1: Parent Catalog Category --&gt; Service Portfolio Taxonomy Node
+//     LEVEL 2: Catalog Item Category --&gt; Business Service (classified under Taxonomy Node)
+//     LEVEL 3: Record Producer --&gt; Service Offering (classified under Business Service)
+// Use Cases
+//   1. Create all levels of objects and realtionships
+//     -- Happens when the first Record Producer for the Parent Catalog Category and Catalog Item Category
+//   2. Create one or more levels of the service structure
+//     -- Happens when a new record producer is put under a pre-existing Parnet and/or Child Catalog Category
+//     -- In this case the Taxonomy Node and/or Business Service Should already exist
+//   3. A Record Producer changes names and no longer maps to the name of the Service Offering
+//     -- This case is handled by ... 
+//	     -- removing the linkage between the Record Producer and Service Offering
+//       -- creating a new Service Offering that matches the name of the Record Producer
+//       -- associating the new Service Offering with the Record Producer
+//   4. A Record Producer is moved to a differnet Catalog Category
+//     -- This case is handled by ...
+//       --
+//   5. A Record Producer's is moved to a differnet Catalog Category
+//     -- This case is handled by ...
+//       --
+
+(function execute(inputs, outputs) {
+  
+  // Get or create a taxonomy node the matches the parent catalog category 
+    
+  var taxNodeId = getTaxNode(inputs.triggerCat.sc_category.parent.title, inputs.taxLayer);
+  gs.error("TaxNode ID is: " + taxNodeId);
+  
+  // Get or create a Business Service the matches the catalog category 
+  var busSvcId = getBusService(inputs.triggerCat.sc_category.title, taxNodeId);
+  
+  gs.error("Bus Svc id is: " + busSvcId);
+  
+  // Get or create a Service Offering the matches the record producer 
+  var svcOffId = getSvcOffering(inputs.triggerCat.sc_cat_item.name, busSvcId); 
+
+  gs.info("Svc Off id is: " + svcOffId);
+  
+  // Create the CMDB Dependencies to the Service Offering
+  createOffDepend(svcOffId, busSvcId, inputs.application_service);
+  
+  // Create the association of the Service Offering to Catalog Item
+  assocOfferingCatItem(inputs.triggerCat.sc_cat_item.sys_id, svcOffId);
+
+  function getTaxNode (nodeName, taxLayerDef) {
+	var taxNode = new GlideRecord('spm_taxonomy_node');
+	taxNode.addQuery('name',nodeName);
+	taxNode.addQuery('spm_taxonomy_layer',taxLayerDef);
+	taxNode.query();
+	
+	if (taxNode.getRowCount() == 0) {
+	  taxNode.initialize();
+	  taxNode.spm_service_portfolio = taxLayerDef.spm_service_portfolio.sys_id;
+	  taxNode.name = nodeName;
+	  taxNode.spm_taxonomy_layer = taxLayerDef.sys_id;
+	  return taxNode.insert();	
+	} else {
+	  taxNode.next();
+	  return taxNode.sys_id;
+	}
+	
+  }
+
+  function getBusService (svcName, taxNode) {
+
+	var newSvc = new GlideRecord('cmdb_ci_service');
+	newSvc.addQuery('category', 'Business Service');
+    newSvc.addQuery('spm_taxonomy_node', taxNode);
+	newSvc.addQuery('name',svcName);
+	newSvc.query();
+	
+	if (newSvc.getRowCount() == 0) {
+	  newSvc.initialize();
+	  newSvc.spm_service_portfolio = taxNode.spm_service_portfolio;
+	  newSvc.name = svcName;
+      newSvc.service_classification = 'Business Service';
+	  newSvc.spm_taxonomy_node = taxNode;
+	  newSvc.sys_class_name = 'cmdb_ci_service';
+	  newSvc.used_for = 'Production';
+	  return newSvc.insert();	
+	} else {
+	  newSvc.next();
+	  return newSvc.sys_id;
+	}
+  }
+
+  function getSvcOffering (offName, parentSvc) {
+    
+	var newOff = new GlideRecord('service_offering');
+	newOff.addQuery('parent', parentSvc);
+	newOff.addQuery('name',offName);
+	newOff.query();
+	    
+	if (newOff.getRowCount() == 0) {
+      gs.info("Creating SO ");
+	  newOff.initialize();
+	  newOff.parent = parentSvc;
+	  newOff.name = offName;
+      newOff.service_classification = 'Business Service';
+	  return newOff.insert();	
+	} else {
+	  newOff.next();
+	  return newOff.sys_id;
+	}
+  }
+
+  function createOffDepend (svcOffId, busSvcId, appSvcId) {
+    var newDpnd = new GlideRecord('cmdb_rel_ci');
+	// Create dependency to Parent Business Service
+	newDpnd.addQuery('parent', busSvcId);
+	newDpnd.addQuery('child',svcOffId);
+	newDpnd.query();
+	
+	if (newDpnd.getRowCount() == 0) {
+	  newDpnd.initialize();
+	  newDpnd.parent = busSvcId;
+	  newDpnd.child = svcOffId;
+	  newDpnd.type.setDisplayValue("Contains::Contained by");
+	  newDpnd.insert();	
+	} 
+	
+    gs.info("app service id: " + appSvcId.sys_id);
+    
+    // Create dependency to Application Service
+	newDpnd.initialize();
+	newDpnd.addQuery('parent', svcOffId);
+	newDpnd.addQuery('child',appSvcId.sys_id);
+	newDpnd.query();
+    
+    gs.info("row count: " + newDpnd.getRowCount());
+	
+	if (newDpnd.getRowCount() == 0) {
+	  newDpnd.initialize();
+	  newDpnd.parent = svcOffId;
+	  newDpnd.child = appSvcId.sys_id;
+	  newDpnd.type.setDisplayValue("Depends on::Used by");
+	  newDpnd.insert();	
+	} 
+	
+  }
+
+  function assocOfferingCatItem (catItemId, svcOffId) {
+	var newAssoc = new GlideRecord('sc_cat_item_subscribe_no_mtom');
+	newAssoc.addQuery('sc_cat_item', catItemId);
+	newAssoc.addQuery('service_offering',svcOffId);
+	newAssoc.query();
+	
+	if (newAssoc.getRowCount() == 0) {
+	  newAssoc.initialize();
+	  newAssoc.sc_cat_item = catItemId;
+	  newAssoc.service_offering = svcOffId;
+	  return newAssoc.insert();	
+	} else {
+	  newAssoc.next();
+	  return newAssoc.sys_id;
+	}
+  }
+  
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b67a7f321bf7a8108872b88e034bcbdd</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>477a7f321bf7a8108872b88e034bcbf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 20:33:53</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b67a7f321bf7a8108872b88e034bcbdd</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>837a7f321bf7a8108872b88e034bcbf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 20:33:53</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b67a7f321bf7a8108872b88e034bcbdd</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>ba7a7f321bf7a8108872b88e034bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 20:33:53</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b67a7f321bf7a8108872b88e034bcbdd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>b67a7f321bf7a8108872b88e034bcbdd</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>b27a7f321bf7a8108872b88e034bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 20:33:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application_service</field>
+        <id>b67a7f321bf7a8108872b88e034bcbdd</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 21:40:26</sys_created_on>
+        <sys_id>75b9400f1bb72010e0f943f28d4bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 21:40:26</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b67a7f321bf7a8108872b88e034bcbdd</table>
+        <value>{{action.application_service}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection</field>
+        <id>b67a7f321bf7a8108872b88e034bcbdd</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>7a7a7f321bf7a8108872b88e034bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 20:33:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>b67a7f321bf7a8108872b88e034bcbdd</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>767a7f321bf7a8108872b88e034bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 20:33:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>b67a7f321bf7a8108872b88e034bcbdd</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>3a7a7f321bf7a8108872b88e034bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 20:33:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>taxLayer</field>
+        <id>b67a7f321bf7a8108872b88e034bcbdd</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>837a7f321bf7a8108872b88e034bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 20:33:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b67a7f321bf7a8108872b88e034bcbdd</table>
+        <value>{{action.taxonomy_layer}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>triggerCat</field>
+        <id>b67a7f321bf7a8108872b88e034bcbdd</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>477a7f321bf7a8108872b88e034bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 20:33:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b67a7f321bf7a8108872b88e034bcbdd</table>
+        <value>{{action.trigger_category}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b67a7f321bf7a8108872b88e034bcbdd^sys_idNOT IN31b9400f1bb72010e0f943f28d4bcb81,327a7f321bf7a8108872b88e034bcbe1,b67a7f321bf7a8108872b88e034bcbe9"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>application_service</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>application_service</label>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">b67a7f321bf7a8108872b88e034bcbdd</model>
+        <model_id>b67a7f321bf7a8108872b88e034bcbdd</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b67a7f321bf7a8108872b88e034bcbdd</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmdb_ci_service_auto">cmdb_ci_service_auto</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 21:40:26</sys_created_on>
+        <sys_id>31b9400f1bb72010e0f943f28d4bcb81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 21:40:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>triggerCat</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>triggerCat</label>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">b67a7f321bf7a8108872b88e034bcbdd</model>
+        <model_id>b67a7f321bf7a8108872b88e034bcbdd</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b67a7f321bf7a8108872b88e034bcbdd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_cat_item_category">sc_cat_item_category</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>327a7f321bf7a8108872b88e034bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 20:33:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>taxLayer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>taxLayer</label>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">b67a7f321bf7a8108872b88e034bcbdd</model>
+        <model_id>b67a7f321bf7a8108872b88e034bcbdd</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b67a7f321bf7a8108872b88e034bcbdd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="spm_taxonomy_layer_definition">spm_taxonomy_layer_definition</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 20:33:53</sys_created_on>
+        <sys_id>b67a7f321bf7a8108872b88e034bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 20:33:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_action_input action="delete_multiple" query="model=667a7f321bf7a8108872b88e034bcb56^sys_idNOT IN06835c0f1bf72010e0f943f28d4bcb70,0e835c0f1bf72010e0f943f28d4bcb95,46835c0f1bf72010e0f943f28d4bcb83"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=22ce8ca8-fe63-4fb2-bf7c-997dc4b5368e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_cat_item_category</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>trigger_category</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Trigger Catalog Category</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Public Service Catalog to Service Portfolio">667a7f321bf7a8108872b88e034bcb56</model>
+        <model_id>667a7f321bf7a8108872b88e034bcb56</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_667a7f321bf7a8108872b88e034bcb56</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_cat_item_category">sc_cat_item_category</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 22:23:19</sys_created_on>
+        <sys_id>06835c0f1bf72010e0f943f28d4bcb70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 22:23:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=74330b6d-6525-4285-a3e9-c7a81a3e859f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>cmdb_ci_service_auto</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>application_service</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Application Service</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Public Service Catalog to Service Portfolio">667a7f321bf7a8108872b88e034bcb56</model>
+        <model_id>667a7f321bf7a8108872b88e034bcb56</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_667a7f321bf7a8108872b88e034bcb56</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmdb_ci_service_auto">cmdb_ci_service_auto</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 22:23:20</sys_created_on>
+        <sys_id>0e835c0f1bf72010e0f943f28d4bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 22:23:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=c3689d75-f162-4621-9bd6-49240921d9ac</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>spm_taxonomy_layer_definition</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>taxonomy_layer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Taxonomy Layer Definition</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Public Service Catalog to Service Portfolio">667a7f321bf7a8108872b88e034bcb56</model>
+        <model_id>667a7f321bf7a8108872b88e034bcb56</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_667a7f321bf7a8108872b88e034bcb56</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="spm_taxonomy_layer_definition">spm_taxonomy_layer_definition</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 22:23:19</sys_created_on>
+        <sys_id>46835c0f1bf72010e0f943f28d4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 22:23:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_667a7f321bf7a8108872b88e034bcb56^sys_idNOT IN06835c0f1bf72010e0f943f28d4bcb76,82835c0f1bf72010e0f943f28d4bcb9b,ca835c0f1bf72010e0f943f28d4bcb88"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>trigger_category</element>
+        <help/>
+        <hint/>
+        <label>Trigger Catalog Category</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_667a7f321bf7a8108872b88e034bcb56</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 22:23:19</sys_created_on>
+        <sys_id>06835c0f1bf72010e0f943f28d4bcb76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 22:23:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>application_service</element>
+        <help/>
+        <hint/>
+        <label>Application Service</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_667a7f321bf7a8108872b88e034bcb56</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 22:23:20</sys_created_on>
+        <sys_id>82835c0f1bf72010e0f943f28d4bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 22:23:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>taxonomy_layer</element>
+        <help/>
+        <hint/>
+        <label>Taxonomy Layer Definition</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_667a7f321bf7a8108872b88e034bcb56</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-02 22:23:19</sys_created_on>
+        <sys_id>ca835c0f1bf72010e0f943f28d4bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-02 22:23:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>b2f1cb261bffe410e0f943f28d4bcba6</sys_id>
+        <latest_snapshot>667a7f321bf7a8108872b88e034bcb56</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>

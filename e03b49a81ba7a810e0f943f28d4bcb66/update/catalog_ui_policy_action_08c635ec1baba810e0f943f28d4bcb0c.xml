@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:9014b1e81baba810e0f943f28d4bcb8c</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-13 00:56:29</sys_created_on>
+        <sys_id>08c635ec1baba810e0f943f28d4bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>consumer</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_08c635ec1baba810e0f943f28d4bcb0c</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-13 00:56:29</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Fields">8e46b9ac1baba810e0f943f28d4bcb40</ui_policy>
+        <variable>consumer</variable>
+        <variable_set display_value="Public Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>

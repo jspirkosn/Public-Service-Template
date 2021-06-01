@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page_route_map">
+    <sp_page_route_map action="DELETE">
+        <active>true</active>
+        <order>100</order>
+        <portals>05b0ad9d1bb3e0108872b88e034bcbfb</portals>
+        <route_from_page display_value="sc_request">a44fd933d7230200a9addd173e24d4b3</route_from_page>
+        <route_to_page display_value="ec_order_status">3e9740af532160105b51ddeeff7b121b</route_to_page>
+        <short_description>EC Order Status</short_description>
+        <sys_class_name>sp_page_route_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:31:10</sys_created_on>
+        <sys_id>7db029dd1bb3e0108872b88e034bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a44fd933d7230200a9addd173e24d4b3</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sp_page_route_map_7db029dd1bb3e0108872b88e034bcb1d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:31:10</sys_updated_on>
+    </sp_page_route_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sp_page_route_map_7db029dd1bb3e0108872b88e034bcb1d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page_route_map"><sp_page_route_map action="INSERT_OR_UPDATE"><active>true</active><order>100</order><portals>05b0ad9d1bb3e0108872b88e034bcbfb</portals><route_from_page display_value="sc_request">a44fd933d7230200a9addd173e24d4b3</route_from_page><route_to_page display_value="ec_order_status">3e9740af532160105b51ddeeff7b121b</route_to_page><short_description>EC Order Status</short_description><sys_class_name>sp_page_route_map</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-04-27 17:31:10</sys_created_on><sys_id>7db029dd1bb3e0108872b88e034bcb1d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>a44fd933d7230200a9addd173e24d4b3</sys_name><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sp_page_route_map_7db029dd1bb3e0108872b88e034bcb1d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-04-27 17:31:10</sys_updated_on></sp_page_route_map></record_update>]]></payload>
+        <payload_hash>424562138</payload_hash>
+        <record_name>a44fd933d7230200a9addd173e24d4b3</record_name>
+        <reverted_from/>
+        <source>313bd1551bb3e0108872b88e034bcb84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:31:10</sys_created_on>
+        <sys_id>75b029dd1bb3e0108872b88e034bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179146281d50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:31:10</sys_updated_on>
+        <type>Page Route Map</type>
+        <update_guid>7db029dd02b3e010b51845ce1757861e</update_guid>
+        <update_guid_history>7db029dd02b3e010b51845ce1757861e:424562138</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="sc_request">cdc0a9dd1bb3e0108872b88e034bcbe0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:31:23</sys_created_on>
+        <sys_db_object display_value="" name="sp_page_route_map">sp_page_route_map</sys_db_object>
+        <sys_id>030d0e2f28a44e2080110943fe392e40</sys_id>
+        <sys_metadata>7db029dd1bb3e0108872b88e034bcb1d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a44fd933d7230200a9addd173e24d4b3</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sp_page_route_map_7db029dd1bb3e0108872b88e034bcb1d</sys_update_name>
+        <sys_update_version display_value="sp_page_route_map_7db029dd1bb3e0108872b88e034bcb1d">75b029dd1bb3e0108872b88e034bcb1f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:31:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

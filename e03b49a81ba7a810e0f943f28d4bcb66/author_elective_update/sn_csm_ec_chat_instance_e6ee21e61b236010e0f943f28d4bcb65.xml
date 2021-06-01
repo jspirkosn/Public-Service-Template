@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_csm_ec_chat_instance">
+    <sn_csm_ec_chat_instance action="DELETE">
+        <chat_branding display_value="UCSF Campus Life Services">36ee21e61b236010e0f943f28d4bcb67</chat_branding>
+        <enabled>false</enabled>
+        <feature display_value="Chat">0c2b5d51876b10109eb0578c87cb0beb</feature>
+        <launch_description>Talk to our team for a quick solution.</launch_description>
+        <launch_message>Chat with us</launch_message>
+        <messenger_module display_value="UCSF Campus Life Services">29ee29a61b236010e0f943f28d4bcbca</messenger_module>
+        <order>600</order>
+        <sub_title/>
+        <sys_class_name>sn_csm_ec_chat_instance</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 05:29:56</sys_created_on>
+        <sys_id>e6ee21e61b236010e0f943f28d4bcb65</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sn_csm_ec_chat_instance_e6ee21e61b236010e0f943f28d4bcb65</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-19 16:10:42</sys_updated_on>
+        <title>Chat with an agent</title>
+        <va_topic display_value="EC Contextual Help">ec9a10d25373101019dfddeeff7b1237</va_topic>
+        <visible_for_guest>true</visible_for_guest>
+        <visible_for_user>true</visible_for_user>
+    </sn_csm_ec_chat_instance>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sn_csm_ec_chat_instance_e6ee21e61b236010e0f943f28d4bcb65</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_csm_ec_chat_instance"><sn_csm_ec_chat_instance action="INSERT_OR_UPDATE"><chat_branding display_value="UCSF Campus Life Services">36ee21e61b236010e0f943f28d4bcb67</chat_branding><enabled>false</enabled><feature display_value="Chat">0c2b5d51876b10109eb0578c87cb0beb</feature><launch_description>Talk to our team for a quick solution.</launch_description><launch_message>Chat with us</launch_message><messenger_module display_value="UCSF Campus Life Services">29ee29a61b236010e0f943f28d4bcbca</messenger_module><order>600</order><sub_title/><sys_class_name>sn_csm_ec_chat_instance</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-04-19 05:29:56</sys_created_on><sys_id>e6ee21e61b236010e0f943f28d4bcb65</sys_id><sys_mod_count>2</sys_mod_count><sys_name/><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sn_csm_ec_chat_instance_e6ee21e61b236010e0f943f28d4bcb65</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-04-19 16:10:42</sys_updated_on><title>Chat with an agent</title><va_topic display_value="EC Contextual Help">ec9a10d25373101019dfddeeff7b1237</va_topic><visible_for_guest>true</visible_for_guest><visible_for_user>true</visible_for_user></sn_csm_ec_chat_instance></record_update>]]></payload>
+        <payload_hash>188850543</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>1bb8f0a01bdca410e0f943f28d4bcbdf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-19 16:10:43</sys_created_on>
+        <sys_id>099100ba1be3a010e0f943f28d4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178eae5f7e70000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-19 16:10:43</sys_updated_on>
+        <type>Chat Feature Instance</type>
+        <update_guid>019100ba9ee3a01051c83075af3b34d5</update_guid>
+        <update_guid_history>019100ba9ee3a01051c83075af3b34d5:188850543,3eee21e6ae236010d0dcb6e3533708a0:1623278521,76ee21e6b8236010748e4a00b669ce9f:-2122734996,b2ee21e627236010c1346b4c82f3779e:1623278521</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">b79b51951bb3e0108872b88e034bcb4f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-27 17:08:55</sys_created_on>
+        <sys_db_object display_value="" name="sn_csm_ec_chat_instance">sn_csm_ec_chat_instance</sys_db_object>
+        <sys_id>4411f682223f435c8cb6d7af0debc4e1</sys_id>
+        <sys_metadata>e6ee21e61b236010e0f943f28d4bcb65</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sn_csm_ec_chat_instance_e6ee21e61b236010e0f943f28d4bcb65</sys_update_name>
+        <sys_update_version display_value="sn_csm_ec_chat_instance_e6ee21e61b236010e0f943f28d4bcb65">099100ba1be3a010e0f943f28d4bcbd5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 17:08:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

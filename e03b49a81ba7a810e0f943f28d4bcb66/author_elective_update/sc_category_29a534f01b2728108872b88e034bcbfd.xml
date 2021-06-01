@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="DELETE">
+        <active>false</active>
+        <description/>
+        <entitlement_script/>
+        <header_icon/>
+        <homepage_image/>
+        <homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
+        <icon/>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture/>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent/>
+        <roles/>
+        <sc_catalog display_value="311 Catalog">b5a15ea81b6fa810e0f943f28d4bcbcb</sc_catalog>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-13 14:51:03</sys_created_on>
+        <sys_id>29a534f01b2728108872b88e034bcbfd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>311 Cases</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_category_29a534f01b2728108872b88e034bcbfd</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-25 19:52:29</sys_updated_on>
+        <title>311 Cases</title>
+    </sc_category>
+    <sys_translated_text action="DELETE" query="documentkey=29a534f01b2728108872b88e034bcbfd"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_category_29a534f01b2728108872b88e034bcbfd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category"><sc_category action="INSERT_OR_UPDATE"><active>false</active><description/><entitlement_script/><header_icon/><homepage_image/><homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer><icon/><image/><location/><mobile_hide_description>false</mobile_hide_description><mobile_picture/><mobile_subcategory_render_type>list</mobile_subcategory_render_type><module/><order>0</order><parent/><roles/><sc_catalog display_value="311 Catalog">b5a15ea81b6fa810e0f943f28d4bcbcb</sc_catalog><sys_class_name>sc_category</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-04-13 14:51:03</sys_created_on><sys_id>29a534f01b2728108872b88e034bcbfd</sys_id><sys_mod_count>1</sys_mod_count><sys_name>311 Cases</sys_name><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_category_29a534f01b2728108872b88e034bcbfd</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-04-25 19:52:29</sys_updated_on><title>311 Cases</title></sc_category><sys_translated_text action="delete_multiple" query="documentkey=29a534f01b2728108872b88e034bcbfd"/></record_update>]]></payload>
+        <payload_hash>-1384916730</payload_hash>
+        <record_name>311 Cases</record_name>
+        <reverted_from/>
+        <source>383b49a81ba7a810e0f943f28d4bcb6a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-25 19:52:29</sys_created_on>
+        <sys_id>c4ed63a01b77e0108872b88e034bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1790a972a310000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-25 19:52:29</sys_updated_on>
+        <type>Category</type>
+        <update_guid>0ced63a08777e010b7248fd90530d9bc</update_guid>
+        <update_guid_history>0ced63a08777e010b7248fd90530d9bc:-1384916730,77c578f09d27281036d66f73f32db032:-300719551</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="311 Cases">53ede3a01b77e0108872b88e034bcb6d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-25 19:52:42</sys_created_on>
+        <sys_db_object display_value="" name="sc_category">sc_category</sys_db_object>
+        <sys_id>19c9a16dce8b40bd877bb7762cc6fb91</sys_id>
+        <sys_metadata>29a534f01b2728108872b88e034bcbfd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>311 Cases</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_category_29a534f01b2728108872b88e034bcbfd</sys_update_name>
+        <sys_update_version display_value="sc_category_29a534f01b2728108872b88e034bcbfd">c4ed63a01b77e0108872b88e034bcbbd</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-25 19:52:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

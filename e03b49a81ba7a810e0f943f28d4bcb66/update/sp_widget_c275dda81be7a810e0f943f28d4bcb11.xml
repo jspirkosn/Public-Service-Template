@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ESRIMapController ($timeout, $rootScope, $scope, $http, $sce) {
+	var c = this;
+	var apiKey = c.data.apiKey;
+	var basemapEnum = "ArcGIS:Navigation";
+	
+	if($scope.page.g_form.getValue("mobile")=='false'){
+	
+		// This is the center of the map 
+		var myTownCenterLat = 34.0195; 
+		var myTownCenterLong = -118.4912;	
+	
+		// Inital map setup																																							
+		var map = L.map("map", {
+			minZoom: 8
+		}).setView([myTownCenterLat, myTownCenterLong], 14);
+
+		// Sets up the vector so we can click on it																					
+		L.esri.Vector.vectorBasemapLayer(basemapEnum, {
+			apiKey: apiKey
+		}).addTo(map);
+
+		// This is the geo coder that can turn the clicks into an address																							
+		var geocoder = L.esri.Geocoding.geocodeService({
+			apikey: apiKey
+		});
+
+	
+		var layerGroup = L.layerGroup().addTo(map);
+	
+		// Sets up what happens when we click on the map																					
+		map.on("click", function(e) {
+			geocoder.reverse().latlng(e.latlng).run(function(error, result) {
+				if (error) {
+					return;
+				}
+			
+				setVariables(result.latlng.lat, result.latlng.lng, result.address.LongLabel);
+			
+				layerGroup.clearLayers();
+				results.clearLayers();
+				marker = L.marker(result.latlng)
+					.addTo(layerGroup)
+					.bindPopup(result.address.LongLabel)
+					.openPopup();
+			});
+		});
+	}
+	// Sets up the search control
+	var searchControl = L.esri.Geocoding.geosearch({
+		position: "topright",
+		placeholder: "Enter an address or place e.g. 1 York St",
+		useMapBounds: false,
+		providers: [L.esri.Geocoding.arcgisOnlineProvider({
+			apikey: apiKey,
+			nearby: {
+				lat: myTownCenterLat,
+				lng: myTownCenterLong
+			},
+		})]
+	}).addTo(map);
+	// This executes when you select a search result
+	var results = L.layerGroup().addTo(map);
+	searchControl.on('results', function(data) {
+		layerGroup.clearLayers();
+		for (var i = data.results.length - 1; i >= 0; i--) {
+			L.marker(data.results[i].latlng)
+				.addTo(results)
+				.bindPopup(data.results[i].text)
+				.openPopup();
+			
+			setVariables(data.results[i].latlng.lat, data.results[i].latlng.lng, data.results[i].text);
+		}
+	});
+	
+	map.locate({setView: true, watch: true}) /* This will return map so you can do chaining */
+        .on('locationfound', function(e){
+			latLong = L.latLng(e.latitude, e.longitude);
+			geocoder.reverse().latlng(latLong).run(function(error, result) {
+				if (error) {
+					alert("error found");
+					return;
+				}
+				//$scope.page.g_form.setValue("location", result.address.LongLabel);
+				result.address.LongLabel;
+				layerGroup.clearLayers();
+				results.clearLayers();
+				var marker = L.marker([e.latitude, e.longitude]).addTo(results).bindPopup("Your location is: " + result.address.LongLabel).openPopup();
+				setVariables(e.latitude, e.longitude, result.address.LongLabel);
+			});
+			
+
+        })
+       .on('locationerror', function(e){
+            //console.log(e);
+            alert("Location access denied.");
+        });
+		
+	function setVariables(latIn, LonIn, locaIn){
+		var lon = Math.round(latIn * 100000) / 100000;
+		var lat = Math.round(LonIn * 100000) / 100000;
+			
+		$scope.page.g_form.setValue("latitude", lon);
+		$scope.page.g_form.setValue("longitude", lat);
+		$scope.page.g_form.setValue("location", locaIn);
+		
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>#map {&#13;
+  height: 100%;&#13;
+  width: 100%;&#13;
+  min-height: 350px;&#13;
+  min-width: 300px;&#13;
+  font-family: Arial, Helvetica, sans-serif;&#13;
+  font-size: 14px;&#13;
+  color: #323232;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>esri_map_leaflet</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>ESRI Map Leaflet</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	// This is the ESRI key that will get passed to the client controller
+	// Go here and to sign up for a dev account and get an API key: https://developers.arcgis.com/
+	data.apiKey = "AAPKb0ae250f6cbf4369a43c56fff74de7f8_uNDILUsEgYYsDzH_j4OeR4mlLUQYVt92pKUPw-BkHSRN6DHFyQc_CSHspaZX4WR";
+	
+	// Lookup the service offering that the record producer is attached to
+	// This follows guidelines set in ServiceNow's Common Service Data Model (CSDM)
+	var so = new GlideRecord('sc_cat_item_subscribe_mtom');
+	var service_offering;
+	
+	so.addQuery('sc_cat_item', $sp.getParameter("sys_id")); // Gets the sys_id of the catalog item
+	so.query();
+	
+	// If we find a Service Offering attached to the catalog item get the sys_id
+	while(so.next()){
+		
+		data.svc_offering = so.service_offering.getValue('sys_id'); 		
+	}
+	
+	//Get other active cases for the service Offering
+	var cases = [];
+	var grCase = new GlideRecord('sn_customerservice_case');
+	grCase.addQuery('active', 'true');
+	grCase.addQuery('state', "!=",1);  // Filtering out anythign in the "new" state
+    //grCase.addQuery('service_offering', data.svc_offering);
+	grCase.query();
+	
+	//gs.log("Case are: " + grCase.getRowCount());		
+
+	while(grCase.next()) { 
+		//gs.log("Found case: " + grCase.number);
+		var imageID = '';
+		var grAttachment = new GlideRecord('sys_attachment');
+		grAttachment.addQuery('table_sys_id', grCase.getUniqueValue());
+		grAttachment.query();
+		//if(grAttachment.next()) {
+		//	imageID = instancePrefix + 'sys_attachment.do?sys_id=' + grAttachment.getUniqueValue();
+		//} else {
+		//	imageID = 'https://tacm.com/wp-content/uploads/2018/01/no-image-available.jpeg';
+		//}
+		cases.push({
+			lat: grCase.location.latitude.toString(),
+			lon: grCase.location.longitude.toString(),
+			short_desc: grCase.getValue('short_description'),
+			loc: grCase.location.name.toString(),
+			url: imageID,
+			sys_id: grCase.getUniqueValue()
+		});
+		
+	}
+	$sp.log(cases);
+	data.cases = cases;
+
+	if (input) {
+		//data.location = new GeolocationUtils()._getLocation(input.latitude, input.longitude);
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-12 22:30:54</sys_created_on>
+        <sys_id>c275dda81be7a810e0f943f28d4bcb11</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ESRI Map Leaflet</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sp_widget_c275dda81be7a810e0f943f28d4bcb11</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-13 03:47:03</sys_updated_on>
+        <template><![CDATA[<div id="map"></div>]]></template>
+    </sp_widget>
+</record_update>
