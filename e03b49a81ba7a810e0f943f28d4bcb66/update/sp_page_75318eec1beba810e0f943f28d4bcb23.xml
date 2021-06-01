@@ -1,13 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
     <sp_page action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <css/>
+        <css>body .padding-top{
+  padding-top: 0px;
+}
+section.page { 
+  background-color: $sp-homepage-bg;
+}
+section.page, section.body {
+  padding-top: 0px !important;
+}
+
+section.body .b-b {
+  margin-bottom: 30px;
+  margin-top: -20px !important;
+  background: #ffffff;
+}
+
+.banner-container {
+    height: 230px;
+    display: table;
+  	width: 100%;
+}
+
+.search-container {
+  max-width: 709px;
+  margin: 0 auto;
+}
+
+.mob-ban-container {
+  height: 85px;
+  padding-top: 20px;
+}
+
+.v-h-center {
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+#homepage-search {
+  	padding: 0px !important;
+}
+#homepage-search h2 {
+	font-size: 36px;
+    font-weight: 300;
+    line-height: 42px;
+    margin-top: 0px;
+	margin-bottom: 10px !important;
+}
+#homepage-search .h4 {
+	margin-top: 0px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+}
+#homepage-search div[widget] .input-group {
+	max-width: 578px;
+  	margin: 0 auto;	
+}
+#homepage-search div[widget] .input-group input[name="q"] {
+	height: 42px;
+    border: 1.2px solid $input-border;
+    border-radius: 4.8px 0 0 4.8px;
+  	padding-left: 12px;
+    padding-right: 12px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+#homepage-search div[widget] .input-group input[name="q"]:focus {
+  outline: 5px auto $input-border-focus;
+}
+#homepage-search ::placeholder {
+	font-size: 16px;
+	line-height: 25px;
+}
+#homepage-search :-ms-input-placeholder {
+	font-size: 16px;
+	line-height: 25px;
+}
+#homepage-search div[widget] .input-group .input-group-btn &gt; button {
+	height: 42px;
+    min-width: 48px;
+    border: 1.2px solid $input-border;
+    border-radius: 0 4.8px 4.8px 0;
+    padding: 0;
+}</css>
         <draft>false</draft>
         <dynamic_title_structure/>
-        <id>311_index</id>
+        <id>pub_index</id>
         <internal>false</internal>
         <omit_watcher>false</omit_watcher>
-        <public>false</public>
+        <public>true</public>
         <roles/>
         <seo_script/>
         <short_description/>
@@ -15,15 +99,15 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-13 01:42:02</sys_created_on>
         <sys_id>75318eec1beba810e0f943f28d4bcb23</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>311_index</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>pub_index</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>sp_page_75318eec1beba810e0f943f28d4bcb23</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-04-13 01:42:02</sys_updated_on>
-        <title>311 Index</title>
+        <sys_updated_on>2021-05-30 01:00:18</sys_updated_on>
+        <title>Pub Index</title>
         <use_seo_script>false</use_seo_script>
     </sp_page>
     <sys_translated_text action="delete_multiple" query="documentkey=75318eec1beba810e0f943f28d4bcb23"/>

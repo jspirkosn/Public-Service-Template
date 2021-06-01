@@ -6,27 +6,27 @@
         <css/>
         <glyph/>
         <id/>
-        <order>1</order>
+        <order>3</order>
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">fcd312ac1b6fa810e0f943f28d4bcb86</sp_column>
-        <sp_widget display_value="SC Categories">4c03cba0cb11020000f8d856634c9ce1</sp_widget>
+        <sp_column display_value="1">fab182201b2fa810e0f943f28d4bcbb8</sp_column>
+        <sp_widget display_value="External Registration Response">6aced6c83b1b3200b5c42479b3efc4eb</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2021-04-13 03:03:35</sys_created_on>
-        <sys_id>58e39aac1b6fa810e0f943f28d4bcbee</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Category</sys_name>
+        <sys_created_on>2021-05-30 00:44:48</sys_created_on>
+        <sys_id>69d67faf1b1030508872b88e034bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
-        <sys_update_name>sp_instance_58e39aac1b6fa810e0f943f28d4bcbee</sys_update_name>
+        <sys_update_name>sp_instance_69d67faf1b1030508872b88e034bcbda</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-30 00:03:07</sys_updated_on>
-        <title>Category</title>
+        <sys_updated_on>2021-05-30 00:44:48</sys_updated_on>
+        <title/>
         <url/>
         <widget_parameters/>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=58e39aac1b6fa810e0f943f28d4bcbee"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=69d67faf1b1030508872b88e034bcbda"/>
 </record_update>

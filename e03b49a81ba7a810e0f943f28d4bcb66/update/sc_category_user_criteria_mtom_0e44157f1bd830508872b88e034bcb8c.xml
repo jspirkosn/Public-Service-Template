@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category_user_criteria_mtom">
+    <sc_category_user_criteria_mtom action="INSERT_OR_UPDATE">
+        <sc_category display_value="Non Emergency Issues">067248cd1b7b2410e0f943f28d4bcbe0</sc_category>
+        <sys_class_name>sc_category_user_criteria_mtom</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-30 07:33:04</sys_created_on>
+        <sys_id>0e44157f1bd830508872b88e034bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Non Emergency Issues.Public</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_category_user_criteria_mtom_0e44157f1bd830508872b88e034bcb8c</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-30 07:33:04</sys_updated_on>
+        <user_criteria display_value="Public">595e98451b106010e0f943f28d4bcbac</user_criteria>
+    </sc_category_user_criteria_mtom>
+</record_update>

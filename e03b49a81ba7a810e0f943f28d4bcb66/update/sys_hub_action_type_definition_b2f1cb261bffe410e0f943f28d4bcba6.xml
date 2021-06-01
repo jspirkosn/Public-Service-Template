@@ -17,14 +17,14 @@
         <name>Public Service Catalog to Service Portfolio</name>
         <natlang/>
         <outputs/>
-        <state>draft</state>
+        <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-01 21:48:33</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b2f1cb261bffe410e0f943f28d4bcba6</sys_id>
-        <sys_mod_count>138</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Public Service Catalog to Service Portfolio</sys_name>
         <sys_overrides/>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_b2f1cb261bffe410e0f943f28d4bcba6</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-28 23:55:11</sys_updated_on>
+        <sys_updated_on>2021-06-01 00:44:15</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -871,7 +871,7 @@
         <sys_created_on>2021-05-02 22:23:13</sys_created_on>
         <sys_id>28831c0f1bf72010e0f943f28d4bcb30</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Trigger Catalog Category</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
@@ -894,7 +894,7 @@
         <sys_created_on>2021-05-02 22:23:14</sys_created_on>
         <sys_id>34831c0f1bf72010e0f943f28d4bcb6e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Application Service</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
@@ -917,7 +917,7 @@
         <sys_created_on>2021-05-02 22:23:14</sys_created_on>
         <sys_id>ec831c0f1bf72010e0f943f28d4bcb42</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Taxonomy Layer Definition</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
@@ -997,10 +997,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-02 20:33:53</sys_created_on>
         <sys_id>b67a7f321bf7a8108872b88e034bcbdd</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-28 23:52:18</sys_updated_on>
+        <sys_updated_on>2021-05-29 23:30:32</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b67a7f321bf7a8108872b88e034bcbdd"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1011,9 +1011,9 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-02 20:33:53</sys_created_on>
         <sys_id>0b7a7f321bf7a8108872b88e034bcbf5</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-28 23:52:18</sys_updated_on>
+        <sys_updated_on>2021-05-29 23:30:32</sys_updated_on>
         <value>// The main purpose of this Action is to copy a catalog taxomomy into a service taxonomy
 // Assumptions
 //   1. the Catalog Category has a parent Catagory (this is pre-validated in flow)
@@ -1032,12 +1032,16 @@
 //	     -- removing the linkage between the Record Producer and Service Offering
 //       -- creating a new Service Offering that matches the name of the Record Producer
 //       -- associating the new Service Offering with the Record Producer
-//   4. A Record Producer is moved to a differnet Catalog Category
-//     -- This case is handled by ...
-//       --
+//       NOTE: The old Service Offering, wiht the old name, is not deleted  
+//   4. A Record Producer has more than 1 category
+//     -- This case is **not** handled ...
+//       -- The scipt will only take the first category so this can cause problems
+//       -- Be sure to manually check the service portfolio to understand how the scipt behaved 
 //   5. A Record Producer's is moved to a differnet Catalog Category
-//     -- This case is handled by ...
-//       --
+//     -- This case is **not** handled at this time ...
+//       -- Manually handling would entail changing the parent of the offering to match the catalog category 
+//       -- A second option would be to delete the existing service offering before moving the Record Producer
+// 
 
 (function execute(inputs, outputs) {
   
@@ -1177,8 +1181,7 @@
   }
   
   
-})(inputs, outputs);
-</value>
+})(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1810,7 +1813,7 @@
         <sys_created_on>2021-05-02 22:23:19</sys_created_on>
         <sys_id>06835c0f1bf72010e0f943f28d4bcb76</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Trigger Catalog Category</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
@@ -1833,7 +1836,7 @@
         <sys_created_on>2021-05-02 22:23:20</sys_created_on>
         <sys_id>82835c0f1bf72010e0f943f28d4bcb9b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Application Service</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
@@ -1856,7 +1859,7 @@
         <sys_created_on>2021-05-02 22:23:19</sys_created_on>
         <sys_id>ca835c0f1bf72010e0f943f28d4bcb88</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Taxonomy Layer Definition</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>

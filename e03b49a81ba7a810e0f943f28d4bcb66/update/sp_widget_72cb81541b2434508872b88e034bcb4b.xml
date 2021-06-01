@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function loginCtrl($scope, $http, $window, $location, glideUserSession, glideSystemProperties, spUtil) {
+
+	var c = this;
+	c.remember_me = c.data.forgetMeDefault;
+
+	if (!c.data.is_logged_in && c.data.multisso_enabled && c.data.default_idp) {
+		c.server.get({
+			action: "set_sso_destination",
+			pageURI: c.data.pageURI
+		}).then(function() {
+			$window.location = "/login_with_sso.do?glide_sso_id=" + c.data.default_idp;
+		});
+	}
+	
+	c.guestLogin = function() {
+		//var username = c.data.guest_user;
+		//var password = 'Servicenow1';
+		var url = spUtil.getURL({sysparm_type: 'view_form.login'});
+	
+		// If the page isn't public, then the ID in the
+		// URL won't match the rendered page ID
+		var pageId = $location.search().id || $scope.page.id;
+		var isLoginPage = $scope.portal.login_page_dv == pageId;
+
+		return $http({
+			method: 'post',
+			url: url,
+			data: $.param({
+				'sysparm_type': 'login',
+				'ni.nolog.user_password': true,
+				'remember_me': !!c.remember_me ? true : false,
+				'user_name': c.data.guest_user,
+				'user_password': c.data.guest_pass,
+				'get_redirect_url': true,
+				'sysparm_goto_url': isLoginPage ? null : $location.url(),
+				'mfa_redirect_url': c.data.pageURI
+			}),
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			}
+		}).then(function(response) {
+			if (!response.data) {
+				c.message = $scope.data.errorMsg;
+				return;
+			}
+
+			if (response.data.status == 'success') {
+				if (c.data.multiFactorAuthEnabled) {
+					c.server.get({
+						action: "multi_factor_auth_setup",
+						directTo: response.data.redirect_url
+					}).then(handleLoginSuccess.bind(response));
+				} else {
+					handleLoginSuccess.call(response);
+				}
+			} else if (response.data.status == 'mfa_code_required') {
+					$window.location = '/validate_multifactor_auth_code.do';
+			} else {
+				// wrong username or password
+				c.message = response.data.message;
+				c.password = "";
+				c.username = "";
+				angular.element("#username").focus();
+			}
+
+		}, function errorCallback(response) {
+			c.message = $scope.data.errorMsg;
+		});
+	};
+	
+	c.login = function(username, password) {
+		var url = spUtil.getURL({sysparm_type: 'view_form.login'});
+		
+		// If the page isn't public, then the ID in the
+		// URL won't match the rendered page ID
+		var pageId = $location.search().id || $scope.page.id;
+		var isLoginPage = $scope.portal.login_page_dv == pageId;
+
+		return $http({
+			method: 'post',
+			url: url,
+			data: $.param({
+				'sysparm_type': 'login',
+				'ni.nolog.user_password': true,
+				'remember_me': !!c.remember_me ? true : false,
+				'user_name': username,
+				'user_password': password,
+				'get_redirect_url': true,
+				'sysparm_goto_url': isLoginPage ? null : $location.url(),
+				'mfa_redirect_url': c.data.pageURI
+			}),
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			}
+		}).then(function(response) {
+			if (!response.data) {
+				c.message = $scope.data.errorMsg;
+				return;
+			}
+
+			if (response.data.status == 'success') {
+				if (c.data.multiFactorAuthEnabled) {
+					c.server.get({
+						action: "multi_factor_auth_setup",
+						directTo: response.data.redirect_url
+					}).then(handleLoginSuccess.bind(response));
+				} else {
+					handleLoginSuccess.call(response);
+				}
+			} else if (response.data.status == 'mfa_code_required') {
+					$window.location = '/validate_multifactor_auth_code.do';
+			} else {
+				// wrong username or password
+				c.message = response.data.message;
+				c.password = "";
+				c.username = "";
+				angular.element("#username").focus();
+			}
+
+		}, function errorCallback(response) {
+			c.message = $scope.data.errorMsg;
+		});
+	};
+
+	c.externalLogin = function() {
+		c.server.get({
+			action: "set_sso_destination",
+			pageURI: c.data.pageURI
+		}).then(function() {
+			glideSystemProperties.set("glide.authenticate.multisso.enabled", true);
+
+			glideUserSession.getSsoRedirectUrlForUsername(c.username)
+				.then(function(url) {
+					$window.location = url;
+				}, function(err) {
+					spUtil.addErrorMessage($scope.data.errorMsg2);
+				});
+		});
+	}
+
+	function handleLoginSuccess() {
+		c.success = this.data.message;
+		$window.location = this.data.redirect_url;
+	}
+
+	c.setExternalLogin = function(newVal) {
+		c.externalLoginMode = newVal;
+	}
+	//c.guestLogin();
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.or-h5 { width:100%; text-align:center; border-bottom: 1px solid #000; line-height:0.1em; margin:10px 0 20px; } &#13;
+.or-h5 .or-span { background:#fff; padding:0 10px; }&#13;
+.btn-guest{&#13;
+    background-color: #aaa !important;&#13;
+    border: none !important;&#13;
+    color: #fff !important;&#13;
+    height: 20px;&#13;
+    padding-top: 5px;&#13;
+    padding-bottom: 30px;&#13;
+}&#13;
+.sp-login-widget { &#13;
+  &#13;
+  .panel-body {&#13;
+    padding: 15px 15px 10px;&#13;
+  }&#13;
+  &#13;
+  .form-control,&#13;
+  label[for="username"],&#13;
+  label[for="password"] {&#13;
+    color: black;&#13;
+  }&#13;
+  &#13;
+  .btn {&#13;
+    font-weight: 600;&#13;
+    font-size: 2.0rem;&#13;
+    background-color: $login-btn-bg;&#13;
+    border-color: $login-btn-border;&#13;
+  }&#13;
+  &#13;
+  .list-group {&#13;
+    margin-bottom: 12px;&#13;
+  }&#13;
+  &#13;
+  .login-button-old {&#13;
+    margin-top: 7px;&#13;
+  }&#13;
+  &#13;
+  .login-alert {&#13;
+    margin-left: 0px;&#13;
+    margin-right: 0px;&#13;
+  }&#13;
+&#13;
+}&#13;
+//STRY50033370: Forgot Password link in the login widget&#13;
+//Start -- login widget advanced view&#13;
+.sp-login-widget.advanced {  &#13;
+  .panel-title {&#13;
+    font-size: 25px;&#13;
+  }&#13;
+  &#13;
+  .panel-default &gt; .panel-heading {&#13;
+    background-color: $panel-bg; &#13;
+    border: 0px;    &#13;
+  }&#13;
+  &#13;
+  .panel-body {&#13;
+    padding: 0px 0px 10px;&#13;
+  }&#13;
+&#13;
+  [placeholder]::-webkit-input-placeholder { &#13;
+    transition: opacity 0.01s 0.01s ease !important; &#13;
+    opacity: 0 !important; &#13;
+  }&#13;
+&#13;
+  .form-signin {&#13;
+    .list-group-item { &#13;
+      border: 0px;&#13;
+    }&#13;
+    &#13;
+    .login-alert {&#13;
+    margin-left: 15px;&#13;
+    margin-right: 15px;&#13;
+    }&#13;
+    &#13;
+    .btn {&#13;
+      font-weight: 400 !important;&#13;
+      border-color: $brand-primary;&#13;
+      background-color: $brand-primary;&#13;
+      border-radius: 2px;&#13;
+    }&#13;
+&#13;
+    .forgot-pwd-div {&#13;
+      padding-right: 15px;&#13;
+      padding-left: 15px;&#13;
+      .forgot-text {&#13;
+        font-size: 16px;	&#13;
+        line-height: 20px;&#13;
+        padding-top: 8px;&#13;
+      }&#13;
+      &#13;
+      .btn {&#13;
+        line-height: 16px;&#13;
+        font-size: 14px;&#13;
+        margin-top: 0px;&#13;
+      }&#13;
+      &#13;
+    }&#13;
+    &#13;
+    .submit-btn {&#13;
+      padding-right: 15px;&#13;
+      padding-left: 15px;&#13;
+    }&#13;
+    &#13;
+    .input-advanced {&#13;
+      margin-top: 10px;&#13;
+      border: 1px solid $panel-default-border !important;&#13;
+      border-radius: 3px !important;&#13;
+      background-color: $panel-bg !important;&#13;
+    }&#13;
+    &#13;
+    .checkbox {&#13;
+      padding-left: 15px !important; &#13;
+    }&#13;
+   &#13;
+    .label-advanced {&#13;
+      position: relative;&#13;
+      width: 100%;&#13;
+      padding: 0;&#13;
+      overflow: visible;&#13;
+      border: 0;&#13;
+      height: 19px;&#13;
+      color: $text-color;&#13;
+      font-size: 16px;&#13;
+      line-height: 19px;&#13;
+    }&#13;
+&#13;
+  }&#13;
+&#13;
+}&#13;
+//End -- login widget advanced view&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>pub_guest_login</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Public Guest Login</name>
+        <option_schema>[{"name":"show_panel","section":"Presentation","default_value":"true","label":"Show Panel","type":"boolean"},{"name":"use_advanced","section":"Presentation","default_value":"false","label":"Use Advanced View","type":"boolean"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	options.show_panel = options.show_panel == "true" || options.show_panel == true;
+	data.guest_user = "public.guest";
+	data.guest_pass = "pubGuest!";
+	
+	if (input && input.action === "multi_factor_auth_setup") {
+		if (gs.getSession().getProperty("setup_multifactor_authn")) {
+			gs.getSession().putProperty("nav_to", input.directTo);
+			gs.getSession().putProperty("starting_page", input.directTo);
+			gs.getSession().putProperty("is_direct_redirect", "true");
+		}
+		return;
+	}
+	
+	// We don't want to set a starting page until we've begun the login process.
+	if (input && input.action === "set_sso_destination") {
+		var gs_nav_to = gs.getSession().getProperty("nav_to");
+		gs.getSession().putProperty("nav_to", null);
+		if (!gs.getSession().getProperty("starting_page"))
+			gs.getSession().putProperty("starting_page", gs_nav_to);
+
+		return;
+	}
+	//STRY50033370: Forgot Password link in the login widget
+  data.pswdResetUrl=gs.getProperty('glide.security.password_reset.uri');
+	data.forgotPwdLinkProp=gs.getProperty('glide.security.forgot_password.display.link');
+
+	data.errorMsg = gs.getMessage("There was an error processing your request");
+	data.errorMsg2 = gs.getMessage("An error has occurred - please contact your system administrator");
+	data.passwordMsg = gs.getMessage("Password");
+	data.usernameMsg = gs.getMessage("User name");
+	data.forgetMe = GlideProperties.getBoolean("glide.ui.forgetme");
+	data.forgetMeDefault = GlideProperties.getBoolean('glide.ui.remember.me.default', true);
+	data.is_logged_in = gs.getSession().isLoggedIn();
+	var bypass_sso = options.bypass_sso == "true";
+	data.multisso_enabled = !bypass_sso && GlideProperties.getBoolean("glide.authenticate.multisso.enabled");			
+	data.default_idp = GlideProperties.get("glide.authenticate.sso.redirect.idp");
+	data.pageURI = new GlideSPUtil().getPageUri();
+	data.multiFactorAuthEnabled = GlideProperties.getBoolean('glide.authenticate.multifactor', false);
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-31 20:14:44</sys_created_on>
+        <sys_id>72cb81541b2434508872b88e034bcb4b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Public Guest Login</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sp_widget_72cb81541b2434508872b88e034bcb4b</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-31 21:32:20</sys_updated_on>
+        <template><![CDATA[<div ng-if="!data.is_logged_in" class="sp-login-widget" ng-class="::(c.options.use_advanced == 'true' ? 'advanced' : '')">
+  <form ng-if="!c.externalLoginMode" class="form-signin" ng-submit="c.login(c.username, c.password)" method="post">
+		<div ng-class="::{'panel panel-default': c.options.show_panel}">
+			<div ng-if="::c.options.show_panel" class="panel-heading padder-v">	      
+				<h3 class="panel-title">${Login}</h3>
+			</div>
+			<div ng-class="::{'panel-body': c.options.show_panel}">
+				<div class="list-group list-group-sm">
+					<div class="list-group-item">
+            <label for="username" class="sr-only label-advanced">{{::data.usernameMsg}}</label>
+            <input id="username" name="username" autocapitalize="off" ng-keypress="c.message = ''" ng-click="c.message = ''" class="form-control no-border input-advanced" type="text" placeholder='{{::data.usernameMsg}}' autofocus="true" ng-model="c.username"/>
+					</div>
+					<div class="list-group-item">
+            <label for="password" class="sr-only label-advanced">{{::data.passwordMsg}}</label>
+            <input id="password" name="password" ng-keypress="c.message = ''" ng-click="c.message = ''" class="form-control no-border input-advanced" type="password" placeholder='{{::data.passwordMsg}}' ng-model="c.password"/>
+					</div>
+				</div>
+
+				<div ng-if="c.message" class="alert alert-danger login-alert" role="alert">{{c.message}}</div>
+				<div ng-if="c.success" class="alert alert-success login-alert" role="alert">{{c.success}}</div>
+
+				<div ng-if="::!c.data.forgetMe" class="checkbox">
+          <label>
+            <input name="c.remember_me" ng-model="c.remember_me" checked="checked" id="remember_me" type="checkbox" class="checkbox" value="true"/> ${Remember me}
+					</label>
+				</div>
+        <!--STRY50033370: Forgot Password link in the login widget-->
+        <div class="forgot-pwd-div m-b">
+          <div class="row">
+            <div ng-if="::(c.data.forgotPwdLinkProp == 'true')" class="forgot-text" ng-class="::(c.options.use_advanced == 'true' ? 'col-xs-8' : 'col-xs-12')">
+              <a class="forgot-pwd-link" ng-href="{{::c.data.pswdResetUrl}}" aria-label="${Please click here to reset your password}">${Forgot Password ?}</a>
+            </div>
+            <div ng-class="::(c.options.use_advanced == 'true' && c.data.forgotPwdLinkProp =='true' ? 'col-xs-4' : 'col-xs-12')">
+              <button name="login" type="submit" class="btn btn-lg btn-primary btn-block login-button-old">
+                ${Login}
+              </button>
+              <h5 class="or-h5"><span class="or-span">or</span></h2>
+              <button name="guestLogin" ng-click="c.guestLogin()" class="btn btn-guest btn-lg btn-block login-button-old">
+                ${Continue as Guest}
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row set-login-type-link m-t" ng-if="::data.multisso_enabled">
+          <div class="col-xs-12 text-center">
+            <a href="javascript:void(0)"
+               ng-click="c.setExternalLogin(true)">${Use external login}</a>
+          </div>
+        </div>
+			</div>
+		</div>
+	</form>
+	<form ng-if="c.externalLoginMode" class="form-signin" ng-submit="c.externalLogin()" method="post">
+		<div ng-class="::{'panel panel-default': c.options.show_panel}">
+			<div ng-if="::c.options.show_panel" class="panel-heading">
+				<h3 class="panel-title">${External Login}</h3>
+			</div>
+
+			<div ng-class="::{'panel-body': c.options.show_panel}">
+				<div class="list-group list-group-sm">
+					<div class="list-group-item">
+            <label for="username" class="sr-only label-advanced">${User ID}</label>
+            <input id="username" name="username" ng-click="message = ''" class="form-control no-border input-advanced" type="text" placeholder='${User ID}' autofocus="true" ng-model="c.username"/>
+					</div>
+				</div>
+
+        <div class="submit-btn row">
+          <div class="col-xs-12">
+            <button name="login" type="submit" class="btn btn-lg btn-primary btn-block">
+              ${Submit}
+            </button>
+          </div>
+        </div>
+        <div class="set-login-type-link row m-t">
+          <div class="col-xs-12 text-center">
+            <a href="javascript:void(0)"
+               ng-click="c.setExternalLogin(false)">${Use internal login}</a>    
+          </div>
+        </div>
+      </div>
+		</div>
+	</form>
+</div>]]></template>
+    </sp_widget>
+</record_update>

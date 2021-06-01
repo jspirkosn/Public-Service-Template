@@ -6,23 +6,23 @@
         <bootstrap_alt>false</bootstrap_alt>
         <class_name/>
         <container_class_name/>
-        <name>Pub Index - Container 2</name>
-        <order>2</order>
-        <sp_page display_value="pub_index">75318eec1beba810e0f943f28d4bcb23</sp_page>
+        <name>Public Login - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="pub_login">3ed6011c1be034508872b88e034bcbbc</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2021-04-13 03:03:14</sys_created_on>
-        <sys_id>13c35aac1b6fa810e0f943f28d4bcb58</sys_id>
+        <sys_created_on>2021-05-31 19:53:10</sys_created_on>
+        <sys_id>c547cd1c1be034508872b88e034bcb81</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>Pub Index - Container 2</sys_name>
+        <sys_name>Public Login - Container 1</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
-        <sys_update_name>sp_container_13c35aac1b6fa810e0f943f28d4bcb58</sys_update_name>
+        <sys_update_name>sp_container_c547cd1c1be034508872b88e034bcb81</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-29 23:32:49</sys_updated_on>
-        <title/>
+        <sys_updated_on>2021-05-31 20:05:31</sys_updated_on>
+        <title>Continuation Page to Login, Register or Continue as a Guest</title>
         <width>container</width>
     </sp_container>
 </record_update>
