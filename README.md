@@ -4,7 +4,11 @@ The Public Service Template repository is a collection of ServiceNow configurati
 1. Install the Customer Service(com.sn_customerservice) plugin
   2. Install the Customer Service with Service Management(com.sn_cs_sm) plugin
 3. Go to system Applications -> Studio
-4. 
+4. A dialog appears to select application click on "Import from Source Control"
+  - URL: https://github.com/jspirkosn/Public-Service-Template
+  - Credential: 
+      - Create a GitHub account 
+      - Follow these instructions https://docs.servicenow.com/bundle/paris-devops/page/product/enterprise-dev-ops/concept/dev-ops-github-apps-oauth-auth.html  
 # Configutation Collections
 - **Anonymous User**
    - Status: 
