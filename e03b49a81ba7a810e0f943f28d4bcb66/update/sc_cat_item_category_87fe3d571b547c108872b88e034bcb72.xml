@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Report Street Light Out">a12a395f1b147c108872b88e034bcbff</sc_cat_item>
+        <sc_cat_item display_value="Report Streetlight Out">a12a395f1b147c108872b88e034bcbff</sc_cat_item>
         <sc_category display_value="Non Emergency Issues">067248cd1b7b2410e0f943f28d4bcbe0</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>

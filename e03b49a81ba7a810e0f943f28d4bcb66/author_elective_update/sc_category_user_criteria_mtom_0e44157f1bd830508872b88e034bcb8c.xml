@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category_user_criteria_mtom">
+    <sc_category_user_criteria_mtom action="DELETE">
+        <sc_category display_value="Non Emergency Issues">067248cd1b7b2410e0f943f28d4bcbe0</sc_category>
+        <sys_class_name>sc_category_user_criteria_mtom</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-30 07:33:04</sys_created_on>
+        <sys_id>0e44157f1bd830508872b88e034bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Non Emergency Issues.Public</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_category_user_criteria_mtom_0e44157f1bd830508872b88e034bcb8c</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-30 07:33:04</sys_updated_on>
+        <user_criteria display_value="Public">595e98451b106010e0f943f28d4bcbac</user_criteria>
+    </sc_category_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_category_user_criteria_mtom_0e44157f1bd830508872b88e034bcb8c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category_user_criteria_mtom"><sc_category_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_category display_value="Non Emergency Issues">067248cd1b7b2410e0f943f28d4bcbe0</sc_category><sys_class_name>sc_category_user_criteria_mtom</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-05-30 07:33:04</sys_created_on><sys_id>0e44157f1bd830508872b88e034bcb8c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Non Emergency Issues.Public</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_category_user_criteria_mtom_0e44157f1bd830508872b88e034bcb8c</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-05-30 07:33:04</sys_updated_on><user_criteria display_value="Public">595e98451b106010e0f943f28d4bcbac</user_criteria></sc_category_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>-154682749</payload_hash>
+        <record_name>Non Emergency Issues.Public</record_name>
+        <reverted_from/>
+        <source>ced986501be834508872b88e034bcb91</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-01 00:44:12</sys_created_on>
+        <sys_id>dce90a501be834508872b88e034bcb4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179c5072c4b0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-01 00:44:12</sys_updated_on>
+        <type>Category Available for</type>
+        <update_guid>c244157f60d83050b9ea14a220d6898e</update_guid>
+        <update_guid_history>c244157f60d83050b9ea14a220d6898e:-154682749,e7b90e1017e8345028167da8465ff25b:955087247,c244157f60d83050b9ea14a220d6898e:-154682749</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Non Emergency Issues.Public">fd03105e1b28f414e0f943f28d4bcbe6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-06 21:12:46</sys_created_on>
+        <sys_db_object display_value="" name="sc_category_user_criteria_mtom">sc_category_user_criteria_mtom</sys_db_object>
+        <sys_id>01b3a868cec740d7806c3086c74fe319</sys_id>
+        <sys_metadata>0e44157f1bd830508872b88e034bcb8c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Non Emergency Issues.Public</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_category_user_criteria_mtom_0e44157f1bd830508872b88e034bcb8c</sys_update_name>
+        <sys_update_version display_value="sc_category_user_criteria_mtom_0e44157f1bd830508872b88e034bcb8c">dce90a501be834508872b88e034bcb4a</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-06 21:12:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
