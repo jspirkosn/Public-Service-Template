@@ -9,14 +9,14 @@
         <compiler_build>glide-quebec-12-09-2020__patch2-hotfix2-04-14-2021</compiler_build>
         <copied_from/>
         <copied_from_name/>
-        <description>This flow will look for updates to record producers and auto-build CSDM models when we find producers in a certain catalog.</description>
+        <description>This flow will look for updates to record producers and auto-build CSDM models when we find producers in the Public Services catalog.</description>
         <internal_name>auto_build_offerings</internal_name>
         <label_cache>[{"name":"21568539-46d0-4c37-af79-2455e8808fd5.Record.service_offering.spm_taxonomy_node.name","label":"3➛Not Available for Subscribers Record➛Dependent Item➛Taxonomy node➛Name","reference":"","reference_display":"Name","type":"translated_text","base_type":"translated_text","parent_table_name":"spm_taxonomy_node","column_name":"name"},{"name":"21568539-46d0-4c37-af79-2455e8808fd5.Record.service_offering.name","label":"3➛Not Available for Subscribers Record➛Dependent Item➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"service_offering","column_name":"name"},{"name":"Created or Updated_1.current.sc_cat_item","label":"Trigger➛Catalog Item Category Record➛Catalog item","reference":"sc_cat_item","reference_display":"Catalog Item","type":"reference","base_type":"reference","parent_table_name":"sc_cat_item_category","column_name":"sc_cat_item"},{"name":"a4c312dc-f421-4074-91bd-2d9c06941e2a.error_message","label":"27➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"a4c312dc-f421-4074-91bd-2d9c06941e2a.status","label":"27➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"a4c312dc-f421-4074-91bd-2d9c06941e2a.Table","label":"27➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a4c312dc-f421-4074-91bd-2d9c06941e2a.Record","label":"27➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80487437-4b40-4546-9f94-35bd4a316f25.table_name","label":"12➛CI Relationship Table","reference":"cmdb_rel_ci","reference_display":"CI Relationship","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80487437-4b40-4546-9f94-35bd4a316f25.record","label":"12➛CI Relationship Record","reference":"cmdb_rel_ci","reference_display":"CI Relationship","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aeaa70fc-342a-4160-ab0e-4ec097da4e69.table_name","label":"11➛CI Relationship Table","reference":"cmdb_rel_ci","reference_display":"CI Relationship","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aeaa70fc-342a-4160-ab0e-4ec097da4e69.record","label":"11➛CI Relationship Record","reference":"cmdb_rel_ci","reference_display":"CI Relationship","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"699539e0-e79f-4169-9d89-47468541d1cd.table_name","label":"10➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"699539e0-e79f-4169-9d89-47468541d1cd.record","label":"10➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.Record.parent","label":"4➛Category Record➛Parent","reference":"sc_category","reference_display":"Category","type":"reference","base_type":"reference","parent_table_name":"sc_category","column_name":"parent"},{"name":"05ecbf3c-1dd0-4692-bb91-1dc5ee75cf57.record.parent","label":"18➛Service Offering Record➛Parent","reference":"cmdb_ci_service","reference_display":"Service","type":"reference","base_type":"reference","parent_table_name":"service_offering","column_name":"parent"},{"name":"1e62de54-c953-4fb6-9683-9685d720a5e8.table_name","label":"24➛Service Offering Table","reference":"service_offering","reference_display":"Service Offering","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1e62de54-c953-4fb6-9683-9685d720a5e8.record","label":"24➛Service Offering Record","reference":"service_offering","reference_display":"Service Offering","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05ecbf3c-1dd0-4692-bb91-1dc5ee75cf57.table_name","label":"18➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05ecbf3c-1dd0-4692-bb91-1dc5ee75cf57.record","label":"18➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0239e63d-94b8-42bb-941e-117f375ef2c0.table_name","label":"21➛Service Table","reference":"cmdb_ci_service","reference_display":"Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0239e63d-94b8-42bb-941e-117f375ef2c0.record","label":"21➛Service Record","reference":"cmdb_ci_service","reference_display":"Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.Record.title","label":"4➛Category Record➛Title","reference":"","reference_display":"Title","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_category","column_name":"title"},{"name":"fe278bfe-870f-4141-a45d-985e10f68d33.error_message","label":"19➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"fe278bfe-870f-4141-a45d-985e10f68d33.status","label":"19➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"fe278bfe-870f-4141-a45d-985e10f68d33.Table","label":"19➛Service Table","reference":"cmdb_ci_service","reference_display":"Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fe278bfe-870f-4141-a45d-985e10f68d33.Record","label":"19➛Service Record","reference":"cmdb_ci_service","reference_display":"Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.category","label":"Trigger➛Record Producer Record➛Category","reference":"sc_category","reference_display":"Category","type":"reference","base_type":"reference","parent_table_name":"sc_cat_item_producer","column_name":"category"},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.error_message","label":"4➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.status","label":"4➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.Table","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.Record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5308b29c-0ad3-429a-b1a2-de05d7de10c3.error_message","label":"7➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"5308b29c-0ad3-429a-b1a2-de05d7de10c3.status","label":"7➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"5308b29c-0ad3-429a-b1a2-de05d7de10c3.Table","label":"7➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5308b29c-0ad3-429a-b1a2-de05d7de10c3.Record","label":"7➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"59c9ff12-8bf7-4200-be03-8b632eb3128a.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"59c9ff12-8bf7-4200-be03-8b632eb3128a.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"59c9ff12-8bf7-4200-be03-8b632eb3128a.Table","label":"1➛Catalog Table","reference":"sc_catalog","reference_display":"Catalog","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"59c9ff12-8bf7-4200-be03-8b632eb3128a.Record","label":"1➛Catalog Record","reference":"sc_catalog","reference_display":"Catalog","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6f7ef7ff-264b-4cb1-8a5a-ed25af4c7c7a.error_message","label":"18➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"6f7ef7ff-264b-4cb1-8a5a-ed25af4c7c7a.status","label":"18➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"6f7ef7ff-264b-4cb1-8a5a-ed25af4c7c7a.Table","label":"18➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6f7ef7ff-264b-4cb1-8a5a-ed25af4c7c7a.Record","label":"18➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7537233e-5dcc-44be-b6fb-259e616311bd.table_name","label":"18➛Service Offering Table","reference":"service_offering","reference_display":"Service Offering","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7537233e-5dcc-44be-b6fb-259e616311bd.record","label":"18➛Service Offering Record","reference":"service_offering","reference_display":"Service Offering","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.name","label":"Trigger➛Record Producer Record➛Name","reference":"","reference_display":"Name","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_cat_item_producer","column_name":"name"},{"name":"dea53bcd-3037-4e3f-92e9-a9e476f15e6a.error_message","label":"16➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"dea53bcd-3037-4e3f-92e9-a9e476f15e6a.status","label":"16➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"dea53bcd-3037-4e3f-92e9-a9e476f15e6a.Table","label":"16➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dea53bcd-3037-4e3f-92e9-a9e476f15e6a.Record","label":"16➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1e673c89-7a4f-4b3b-b685-7debb018511c.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1e673c89-7a4f-4b3b-b685-7debb018511c.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current","label":"Trigger➛Catalog Item Category Record","reference":"sc_cat_item_category","reference_display":"Catalog Item Category","type":"reference","base_type":"reference","attributes":{}},{"name":"a8940882-c0d3-4568-b81f-2ca318e17595.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"a8940882-c0d3-4568-b81f-2ca318e17595.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"a8940882-c0d3-4568-b81f-2ca318e17595.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8940882-c0d3-4568-b81f-2ca318e17595.Record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"923a89c3-a939-40fa-9e56-40f8399984ce.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"923a89c3-a939-40fa-9e56-40f8399984ce.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"923a89c3-a939-40fa-9e56-40f8399984ce.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"923a89c3-a939-40fa-9e56-40f8399984ce.Record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"21568539-46d0-4c37-af79-2455e8808fd5.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"21568539-46d0-4c37-af79-2455e8808fd5.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"21568539-46d0-4c37-af79-2455e8808fd5.Table","label":"3➛Not Available for Subscribers Table","reference":"sc_cat_item_subscribe_no_mtom","reference_display":"Not Available for Subscribers","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"21568539-46d0-4c37-af79-2455e8808fd5.Record","label":"3➛Not Available for Subscribers Record","reference":"sc_cat_item_subscribe_no_mtom","reference_display":"Not Available for Subscribers","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.sc_catalogs","label":"Trigger➛Record Producer Record➛Catalogs","reference":"sc_catalog","reference_display":"Catalog","type":"glide_list","base_type":"glide_list","parent_table_name":"sc_cat_item_producer","column_name":"sc_catalogs"},{"name":"fd207d0c-c140-4598-9989-6f9cb4286219.Record","label":"6➛Taxonomy Node Record","reference":"spm_taxonomy_node","reference_display":"Taxonomy Node","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fd207d0c-c140-4598-9989-6f9cb4286219.Table","label":"6➛Taxonomy Node Table","reference":"spm_taxonomy_node","reference_display":"Taxonomy Node","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fd207d0c-c140-4598-9989-6f9cb4286219.status","label":"6➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"fd207d0c-c140-4598-9989-6f9cb4286219.error_message","label":"6➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.Record.parent.title","label":"4➛Category Record➛Parent➛Title","reference":"","reference_display":"Title","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_category","column_name":"title"},{"name":"d4747191-a3b5-40b8-9abe-c9ed75513dde.record","label":"12➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d4747191-a3b5-40b8-9abe-c9ed75513dde.table_name","label":"12➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cd8579dc-0c36-4157-acff-e8afba3ccecd.Record","label":"9➛Taxonomy Layer Definition Record","reference":"spm_taxonomy_layer_definition","reference_display":"Taxonomy Layer Definition","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cd8579dc-0c36-4157-acff-e8afba3ccecd.Table","label":"9➛Taxonomy Layer Definition Table","reference":"spm_taxonomy_layer_definition","reference_display":"Taxonomy Layer Definition","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cd8579dc-0c36-4157-acff-e8afba3ccecd.status","label":"9➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"cd8579dc-0c36-4157-acff-e8afba3ccecd.error_message","label":"9➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"7c173eac-1291-4469-a6c2-34d0ccd28869.record","label":"8➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7c173eac-1291-4469-a6c2-34d0ccd28869.table_name","label":"8➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ae65a520-9b14-4da0-a8b9-725a47c8e5c4.record","label":"10➛Service Record","reference":"cmdb_ci_service","reference_display":"Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ae65a520-9b14-4da0-a8b9-725a47c8e5c4.table_name","label":"10➛Service Table","reference":"cmdb_ci_service","reference_display":"Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b1dcfa2e-8465-41d9-bea6-3e904b247bf3.record","label":"15➛Service Record","reference":"cmdb_ci_service","reference_display":"Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b1dcfa2e-8465-41d9-bea6-3e904b247bf3.table_name","label":"15➛Service Table","reference":"cmdb_ci_service","reference_display":"Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ec92b6db-0a40-4478-a78e-10c592e0d433.record","label":"22➛Service Offering Record","reference":"service_offering","reference_display":"Service Offering","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ec92b6db-0a40-4478-a78e-10c592e0d433.table_name","label":"22➛Service Offering Table","reference":"service_offering","reference_display":"Service Offering","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e1dc65d-ffd2-4663-b8b5-a380056301d3.record","label":"9➛Service Record","reference":"cmdb_ci_service","reference_display":"Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e1dc65d-ffd2-4663-b8b5-a380056301d3.table_name","label":"9➛Service Table","reference":"cmdb_ci_service","reference_display":"Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b32557ec-90a2-42cd-99a5-011751c0d515.Record","label":"5➛Application Service Record","reference":"cmdb_ci_service_auto","reference_display":"Application Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b32557ec-90a2-42cd-99a5-011751c0d515.Table","label":"5➛Application Service Table","reference":"cmdb_ci_service_auto","reference_display":"Application Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b32557ec-90a2-42cd-99a5-011751c0d515.status","label":"5➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"b32557ec-90a2-42cd-99a5-011751c0d515.error_message","label":"5➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"47cf7941-2d87-41c4-8763-d9fdfc075a00.record","label":"13➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47cf7941-2d87-41c4-8763-d9fdfc075a00.table_name","label":"13➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"da149aa9-0e37-4c90-9639-565d81ee2aa1.Record","label":"28➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"da149aa9-0e37-4c90-9639-565d81ee2aa1.Table","label":"28➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"da149aa9-0e37-4c90-9639-565d81ee2aa1.status","label":"28➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"da149aa9-0e37-4c90-9639-565d81ee2aa1.error_message","label":"28➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"755b45c3-148f-434e-b294-db6c9c1deb2c.Record","label":"26➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"755b45c3-148f-434e-b294-db6c9c1deb2c.Table","label":"26➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"755b45c3-148f-434e-b294-db6c9c1deb2c.status","label":"26➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"755b45c3-148f-434e-b294-db6c9c1deb2c.error_message","label":"26➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"755b45c3-148f-434e-b294-db6c9c1deb2c.Record.service_offering.name","label":"26➛Not Available for Subscribers Record➛Dependent Item➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"service_offering","column_name":"name"},{"name":"a4c312dc-f421-4074-91bd-2d9c06941e2a.Record.title","label":"27➛Category Record➛Title","reference":"","reference_display":"Title","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_category","column_name":"title"},{"name":"755b45c3-148f-434e-b294-db6c9c1deb2c.Record.service_offering.parent.name","label":"26➛Not Available for Subscribers Record➛Dependent Item➛Parent➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmdb_ci_service","column_name":"name"},{"name":"Created or Updated_1.current.sc_cat_item.sc_catalogs","label":"Trigger➛Catalog Item Category Record➛Catalog item➛Catalogs","reference":"sc_catalog","reference_display":"Catalog","type":"glide_list","base_type":"glide_list","parent_table_name":"sc_cat_item","column_name":"sc_catalogs"},{"name":"Created or Updated_1.current.sc_category.parent","label":"Trigger➛Catalog Item Category Record➛Catalog category➛Parent","reference":"sc_category","reference_display":"Category","type":"reference","base_type":"reference","parent_table_name":"sc_category","column_name":"parent"},{"name":"eaa67b6b-2a9c-4843-85f5-0bca21213251.Record","label":"3➛Taxonomy Layer Definition Record","reference":"spm_taxonomy_layer_definition","reference_display":"Taxonomy Layer Definition","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eaa67b6b-2a9c-4843-85f5-0bca21213251.Table","label":"3➛Taxonomy Layer Definition Table","reference":"spm_taxonomy_layer_definition","reference_display":"Taxonomy Layer Definition","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eaa67b6b-2a9c-4843-85f5-0bca21213251.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"eaa67b6b-2a9c-4843-85f5-0bca21213251.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"1c7559e8-c245-435d-8a6b-d6e9bb3d72ca.Record","label":"4➛Application Service Record","reference":"cmdb_ci_service_auto","reference_display":"Application Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1c7559e8-c245-435d-8a6b-d6e9bb3d72ca.Table","label":"4➛Application Service Table","reference":"cmdb_ci_service_auto","reference_display":"Application Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1c7559e8-c245-435d-8a6b-d6e9bb3d72ca.status","label":"4➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"1c7559e8-c245-435d-8a6b-d6e9bb3d72ca.error_message","label":"4➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"0fc5890d-8b07-4fdb-8898-a154701bd6ec.Records","label":"3➛Application Service Records","reference":"cmdb_ci_service_auto","reference_display":"Application Service","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0fc5890d-8b07-4fdb-8898-a154701bd6ec.Table","label":"3➛Application Service Table","reference":"cmdb_ci_service_auto","reference_display":"Application Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0fc5890d-8b07-4fdb-8898-a154701bd6ec.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"35cd5119-53d3-440a-927c-16965eb39460.Records","label":"3➛Taxonomy Layer Definition Records","reference":"spm_taxonomy_layer_definition","reference_display":"Taxonomy Layer Definition","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"35cd5119-53d3-440a-927c-16965eb39460.Table","label":"3➛Taxonomy Layer Definition Table","reference":"spm_taxonomy_layer_definition","reference_display":"Taxonomy Layer Definition","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"35cd5119-53d3-440a-927c-16965eb39460.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a2fff351-9cc5-4a81-b116-9b9ccb72df55.Records","label":"3➛Catalog Item Category Records","reference":"sc_cat_item_category","reference_display":"Catalog Item Category","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a2fff351-9cc5-4a81-b116-9b9ccb72df55.Table","label":"3➛Catalog Item Category Table","reference":"sc_cat_item_category","reference_display":"Catalog Item Category","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a2fff351-9cc5-4a81-b116-9b9ccb72df55.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger➛Catalog Item Category Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_cat_item_category","column_name":"sys_id"}]</label_cache>
         <master_snapshot>02ec38bc1b7fe0108872b88e034bcbce</master_snapshot>
-        <name>311 Service Builder</name>
+        <name>Public Services Data Modeler</name>
         <natlang/>
         <outputs/>
-        <remote_trigger_id>e3e8c5071b7f2010e0f943f28d4bcb64</remote_trigger_id>
+        <remote_trigger_id>acb240161be4f414e0f943f28d4bcbf6</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -29,15 +29,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b71030781be328108872b88e034bcb7a</sys_id>
-        <sys_mod_count>25</sys_mod_count>
-        <sys_name>311 Service Builder</sys_name>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Public Services Data Modeler</sys_name>
         <sys_overrides/>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>sys_hub_flow_b71030781be328108872b88e034bcb7a</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:38</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:26</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=b71030781be328108872b88e034bcb7a"/>
@@ -57,56 +57,56 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2021-05-03 02:16:37</sys_created_on>
+        <sys_created_on>2021-06-06 20:01:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>e3e8c5071b7f2010e0f943f28d4bcb64</sys_id>
+        <sys_id>acb240161be4f414e0f943f28d4bcbf6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:37</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:24</sys_updated_on>
         <table>sc_cat_item_category</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
-        <data>{"table":"sys_trigger_runner_mapping","id":"23e8c5071b7f2010e0f943f28d4bcb65","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <data>{"table":"sys_trigger_runner_mapping","id":"a8b240161be4f414e0f943f28d4bcbf7","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
         <identifier>b71030781be328108872b88e034bcb7a</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2021-05-03 02:16:37</sys_created_on>
-        <sys_id>23e8c5071b7f2010e0f943f28d4bcb65</sys_id>
+        <sys_created_on>2021-06-06 20:01:25</sys_created_on>
+        <sys_id>a8b240161be4f414e0f943f28d4bcbf7</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:38</sys_updated_on>
-        <trigger display_value="">e3e8c5071b7f2010e0f943f28d4bcb64</trigger>
+        <sys_updated_on>2021-06-06 20:01:25</sys_updated_on>
+        <trigger display_value="">acb240161be4f414e0f943f28d4bcbf6</trigger>
     </sys_trigger_runner_mapping>
     <sys_json_chunk action="INSERT_OR_UPDATE">
         <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
-        <document_id>23e8c5071b7f2010e0f943f28d4bcb65</document_id>
+        <document_id>a8b240161be4f414e0f943f28d4bcbf7</document_id>
         <field>trigger_runner</field>
         <length>144</length>
         <position>0</position>
         <source_table>sys_trigger_runner_mapping</source_table>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2021-05-03 02:16:37</sys_created_on>
-        <sys_id>e7e8c5071b7f2010e0f943f28d4bcb65</sys_id>
+        <sys_created_on>2021-06-06 20:01:25</sys_created_on>
+        <sys_id>60b240161be4f414e0f943f28d4bcbf8</sys_id>
     </sys_json_chunk>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b71030781be328108872b88e034bcb7a^sys_idNOT IN23e8c5071b7f2010e0f943f28d4bcb65"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b71030781be328108872b88e034bcb7a^sys_idNOT INa8b240161be4f414e0f943f28d4bcbf7"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=b71030781be328108872b88e034bcb7a^sys_idNOT IN6f3a09f41ba728108872b88e034bcb71"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="311 Service Builder">b71030781be328108872b88e034bcb7a</flow>
+        <flow display_value="Public Services Data Modeler">b71030781be328108872b88e034bcb7a</flow>
         <name>Created or Updated</name>
         <remote_sys_id/>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-13 16:20:20</sys_created_on>
         <sys_id>6f3a09f41ba728108872b88e034bcb71</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:38</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:26</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -207,7 +207,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="311 Service Builder">b71030781be328108872b88e034bcb7a</model>
+        <model display_value="Public Services Data Modeler">b71030781be328108872b88e034bcb7a</model>
         <model_id>b71030781be328108872b88e034bcb7a</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_b71030781be328108872b88e034bcb7a</name>
@@ -230,14 +230,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-13 16:20:19</sys_created_on>
         <sys_id>533a09f41ba728108872b88e034bcb40</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:38</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -253,7 +253,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD72e88507307f2010aa1691c8dacfb27e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDf7a24016f6e4f414cd129d7394397734,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -288,7 +288,7 @@
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="311 Service Builder">b71030781be328108872b88e034bcb7a</model>
+        <model display_value="Public Services Data Modeler">b71030781be328108872b88e034bcb7a</model>
         <model_id>b71030781be328108872b88e034bcb7a</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_b71030781be328108872b88e034bcb7a</name>
@@ -311,14 +311,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-13 16:20:19</sys_created_on>
         <sys_id>9f3a09f41ba728108872b88e034bcb56</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:38</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -369,7 +369,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="311 Service Builder">b71030781be328108872b88e034bcb7a</model>
+        <model display_value="Public Services Data Modeler">b71030781be328108872b88e034bcb7a</model>
         <model_id>b71030781be328108872b88e034bcb7a</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_b71030781be328108872b88e034bcb7a</name>
@@ -392,14 +392,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-13 16:20:19</sys_created_on>
         <sys_id>d33a09f41ba728108872b88e034bcb5d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:38</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -420,17 +420,17 @@
         <comment/>
         <compiled_snapshot>667a7f321bf7a8108872b88e034bcb56</compiled_snapshot>
         <display_text/>
-        <flow display_value="311 Service Builder">b71030781be328108872b88e034bcb7a</flow>
+        <flow display_value="Public Services Data Modeler">b71030781be328108872b88e034bcb7a</flow>
         <order>3</order>
         <parent_ui_id>36d65a6d-c12f-4ea2-a4e3-b20fdd1b04f3</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-02 22:27:27</sys_created_on>
         <sys_id>2e74548f1bf72010e0f943f28d4bcb08</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2021-05-25 22:29:00</sys_updated_on>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-06 20:01:26</sys_updated_on>
         <ui_id>4daea9dd-797c-4cf2-9a9a-96eeb01c4321</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2e74548f1bf72010e0f943f28d4bcb08"/>
@@ -506,17 +506,17 @@
         <comment/>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
-        <flow display_value="311 Service Builder">b71030781be328108872b88e034bcb7a</flow>
+        <flow display_value="Public Services Data Modeler">b71030781be328108872b88e034bcb7a</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-16 16:15:04</sys_created_on>
         <sys_id>6fc5e0bd1b2f20108872b88e034bcb54</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2021-05-25 22:29:00</sys_updated_on>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-06 20:01:26</sys_updated_on>
         <ui_id>59c9ff12-8bf7-4200-be03-8b632eb3128a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6fc5e0bd1b2f20108872b88e034bcb54"/>
@@ -528,10 +528,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-16 16:15:04</sys_created_on>
         <sys_id>b7c5e0bd1b2f20108872b88e034bcb7d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-04-16 16:15:04</sys_updated_on>
-        <value>title=311 Catalog</value>
+        <sys_updated_on>2021-06-06 20:01:05</sys_updated_on>
+        <value>title=Public Service Catalog</value>
         <variable display_value="Conditions">d509f99587003300663ca1bb36cb0ba9</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -557,7 +557,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="311 Service Builder">b71030781be328108872b88e034bcb7a</flow>
+        <flow display_value="Public Services Data Modeler">b71030781be328108872b88e034bcb7a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -571,10 +571,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-13 16:20:20</sys_created_on>
         <sys_id>233a09f41ba728108872b88e034bcb76</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:38</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:26</sys_updated_on>
         <ui_id>36d65a6d-c12f-4ea2-a4e3-b20fdd1b04f3</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -668,18 +668,18 @@
         <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"bbecf8bc1b7fe0108872b88e034bcb7f","name":"plan"}}</plan>
         <plan_id>b71030781be328108872b88e034bcb7a</plan_id>
-        <snapshot>8561ba5a1b94b4108872b88e034bcbce</snapshot>
+        <snapshot>02ec38bc1b7fe0108872b88e034bcbce</snapshot>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-26 01:37:54</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bbecf8bc1b7fe0108872b88e034bcb7f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:38</sys_updated_on>
-        <trigger display_value="">e3e8c5071b7f2010e0f943f28d4bcb64</trigger>
+        <sys_updated_on>2021-06-06 20:01:25</sys_updated_on>
+        <trigger display_value="">acb240161be4f414e0f943f28d4bcbf6</trigger>
     </sys_flow_trigger_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -690,14 +690,14 @@
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description>This flow will look for updates to record producers and auto-build CSDM models when we find producers in a certain catalog.</description>
+        <description>This flow will look for updates to record producers and auto-build CSDM models when we find producers in the Public Services catalog.</description>
         <internal_name>311_service_builder</internal_name>
         <label_cache>[{"name":"21568539-46d0-4c37-af79-2455e8808fd5.Record.service_offering.spm_taxonomy_node.name","label":"3➛Not Available for Subscribers Record➛Dependent Item➛Taxonomy node➛Name","reference":"","reference_display":"Name","type":"translated_text","base_type":"translated_text","parent_table_name":"spm_taxonomy_node","column_name":"name"},{"name":"21568539-46d0-4c37-af79-2455e8808fd5.Record.service_offering.name","label":"3➛Not Available for Subscribers Record➛Dependent Item➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"service_offering","column_name":"name"},{"name":"Created or Updated_1.current.sc_cat_item","label":"Trigger➛Catalog Item Category Record➛Catalog item","reference":"sc_cat_item","reference_display":"Catalog Item","type":"reference","base_type":"reference","parent_table_name":"sc_cat_item_category","column_name":"sc_cat_item"},{"name":"a4c312dc-f421-4074-91bd-2d9c06941e2a.error_message","label":"27➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"a4c312dc-f421-4074-91bd-2d9c06941e2a.status","label":"27➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"a4c312dc-f421-4074-91bd-2d9c06941e2a.Table","label":"27➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a4c312dc-f421-4074-91bd-2d9c06941e2a.Record","label":"27➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80487437-4b40-4546-9f94-35bd4a316f25.table_name","label":"12➛CI Relationship Table","reference":"cmdb_rel_ci","reference_display":"CI Relationship","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80487437-4b40-4546-9f94-35bd4a316f25.record","label":"12➛CI Relationship Record","reference":"cmdb_rel_ci","reference_display":"CI Relationship","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aeaa70fc-342a-4160-ab0e-4ec097da4e69.table_name","label":"11➛CI Relationship Table","reference":"cmdb_rel_ci","reference_display":"CI Relationship","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aeaa70fc-342a-4160-ab0e-4ec097da4e69.record","label":"11➛CI Relationship Record","reference":"cmdb_rel_ci","reference_display":"CI Relationship","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"699539e0-e79f-4169-9d89-47468541d1cd.table_name","label":"10➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"699539e0-e79f-4169-9d89-47468541d1cd.record","label":"10➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.Record.parent","label":"4➛Category Record➛Parent","reference":"sc_category","reference_display":"Category","type":"reference","base_type":"reference","parent_table_name":"sc_category","column_name":"parent"},{"name":"05ecbf3c-1dd0-4692-bb91-1dc5ee75cf57.record.parent","label":"18➛Service Offering Record➛Parent","reference":"cmdb_ci_service","reference_display":"Service","type":"reference","base_type":"reference","parent_table_name":"service_offering","column_name":"parent"},{"name":"1e62de54-c953-4fb6-9683-9685d720a5e8.table_name","label":"24➛Service Offering Table","reference":"service_offering","reference_display":"Service Offering","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1e62de54-c953-4fb6-9683-9685d720a5e8.record","label":"24➛Service Offering Record","reference":"service_offering","reference_display":"Service Offering","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05ecbf3c-1dd0-4692-bb91-1dc5ee75cf57.table_name","label":"18➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05ecbf3c-1dd0-4692-bb91-1dc5ee75cf57.record","label":"18➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0239e63d-94b8-42bb-941e-117f375ef2c0.table_name","label":"21➛Service Table","reference":"cmdb_ci_service","reference_display":"Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0239e63d-94b8-42bb-941e-117f375ef2c0.record","label":"21➛Service Record","reference":"cmdb_ci_service","reference_display":"Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.Record.title","label":"4➛Category Record➛Title","reference":"","reference_display":"Title","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_category","column_name":"title"},{"name":"fe278bfe-870f-4141-a45d-985e10f68d33.error_message","label":"19➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"fe278bfe-870f-4141-a45d-985e10f68d33.status","label":"19➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"fe278bfe-870f-4141-a45d-985e10f68d33.Table","label":"19➛Service Table","reference":"cmdb_ci_service","reference_display":"Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fe278bfe-870f-4141-a45d-985e10f68d33.Record","label":"19➛Service Record","reference":"cmdb_ci_service","reference_display":"Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.category","label":"Trigger➛Record Producer Record➛Category","reference":"sc_category","reference_display":"Category","type":"reference","base_type":"reference","parent_table_name":"sc_cat_item_producer","column_name":"category"},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.error_message","label":"4➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.status","label":"4➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.Table","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.Record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5308b29c-0ad3-429a-b1a2-de05d7de10c3.error_message","label":"7➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"5308b29c-0ad3-429a-b1a2-de05d7de10c3.status","label":"7➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"5308b29c-0ad3-429a-b1a2-de05d7de10c3.Table","label":"7➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5308b29c-0ad3-429a-b1a2-de05d7de10c3.Record","label":"7➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"59c9ff12-8bf7-4200-be03-8b632eb3128a.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"59c9ff12-8bf7-4200-be03-8b632eb3128a.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"59c9ff12-8bf7-4200-be03-8b632eb3128a.Table","label":"1➛Catalog Table","reference":"sc_catalog","reference_display":"Catalog","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"59c9ff12-8bf7-4200-be03-8b632eb3128a.Record","label":"1➛Catalog Record","reference":"sc_catalog","reference_display":"Catalog","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6f7ef7ff-264b-4cb1-8a5a-ed25af4c7c7a.error_message","label":"18➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"6f7ef7ff-264b-4cb1-8a5a-ed25af4c7c7a.status","label":"18➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"6f7ef7ff-264b-4cb1-8a5a-ed25af4c7c7a.Table","label":"18➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6f7ef7ff-264b-4cb1-8a5a-ed25af4c7c7a.Record","label":"18➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7537233e-5dcc-44be-b6fb-259e616311bd.table_name","label":"18➛Service Offering Table","reference":"service_offering","reference_display":"Service Offering","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7537233e-5dcc-44be-b6fb-259e616311bd.record","label":"18➛Service Offering Record","reference":"service_offering","reference_display":"Service Offering","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.name","label":"Trigger➛Record Producer Record➛Name","reference":"","reference_display":"Name","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_cat_item_producer","column_name":"name"},{"name":"dea53bcd-3037-4e3f-92e9-a9e476f15e6a.error_message","label":"16➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"dea53bcd-3037-4e3f-92e9-a9e476f15e6a.status","label":"16➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"dea53bcd-3037-4e3f-92e9-a9e476f15e6a.Table","label":"16➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dea53bcd-3037-4e3f-92e9-a9e476f15e6a.Record","label":"16➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1e673c89-7a4f-4b3b-b685-7debb018511c.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1e673c89-7a4f-4b3b-b685-7debb018511c.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current","label":"Trigger➛Catalog Item Category Record","reference":"sc_cat_item_category","reference_display":"Catalog Item Category","type":"reference","base_type":"reference","attributes":{}},{"name":"a8940882-c0d3-4568-b81f-2ca318e17595.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"a8940882-c0d3-4568-b81f-2ca318e17595.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"a8940882-c0d3-4568-b81f-2ca318e17595.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8940882-c0d3-4568-b81f-2ca318e17595.Record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"923a89c3-a939-40fa-9e56-40f8399984ce.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"923a89c3-a939-40fa-9e56-40f8399984ce.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"923a89c3-a939-40fa-9e56-40f8399984ce.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"923a89c3-a939-40fa-9e56-40f8399984ce.Record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"21568539-46d0-4c37-af79-2455e8808fd5.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"21568539-46d0-4c37-af79-2455e8808fd5.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"21568539-46d0-4c37-af79-2455e8808fd5.Table","label":"3➛Not Available for Subscribers Table","reference":"sc_cat_item_subscribe_no_mtom","reference_display":"Not Available for Subscribers","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"21568539-46d0-4c37-af79-2455e8808fd5.Record","label":"3➛Not Available for Subscribers Record","reference":"sc_cat_item_subscribe_no_mtom","reference_display":"Not Available for Subscribers","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.sc_catalogs","label":"Trigger➛Record Producer Record➛Catalogs","reference":"sc_catalog","reference_display":"Catalog","type":"glide_list","base_type":"glide_list","parent_table_name":"sc_cat_item_producer","column_name":"sc_catalogs"},{"name":"fd207d0c-c140-4598-9989-6f9cb4286219.Record","label":"6➛Taxonomy Node Record","reference":"spm_taxonomy_node","reference_display":"Taxonomy Node","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fd207d0c-c140-4598-9989-6f9cb4286219.Table","label":"6➛Taxonomy Node Table","reference":"spm_taxonomy_node","reference_display":"Taxonomy Node","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fd207d0c-c140-4598-9989-6f9cb4286219.status","label":"6➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"fd207d0c-c140-4598-9989-6f9cb4286219.error_message","label":"6➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"b493f02e-7be6-4d7c-be20-2b9ff4da97d1.Record.parent.title","label":"4➛Category Record➛Parent➛Title","reference":"","reference_display":"Title","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_category","column_name":"title"},{"name":"d4747191-a3b5-40b8-9abe-c9ed75513dde.record","label":"12➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d4747191-a3b5-40b8-9abe-c9ed75513dde.table_name","label":"12➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cd8579dc-0c36-4157-acff-e8afba3ccecd.Record","label":"9➛Taxonomy Layer Definition Record","reference":"spm_taxonomy_layer_definition","reference_display":"Taxonomy Layer Definition","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cd8579dc-0c36-4157-acff-e8afba3ccecd.Table","label":"9➛Taxonomy Layer Definition Table","reference":"spm_taxonomy_layer_definition","reference_display":"Taxonomy Layer Definition","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cd8579dc-0c36-4157-acff-e8afba3ccecd.status","label":"9➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"cd8579dc-0c36-4157-acff-e8afba3ccecd.error_message","label":"9➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"7c173eac-1291-4469-a6c2-34d0ccd28869.record","label":"8➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7c173eac-1291-4469-a6c2-34d0ccd28869.table_name","label":"8➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ae65a520-9b14-4da0-a8b9-725a47c8e5c4.record","label":"10➛Service Record","reference":"cmdb_ci_service","reference_display":"Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ae65a520-9b14-4da0-a8b9-725a47c8e5c4.table_name","label":"10➛Service Table","reference":"cmdb_ci_service","reference_display":"Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b1dcfa2e-8465-41d9-bea6-3e904b247bf3.record","label":"15➛Service Record","reference":"cmdb_ci_service","reference_display":"Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b1dcfa2e-8465-41d9-bea6-3e904b247bf3.table_name","label":"15➛Service Table","reference":"cmdb_ci_service","reference_display":"Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ec92b6db-0a40-4478-a78e-10c592e0d433.record","label":"22➛Service Offering Record","reference":"service_offering","reference_display":"Service Offering","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ec92b6db-0a40-4478-a78e-10c592e0d433.table_name","label":"22➛Service Offering Table","reference":"service_offering","reference_display":"Service Offering","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e1dc65d-ffd2-4663-b8b5-a380056301d3.record","label":"9➛Service Record","reference":"cmdb_ci_service","reference_display":"Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e1dc65d-ffd2-4663-b8b5-a380056301d3.table_name","label":"9➛Service Table","reference":"cmdb_ci_service","reference_display":"Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b32557ec-90a2-42cd-99a5-011751c0d515.Record","label":"5➛Application Service Record","reference":"cmdb_ci_service_auto","reference_display":"Application Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b32557ec-90a2-42cd-99a5-011751c0d515.Table","label":"5➛Application Service Table","reference":"cmdb_ci_service_auto","reference_display":"Application Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b32557ec-90a2-42cd-99a5-011751c0d515.status","label":"5➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"b32557ec-90a2-42cd-99a5-011751c0d515.error_message","label":"5➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"47cf7941-2d87-41c4-8763-d9fdfc075a00.record","label":"13➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47cf7941-2d87-41c4-8763-d9fdfc075a00.table_name","label":"13➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"da149aa9-0e37-4c90-9639-565d81ee2aa1.Record","label":"28➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"da149aa9-0e37-4c90-9639-565d81ee2aa1.Table","label":"28➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"da149aa9-0e37-4c90-9639-565d81ee2aa1.status","label":"28➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"da149aa9-0e37-4c90-9639-565d81ee2aa1.error_message","label":"28➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"755b45c3-148f-434e-b294-db6c9c1deb2c.Record","label":"26➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"755b45c3-148f-434e-b294-db6c9c1deb2c.Table","label":"26➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"755b45c3-148f-434e-b294-db6c9c1deb2c.status","label":"26➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"755b45c3-148f-434e-b294-db6c9c1deb2c.error_message","label":"26➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"755b45c3-148f-434e-b294-db6c9c1deb2c.Record.service_offering.name","label":"26➛Not Available for Subscribers Record➛Dependent Item➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"service_offering","column_name":"name"},{"name":"a4c312dc-f421-4074-91bd-2d9c06941e2a.Record.title","label":"27➛Category Record➛Title","reference":"","reference_display":"Title","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_category","column_name":"title"},{"name":"755b45c3-148f-434e-b294-db6c9c1deb2c.Record.service_offering.parent.name","label":"26➛Not Available for Subscribers Record➛Dependent Item➛Parent➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmdb_ci_service","column_name":"name"},{"name":"Created or Updated_1.current.sc_cat_item.sc_catalogs","label":"Trigger➛Catalog Item Category Record➛Catalog item➛Catalogs","reference":"sc_catalog","reference_display":"Catalog","type":"glide_list","base_type":"glide_list","parent_table_name":"sc_cat_item","column_name":"sc_catalogs"},{"name":"Created or Updated_1.current.sc_category.parent","label":"Trigger➛Catalog Item Category Record➛Catalog category➛Parent","reference":"sc_category","reference_display":"Category","type":"reference","base_type":"reference","parent_table_name":"sc_category","column_name":"parent"},{"name":"eaa67b6b-2a9c-4843-85f5-0bca21213251.Record","label":"3➛Taxonomy Layer Definition Record","reference":"spm_taxonomy_layer_definition","reference_display":"Taxonomy Layer Definition","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eaa67b6b-2a9c-4843-85f5-0bca21213251.Table","label":"3➛Taxonomy Layer Definition Table","reference":"spm_taxonomy_layer_definition","reference_display":"Taxonomy Layer Definition","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eaa67b6b-2a9c-4843-85f5-0bca21213251.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"eaa67b6b-2a9c-4843-85f5-0bca21213251.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"1c7559e8-c245-435d-8a6b-d6e9bb3d72ca.Record","label":"4➛Application Service Record","reference":"cmdb_ci_service_auto","reference_display":"Application Service","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1c7559e8-c245-435d-8a6b-d6e9bb3d72ca.Table","label":"4➛Application Service Table","reference":"cmdb_ci_service_auto","reference_display":"Application Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1c7559e8-c245-435d-8a6b-d6e9bb3d72ca.status","label":"4➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"1c7559e8-c245-435d-8a6b-d6e9bb3d72ca.error_message","label":"4➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"0fc5890d-8b07-4fdb-8898-a154701bd6ec.Records","label":"3➛Application Service Records","reference":"cmdb_ci_service_auto","reference_display":"Application Service","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0fc5890d-8b07-4fdb-8898-a154701bd6ec.Table","label":"3➛Application Service Table","reference":"cmdb_ci_service_auto","reference_display":"Application Service","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0fc5890d-8b07-4fdb-8898-a154701bd6ec.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"35cd5119-53d3-440a-927c-16965eb39460.Records","label":"3➛Taxonomy Layer Definition Records","reference":"spm_taxonomy_layer_definition","reference_display":"Taxonomy Layer Definition","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"35cd5119-53d3-440a-927c-16965eb39460.Table","label":"3➛Taxonomy Layer Definition Table","reference":"spm_taxonomy_layer_definition","reference_display":"Taxonomy Layer Definition","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"35cd5119-53d3-440a-927c-16965eb39460.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a2fff351-9cc5-4a81-b116-9b9ccb72df55.Records","label":"3➛Catalog Item Category Records","reference":"sc_cat_item_category","reference_display":"Catalog Item Category","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a2fff351-9cc5-4a81-b116-9b9ccb72df55.Table","label":"3➛Catalog Item Category Table","reference":"sc_cat_item_category","reference_display":"Catalog Item Category","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a2fff351-9cc5-4a81-b116-9b9ccb72df55.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger➛Catalog Item Category Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_cat_item_category","column_name":"sys_id"}]</label_cache>
         <master>true</master>
-        <name>311 Service Builder</name>
+        <name>Public Services Data Modeler</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="311 Service Builder">b71030781be328108872b88e034bcb7a</parent_flow>
+        <parent_flow display_value="Public Services Data Modeler">b71030781be328108872b88e034bcb7a</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -709,7 +709,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>02ec38bc1b7fe0108872b88e034bcbce</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -717,7 +717,7 @@
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:36</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:23</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=02ec38bc1b7fe0108872b88e034bcbce"/>
@@ -726,16 +726,16 @@
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="311 Service Builder">02ec38bc1b7fe0108872b88e034bcbce</flow>
+        <flow display_value="Public Services Data Modeler">02ec38bc1b7fe0108872b88e034bcbce</flow>
         <name>Created or Updated</name>
         <remote_sys_id/>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-26 01:37:50</sys_created_on>
         <sys_id>87ecb8bc1b7fe0108872b88e034bcb39</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:38</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:25</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -801,7 +801,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD72e88507307f2010aa1691c8dacfb27e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDf7a24016f6e4f414cd129d7394397734,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -836,7 +836,7 @@
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="311 Service Builder">02ec38bc1b7fe0108872b88e034bcbce</model>
+        <model display_value="Public Services Data Modeler">02ec38bc1b7fe0108872b88e034bcbce</model>
         <model_id>02ec38bc1b7fe0108872b88e034bcbce</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_02ec38bc1b7fe0108872b88e034bcbce</name>
@@ -859,14 +859,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-26 01:37:47</sys_created_on>
         <sys_id>52ec78bc1b7fe0108872b88e034bcb02</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:34</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -917,7 +917,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="311 Service Builder">02ec38bc1b7fe0108872b88e034bcbce</model>
+        <model display_value="Public Services Data Modeler">02ec38bc1b7fe0108872b88e034bcbce</model>
         <model_id>02ec38bc1b7fe0108872b88e034bcbce</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_02ec38bc1b7fe0108872b88e034bcbce</name>
@@ -940,14 +940,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-26 01:37:47</sys_created_on>
         <sys_id>d6ec78bc1b7fe0108872b88e034bcb0d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:34</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -998,7 +998,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="311 Service Builder">02ec38bc1b7fe0108872b88e034bcbce</model>
+        <model display_value="Public Services Data Modeler">02ec38bc1b7fe0108872b88e034bcbce</model>
         <model_id>02ec38bc1b7fe0108872b88e034bcbce</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_02ec38bc1b7fe0108872b88e034bcbce</name>
@@ -1021,14 +1021,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-26 01:37:47</sys_created_on>
         <sys_id>deec38bc1b7fe0108872b88e034bcbd2</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:34</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1049,17 +1049,17 @@
         <comment/>
         <compiled_snapshot>667a7f321bf7a8108872b88e034bcb56</compiled_snapshot>
         <display_text/>
-        <flow display_value="311 Service Builder">02ec38bc1b7fe0108872b88e034bcbce</flow>
+        <flow display_value="Public Services Data Modeler">02ec38bc1b7fe0108872b88e034bcbce</flow>
         <order>3</order>
         <parent_ui_id>36d65a6d-c12f-4ea2-a4e3-b20fdd1b04f3</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-03 02:16:34</sys_created_on>
         <sys_id>6ee885071b7f2010e0f943f28d4bcb3e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:35</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:22</sys_updated_on>
         <ui_id>4daea9dd-797c-4cf2-9a9a-96eeb01c4321</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6ee885071b7f2010e0f943f28d4bcb3e"/>
@@ -1135,17 +1135,17 @@
         <comment/>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
-        <flow display_value="311 Service Builder">02ec38bc1b7fe0108872b88e034bcbce</flow>
+        <flow display_value="Public Services Data Modeler">02ec38bc1b7fe0108872b88e034bcbce</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-26 01:37:48</sys_created_on>
         <sys_id>e2ec78bc1b7fe0108872b88e034bcb81</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:35</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:22</sys_updated_on>
         <ui_id>59c9ff12-8bf7-4200-be03-8b632eb3128a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e2ec78bc1b7fe0108872b88e034bcb81"/>
@@ -1171,10 +1171,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-26 01:37:48</sys_created_on>
         <sys_id>2aec78bc1b7fe0108872b88e034bcb83</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-04-26 01:37:48</sys_updated_on>
-        <value>title=311 Catalog</value>
+        <sys_updated_on>2021-06-06 20:01:21</sys_updated_on>
+        <value>title=Public Service Catalog</value>
         <variable display_value="Conditions">d509f99587003300663ca1bb36cb0ba9</variable>
     </sys_variable_value>
     <sys_hub_flow_logic action="delete_multiple" query="flow=02ec38bc1b7fe0108872b88e034bcbce^sys_idNOT IN56ec78bc1b7fe0108872b88e034bcb1c"/>
@@ -1186,7 +1186,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="311 Service Builder">02ec38bc1b7fe0108872b88e034bcbce</flow>
+        <flow display_value="Public Services Data Modeler">02ec38bc1b7fe0108872b88e034bcbce</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1200,10 +1200,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-26 01:37:47</sys_created_on>
         <sys_id>56ec78bc1b7fe0108872b88e034bcb1c</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-03 02:16:35</sys_updated_on>
+        <sys_updated_on>2021-06-06 20:01:22</sys_updated_on>
         <ui_id>36d65a6d-c12f-4ea2-a4e3-b20fdd1b04f3</ui_id>
         <workflow_inputs/>
         <workflow_reference/>

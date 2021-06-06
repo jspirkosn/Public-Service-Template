@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
     <io_set_item action="INSERT_OR_UPDATE">
         <order>200</order>
-        <sc_cat_item display_value="Report Street Light Out">a12a395f1b147c108872b88e034bcbff</sc_cat_item>
+        <sc_cat_item display_value="Report Streetlight Out">a12a395f1b147c108872b88e034bcbff</sc_cat_item>
         <sys_class_name>io_set_item</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-30 08:01:34</sys_created_on>

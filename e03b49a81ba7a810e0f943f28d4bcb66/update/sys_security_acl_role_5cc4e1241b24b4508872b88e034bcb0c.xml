@@ -2,18 +2,18 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2021-04-12 21:50:33</sys_created_on>
-        <sys_id>f63c852c1ba7a810e0f943f28d4bcb28</sys_id>
+        <sys_created_on>2021-06-01 16:40:29</sys_created_on>
+        <sys_id>5cc4e1241b24b4508872b88e034bcb0c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>now.workspace.311_template.311_template</sys_name>
+        <sys_name>now.workspace.311_template.snc_internal</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_security_acl display_value="now.workspace.311_template">f63c852c1ba7a810e0f943f28d4bcb19</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_f63c852c1ba7a810e0f943f28d4bcb28</sys_update_name>
+        <sys_update_name>sys_security_acl_role_5cc4e1241b24b4508872b88e034bcb0c</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-04-12 21:50:33</sys_updated_on>
-        <sys_user_role display_value="311_template" name="311_template">7a3c852c1ba7a810e0f943f28d4bcb20</sys_user_role>
-        <transaction_id/>
+        <sys_updated_on>2021-06-01 16:40:29</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
+        <transaction_id>f7b4e9201b24b4508872b88e034bcb36</transaction_id>
     </sys_security_acl_role>
 </record_update>
