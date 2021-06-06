@@ -34,7 +34,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 </details>
 
 <details>
-<summary>**Anonymous User** - Make it so a user can continue as Guest</summary>
+<summary>Anonymous User - Make it so a user can continue as Guest</summary>
 
 - **Status:** Complete
 - **Demo:** {coming soon}
@@ -43,6 +43,8 @@ The Public Service Template repository is a collection of ServiceNow configurati
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
+
+
 - **Service Builder Workflow**
    - Status: Complete 
    - Usage demo: {coming soon}  
