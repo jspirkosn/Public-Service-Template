@@ -1,9 +1,10 @@
 # Public-Service-Template
-The Public Service Template repository is a collection of ServiceNow configurations.  Their purpose is to shorten deployment time for public digital services. The main branch is dependent on one plugin described in the installation instructions.  Download directly into a ServiceNow instance and get started!
+The Public Service Template repository is a collection of ServiceNow configurations.  Their purpose is to shorten deployment time for public digital services. The main branch is dependent on two plugins described in the installation instructions.  Download directly into a ServiceNow instance and get started!
 # Installation Instructions
 1. Prepare your ServiceNow instance or <a href="https://developer.servicenow.com/dev.do#!/guides/quebec/developer-program/pdi-guide/obtaining-a-pdi" title="PDI Readme">Get a Personal Developer Instance</a>
 	- In the ServiceNow Navigator go to "System Definition" -> "Plugins"
-    - Install the Customer Service(com.sn_customerservice) plugin
+		- Install the Customer Service(com.sn_customerservice) plugin
+ 		- Install the Consumer Service Portal(com.glide.service-portal.consumer-portal) plugin
    
 2. Create GitHub Access - use an existing account or <a href="https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home" title="GitHub Create Account">Create a New GitHub Account</a>
 3. Create a ServiceNow Credential - if you have a GitHub credential for ServiceNow skip to step 4
