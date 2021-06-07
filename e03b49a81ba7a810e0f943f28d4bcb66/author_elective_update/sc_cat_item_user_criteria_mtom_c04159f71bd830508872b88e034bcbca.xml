@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="DELETE">
+        <sc_cat_item display_value="Report Street Light Out">a12a395f1b147c108872b88e034bcbff</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-30 07:19:49</sys_created_on>
+        <sys_id>c04159f71bd830508872b88e034bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Report Street Light Out.Any User</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_c04159f71bd830508872b88e034bcbca</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-30 07:19:49</sys_updated_on>
+        <user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_user_criteria_mtom_c04159f71bd830508872b88e034bcbca</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom"><sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Report Street Light Out">a12a395f1b147c108872b88e034bcbff</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-05-30 07:19:49</sys_created_on><sys_id>c04159f71bd830508872b88e034bcbca</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Report Street Light Out.Any User</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_user_criteria_mtom_c04159f71bd830508872b88e034bcbca</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-05-30 07:19:49</sys_updated_on><user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria></sc_cat_item_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>-236803738</payload_hash>
+        <record_name>Report Street Light Out.Any User</record_name>
+        <reverted_from/>
+        <source>ced986501be834508872b88e034bcb91</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-01 00:44:12</sys_created_on>
+        <sys_id>18e90a501be834508872b88e034bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179c5072df70000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-01 00:44:12</sys_updated_on>
+        <type>Catalog Item Available for</type>
+        <update_guid>cc4159f706d830507b2b5c68de7387cd</update_guid>
+        <update_guid_history>cc4159f706d830507b2b5c68de7387cd:-236803738,c4c94e105be834502524fe4ec22ded5f:-1538016910,cc4159f706d830507b2b5c68de7387cd:-236803738</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Report Street Light Out.Any User">d4bf39a61b2c7814e0f943f28d4bcb20</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-07 23:46:00</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_mtom">sc_cat_item_user_criteria_mtom</sys_db_object>
+        <sys_id>8f30d4a2479f495c9ed84c493b44a3e4</sys_id>
+        <sys_metadata>c04159f71bd830508872b88e034bcbca</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Report Street Light Out.Any User</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent display_value="Report Streetlight Out">a12a395f1b147c108872b88e034bcbff</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_c04159f71bd830508872b88e034bcbca</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_mtom_c04159f71bd830508872b88e034bcbca">18e90a501be834508872b88e034bcb67</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-07 23:46:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
