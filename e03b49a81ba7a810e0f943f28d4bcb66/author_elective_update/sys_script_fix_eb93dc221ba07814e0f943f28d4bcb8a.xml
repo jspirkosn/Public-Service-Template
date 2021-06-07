@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="DELETE">
+        <before>false</before>
+        <description/>
+        <name>Open Widgets to Public</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[// This script will make several widgets available to the public,
+// Users that are not authenticated 
+// Please read about each grant
+
+
+// The following 2 grants open up the search widget so user can search from the home page
+setWidgetToPublic("200fbd96cb20020000f8d856634c9ca1"); //Homepage Search Widget
+setWidgetToPublic("fa20ec02cb31020000f8d856634c9ce9"); //Typeahead Search Widget
+
+function setWidgetToPublic (widgetID){
+	var curWidget = new GlideRecord('sp_widget');
+	curWidget.get(widgetID);	
+	curWidget.setValue('public','true');
+	curWidget.update();
+}
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-07 16:24:36</sys_created_on>
+        <sys_id>eb93dc221ba07814e0f943f28d4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open Widgets to Public</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_script_fix_eb93dc221ba07814e0f943f28d4bcb8a</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-07 16:24:36</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sys_script_fix_eb93dc221ba07814e0f943f28d4bcb8a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_fix"&gt;&lt;sys_script_fix action="INSERT_OR_UPDATE"&gt;&lt;before&gt;false&lt;/before&gt;&lt;description/&gt;&lt;name&gt;Open Widgets to Public&lt;/name&gt;&lt;record_for_rollback&gt;false&lt;/record_for_rollback&gt;&lt;script&gt;&lt;![CDATA[// This script will make several widgets available to the public,
+// Users that are not authenticated 
+// Please read about each grant
+
+
+// The following 2 grants open up the search widget so user can search from the home page
+setWidgetToPublic("200fbd96cb20020000f8d856634c9ca1"); //Homepage Search Widget
+setWidgetToPublic("fa20ec02cb31020000f8d856634c9ce9"); //Typeahead Search Widget
+
+function setWidgetToPublic (widgetID){
+	var curWidget = new GlideRecord('sp_widget');
+	curWidget.get(widgetID);	
+	curWidget.setValue('public','true');
+	curWidget.update();
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_fix&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 16:24:36&lt;/sys_created_on&gt;&lt;sys_id&gt;eb93dc221ba07814e0f943f28d4bcb8a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Open Widgets to Public&lt;/sys_name&gt;&lt;sys_package display_value="Public Service Template" source="x_snc_311_template"&gt;e03b49a81ba7a810e0f943f28d4bcb66&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Public Service Template"&gt;e03b49a81ba7a810e0f943f28d4bcb66&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_fix_eb93dc221ba07814e0f943f28d4bcb8a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 16:24:36&lt;/sys_updated_on&gt;&lt;unloadable&gt;false&lt;/unloadable&gt;&lt;/sys_script_fix&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-393530448</payload_hash>
+        <record_name>Open Widgets to Public</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-07 16:24:36</sys_created_on>
+        <sys_id>daaa5cea1ba07814e0f943f28d4bcb2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179e74a4c790000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-07 16:24:36</sys_updated_on>
+        <type>Fix Script</type>
+        <update_guid>d2aa5cea0ea07814f4610a50068af12d</update_guid>
+        <update_guid_history>d2aa5cea0ea07814f4610a50068af12d:-393530448</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-07 22:49:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_fix">sys_script_fix</sys_db_object>
+        <sys_id>7593f2c7d3a24750942041d52d9cf100</sys_id>
+        <sys_metadata>eb93dc221ba07814e0f943f28d4bcb8a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open Widgets to Public</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sys_script_fix_eb93dc221ba07814e0f943f28d4bcb8a</sys_update_name>
+        <sys_update_version display_value="sys_script_fix_eb93dc221ba07814e0f943f28d4bcb8a">daaa5cea1ba07814e0f943f28d4bcb2d</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-07 22:49:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
