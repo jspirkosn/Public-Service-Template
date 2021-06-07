@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="DELETE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-07 16:58:54</sys_created_on>
+        <sys_id>16f1a0e61be07814e0f943f28d4bcb5e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>sp_widget</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_db_view_table_16f1a0e61be07814e0f943f28d4bcb5e</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-07 17:16:37</sys_updated_on>
+        <table>sp_widget</table>
+        <variable_prefix>wid</variable_prefix>
+        <view display_value="x_snc_311_template_global_widgets_to_make_public">bc8160a61be07814e0f943f28d4bcb68</view>
+        <where_clause>(wid_sys_id='200fbd96cb20020000f8d856634c9ca1')</where_clause>
+    </sys_db_view_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sys_db_view_table_16f1a0e61be07814e0f943f28d4bcb5e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>100</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-06-07 16:58:54</sys_created_on><sys_id>16f1a0e61be07814e0f943f28d4bcb5e</sys_id><sys_mod_count>4</sys_mod_count><sys_name>sp_widget</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sys_db_view_table_16f1a0e61be07814e0f943f28d4bcb5e</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-06-07 17:16:37</sys_updated_on><table>sp_widget</table><variable_prefix>wid</variable_prefix><view display_value="x_snc_311_template_global_widgets_to_make_public">bc8160a61be07814e0f943f28d4bcb68</view><where_clause>(wid_sys_id='200fbd96cb20020000f8d856634c9ca1')</where_clause></sys_db_view_table></record_update>]]></payload>
+        <payload_hash>-1856125679</payload_hash>
+        <record_name>sp_widget</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-07 17:16:37</sys_created_on>
+        <sys_id>dc96e0ae1be07814e0f943f28d4bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179e779ecce0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-07 17:16:37</sys_updated_on>
+        <type>View Table</type>
+        <update_guid>1496e0ae66e078149f313be5c710236a</update_guid>
+        <update_guid_history>1496e0ae66e078149f313be5c710236a:-1856125679,5b156cea68e07814aa8c004c032534e4:-845945950,f8c464ea31e07814bf45716ec624ed0a:697381310,3784ecaa73e0781484a3463f91388cde:-845945950,4d82ece6d4e07814545b213342bfee29:1441992169</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-07 23:10:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table">sys_db_view_table</sys_db_object>
+        <sys_id>505cec90ee704f508652f44af3bd8069</sys_id>
+        <sys_metadata>16f1a0e61be07814e0f943f28d4bcb5e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sp_widget</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_16f1a0e61be07814e0f943f28d4bcb5e</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_16f1a0e61be07814e0f943f28d4bcb5e">dc96e0ae1be07814e0f943f28d4bcb6a</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-07 23:10:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
