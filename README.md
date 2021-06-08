@@ -13,7 +13,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 		- Chose "Basic Auth Credential"
 		- Give it a name and enter your GitHub User Name and Password from step 3
 4. In the ServiceNow Navigator go to "System Applications" -> "Studio"
-5. A dialog appears click on "Import from Source Control"
+5. A dialog appears - click on "Import from Source Control"
     - URL: https://github.com/jspirkosn/Public-Service-Template
     - Branch: master 
     - Credential: chose credential from step 3   
