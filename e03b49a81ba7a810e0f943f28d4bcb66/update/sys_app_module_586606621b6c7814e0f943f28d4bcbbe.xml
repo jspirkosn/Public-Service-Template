@@ -4,10 +4,7 @@
         <application display_value="Public Services Template">aa1139ae1ba87814e0f943f28d4bcb70</application>
         <assessment/>
         <device_type/>
-        <filter table="sp_widget">sys_id=200fbd96cb20020000f8d856634c9ca1^ORsys_id=fa20ec02cb31020000f8d856634c9ce9^ORsys_id=4c03cba0cb11020000f8d856634c9ce1^ORsys_id=f2ff0622d7000200a9ad1e173e24d4f3^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="200fbd96cb20020000f8d856634c9ca1"/>
-            <item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="true" value="fa20ec02cb31020000f8d856634c9ce9"/>
-            <item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="true" value="4c03cba0cb11020000f8d856634c9ce1"/>
-            <item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="true" value="f2ff0622d7000200a9ad1e173e24d4f3"/>
+        <filter table="sp_page">sys_id=07261a2147132100ba13a5554ee49092^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="07261a2147132100ba13a5554ee49092"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
@@ -15,9 +12,9 @@
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Widgets for Public Portal</mobile_title>
+        <mobile_title>Pages to Make Public</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>sp_widget</name>
+        <name>sp_page</name>
         <order/>
         <override_menu_roles>false</override_menu_roles>
         <query/>
@@ -25,21 +22,21 @@
         <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2021-06-07 22:46:55</sys_created_on>
+        <sys_created_on>2021-06-08 00:18:17</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>1591b5ee1ba87814e0f943f28d4bcb00</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Widgets to Make Public</sys_name>
+        <sys_id>586606621b6c7814e0f943f28d4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pages to Make Public</sys_name>
         <sys_overrides/>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
-        <sys_update_name>sys_app_module_1591b5ee1ba87814e0f943f28d4bcb00</sys_update_name>
+        <sys_update_name>sys_app_module_586606621b6c7814e0f943f28d4bcbbe</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-06-08 00:14:52</sys_updated_on>
+        <sys_updated_on>2021-06-08 00:18:17</sys_updated_on>
         <timeline_page/>
-        <title>Widgets to Make Public</title>
+        <title>Pages to Make Public</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
