@@ -38,6 +38,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	5. Refresh the browser in step 1 - you should now see the search box and catalog navigations  
 	
 - **Setup Video:**
+	<a href="https://www.youtube.com/watch?v=wtkbx07DY5k" title="Make the Portal Public - Setup">Make the Portal Public - Setup</a>
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
