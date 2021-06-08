@@ -30,9 +30,11 @@ The Public Service Template repository is a collection of ServiceNow configurati
 - **Demo:** {coming soon}
 - **Setup:**
 	1. Go to [your instance]/pub and make sure you aren't authenticated - You should only see the header to login and background image
-	2. In the ServiceNow Navigator go to "Public Services Template" -> "Portal Widgets to Make Public"
+	2. In the ServiceNow Navigator go to "Public Services Template" -> "Widgets to Make Public"
 	3. Make sure you are in the global scope
-	4. Change the Public filed to "true" for all 4 of the widgets
+	4. Change the Public field to "true" for all 4 of the widgets
+	5. In the ServiceNow Navigator go to "Public Services Template" -> "Pages to Make Public"
+	6. Change the Public field to "true" for 1 page
 	5. Refresh the browser in step 1 - you should now see the search box and catalog navigations  
 	
 - **Setup Video:**
