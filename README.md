@@ -85,6 +85,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	16. You should see a form and it should say "Public Guest" in the upper right-hand corner
 	
 - **Setup Video:**
+	<a href="https://www.youtube.com/watch?v=z80QPiMahpY" title="Anonymous User - Setup">Anonymous User - Setup</a>
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
