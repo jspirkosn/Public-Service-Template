@@ -24,10 +24,25 @@ The Public Service Template repository is a collection of ServiceNow configurati
 
 # Configurations
 <details>
+<summary>Update the Public Service Template on Your Instance - Steps to update an the Public Service Template applicaiton </summary>
+
+- **Status:** Complete
+- **Setup:**
+	1. In the ServiceNow Navigator go to "System Applications" -> "Studio"
+	2. Find the "Public Service Template Application"
+	3. Select "Apply Remote Changes"
+	4. In the dialog select "Apply Remote Changes" again
+	5. This brings the most recent code into your instance	
+- **Setup Video:**
+	<a href="https://www.youtube.com/watch?v=wtkbx07DY5k" title="Make the Portal Public - Setup">Make the Portal Public - Setup</a>
+- **Contributors:** 
+	- john.spirko@servicenow.com 
+</details>
+
+<details>
 <summary>Make the Portal Public - These are steps to make the portal accessible to unauthenticated users</summary>
 
 - **Status:** Complete
-- **Demo:** {coming soon}
 - **Setup:**
 	1. Go to [your instance]/pub and make sure you aren't authenticated - You should only see the header to login and background image
 	2. In the ServiceNow Navigator go to "Public Services Template" -> "Widgets to Make Public"
@@ -45,10 +60,19 @@ The Public Service Template repository is a collection of ServiceNow configurati
 
 <details>
 <summary>Anonymous User - Make it so a user can continue as Guest</summary>
-
+- **Prerequisites:** "Make the Portal Public" 
 - **Status:** Complete
-- **Demo:** {coming soon}
 - **Setup:**
+	1. Go to [your instance]/pub and make sure you aren't authenticated - you should see the search box and catalog navigations
+	2. Navigate to Services - Non Emergency Issues
+	3. Click on Report Streetlight Out
+	4. On the login page select "Continue as Guest"
+	5. Note: You should see a User name or password invalid message
+	6. Go to [your instance] and login as an Admin user
+	7. In the ServiceNow Navigator go to "System Application Studio" -> "Widgets to Make Public"
+
+	
+		
 - **Setup Video:**
 - **Contributors:** 
 	- john.spirko@servicenow.com 
