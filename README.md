@@ -29,12 +29,12 @@ The Public Service Template repository is a collection of ServiceNow configurati
 - **Status:** Complete
 - **Setup:**
 	1. In the ServiceNow Navigator go to "System Applications" -> "Studio"
-	2. Find the "Public Service Template Application"
+	2. Select the "Public Service Template" Application
+	3. Open the top menu for "Source Control"
 	3. Select "Apply Remote Changes"
-	4. In the dialog select "Apply Remote Changes" again
+	4. In the dialog box select "Apply Remote Changes" again
 	5. This brings the most recent code into your instance	
 - **Setup Video:**
-	<a href="https://www.youtube.com/watch?v=wtkbx07DY5k" title="Make the Portal Public - Setup">Make the Portal Public - Setup</a>
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
