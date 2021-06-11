@@ -62,6 +62,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 
 <details>
 <summary>Anonymous User - Make it so a user can continue as Guest</summary>
+	
 - **Prerequisites:** "Make the Portal Public" 
 - **Status:** Complete
 - **Setup:**
