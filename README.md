@@ -35,6 +35,8 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	4. In the dialog box select "Apply Remote Changes" again
 	5. This brings the most recent code into your instance	
 - **Setup Video:**
+	<a href="https://www.youtube.com/watch?v=aX22pNK14rY" title="Public Services Template - Update the Public Services Template on Your Instance">Update the Public Services Template on Your Instance</a>
+	
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
@@ -63,16 +65,24 @@ The Public Service Template repository is a collection of ServiceNow configurati
 - **Prerequisites:** "Make the Portal Public" 
 - **Status:** Complete
 - **Setup:**
-	1. Go to [your instance]/pub and make sure you aren't authenticated - you should see the search box and catalog navigations
-	2. Navigate to Services - Non Emergency Issues
-	3. Click on Report Streetlight Out
+	1. Follow the steps in the "Update the Public Service Template on Your Instance" section above
+	2. Go to [your instance]/pub and make sure you aren't authenticated - you should see the search box and catalog navigations
+	3. Navigate to Services - Non Emergency Issues
+	3. Click on the "Report Streetlight Out" catalog item
 	4. On the login page select "Continue as Guest"
-	5. Note: You should see a User name or password invalid message
+	5. You should see a User name or password invalid message
 	6. Go to [your instance] and login as an Admin user
-	7. In the ServiceNow Navigator go to "System Application Studio" -> "Widgets to Make Public"
-
+	7. Make sure you are in the "Global" scope
+	8. In the ServiceNow Navigator go to "Public Services Template" -> "Scripts to Run"
+	9. Click on "Create Public User for Anonymous Access" to open it
+	10. Once opened click on "Run Fix Scipt"
+	11. Click on "Proceed"
+	12. Go to [your instance]/pub and make sure you aren't authenticated 
+	13. Navigate to Services - Non Emergency Issues
+	14. Click on the "Report Streetlight Out" catalog item
+	15. On the login page select "Continue as Guest"
+	16. You should see a form and it should say "Public Guest" in the upper right-hand corner
 	
-		
 - **Setup Video:**
 - **Contributors:** 
 	- john.spirko@servicenow.com 
