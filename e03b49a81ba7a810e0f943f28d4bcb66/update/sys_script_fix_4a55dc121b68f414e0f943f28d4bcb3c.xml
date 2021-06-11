@@ -18,13 +18,12 @@ if (newUser.getRowCount() == 0) {
 	newUser.first_name = "Public";
 	newUser.last_name = "Guest";
 	newUser.user_name = "public.guest";
-	newUser.user_password = "pubGuest12!";
-	var newUserid = newUser.insert();
-
-	gs.info("SUCCESS: Created Public Guest User: " + newUserid);
+	newUser.user_password.setDisplayValue("pubGuest12!");
+	var newUserRec = newUser.insert();
 	
-	grantRoles(newUserid);
+	//gs.info("SUCCESS: Created Public Guest User: " + newUserRec);
 	
+	grantRoles(newUserRec);
 
 	
 } else {
@@ -61,14 +60,14 @@ function grantRoles (userRec){
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-06-06 21:54:40</sys_created_on>
         <sys_id>4a55dc121b68f414e0f943f28d4bcb3c</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Create Public User for Anonyomus Access</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>sys_script_fix_4a55dc121b68f414e0f943f28d4bcb3c</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-06-06 22:26:06</sys_updated_on>
+        <sys_updated_on>2021-06-11 18:48:22</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
