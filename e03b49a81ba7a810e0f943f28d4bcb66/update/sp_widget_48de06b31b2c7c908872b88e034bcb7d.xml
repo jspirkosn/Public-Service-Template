@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function loginCtrl($scope, $http, $window, $location, spUtil) {
+
+	var c = this;
+	
+	c.guestLogin = function() {
+
+		var url = spUtil.getURL({sysparm_type: 'view_form.login'});
+	
+		// If the page isn't public, then the ID in the
+		// URL won't match the rendered page ID
+		var pageId = $location.search().id || $scope.page.id;
+		var isLoginPage = $scope.portal.login_page_dv == pageId;
+
+		return $http({
+			method: 'post',
+			url: url,
+			data: $.param({
+				'sysparm_type': 'login',
+				'ni.nolog.user_password': true,
+				'remember_me': !c.remember_me ? true : false,
+				'user_name': c.data.guest_user,
+				'user_password': c.data.guest_pass,
+				'get_redirect_url': true,
+				'sysparm_goto_url': isLoginPage ? null : $location.url(),
+				'mfa_redirect_url': c.data.pageURI
+			}),
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			}
+		}).then(function(response) {
+			if (!response.data) {
+				c.message = $scope.data.errorMsg;
+				return;
+			}
+			
+			if (response.data.status == 'success') {
+				handleLoginSuccess.call(response);
+			} else {
+				// wrong username or password
+				c.message = response.data.message;
+				c.password = "";
+				c.username = "";
+				angular.element("#username").focus();
+			}
+
+		}, function errorCallback(response) {
+			c.message = $scope.data.errorMsg;
+		});
+	};
+
+	function handleLoginSuccess() {
+		c.success = this.data.message;
+		$window.location = this.data.redirect_url;
+	}
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.or-h5 { width:100%; text-align:center; border-bottom: 1px solid #000; line-height:0.1em; margin:10px 0 20px; } 
+.or-h5 .or-span { background:#fff; padding:0 10px; }
+.btn-guest{
+    background-color: #aaa !important;
+    border: none !important;
+    color: #fff !important;
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+.sp-login-widget { 
+  
+  .panel-body {
+    padding: 15px 15px 10px;
+  }
+  
+  .form-control,
+  label[for="username"],
+  label[for="password"] {
+    color: black;
+  }
+  
+  .btn {
+    font-weight: 600;
+    font-size: 2.0rem;
+    background-color: $login-btn-bg;
+    border-color: $login-btn-border;
+  }
+  
+  .list-group {
+    margin-bottom: 12px;
+  }
+  
+  .login-button-old {
+    margin-top: 7px;
+  }
+  
+  .login-alert {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+}
+//STRY50033370: Forgot Password link in the login widget
+//Start -- login widget advanced view
+.sp-login-widget.advanced {  
+  .panel-title {
+    font-size: 25px;
+  }
+  
+  .panel-default &gt; .panel-heading {
+    background-color: $panel-bg; 
+    border: 0px;    
+  }
+  
+  .panel-body {
+    padding: 0px 0px 10px;
+  }
+
+  [placeholder]::-webkit-input-placeholder { 
+    transition: opacity 0.01s 0.01s ease !important; 
+    opacity: 0 !important; 
+  }
+
+  .form-signin {
+    .list-group-item { 
+      border: 0px;
+    }
+    
+    .login-alert {
+    margin-left: 15px;
+    margin-right: 15px;
+    }
+    
+    .btn {
+      font-weight: 400 !important;
+      border-color: $brand-primary;
+      background-color: $brand-primary;
+      border-radius: 2px;
+    }
+
+    .forgot-pwd-div {
+      padding-right: 15px;
+      padding-left: 15px;
+      .forgot-text {
+        font-size: 16px;	
+        line-height: 20px;
+        padding-top: 8px;
+      }
+      
+      .btn {
+        line-height: 16px;
+        font-size: 14px;
+        margin-top: 0px;
+      }
+      
+    }
+    
+    .submit-btn {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    
+    .input-advanced {
+      margin-top: 10px;
+      border: 1px solid $panel-default-border !important;
+      border-radius: 3px !important;
+      background-color: $panel-bg !important;
+    }
+    
+    .checkbox {
+      padding-left: 15px !important; 
+    }
+   
+    .label-advanced {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      overflow: visible;
+      border: 0;
+      height: 19px;
+      color: $text-color;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+  }
+
+}
+//End -- login widget advanced view
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Pub Guest Login</name>
+        <option_schema>[{"name":"show_panel","section":"Presentation","default_value":"true","label":"Show Panel","type":"boolean"},{"name":"use_advanced","section":"Presentation","default_value":"false","label":"Use Advanced View","type":"boolean"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.guest_user = "public.guest";
+	data.guest_pass = "pubGuest12!";
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-11 22:04:29</sys_created_on>
+        <sys_id>48de06b31b2c7c908872b88e034bcb7d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Pub Guest Login</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sp_widget_48de06b31b2c7c908872b88e034bcb7d</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-11 22:32:00</sys_updated_on>
+        <template><![CDATA[<div ng-if="!data.is_logged_in" class="sp-login-widget" ng-class="::(c.options.use_advanced == 'true' ? 'advanced' : '')">
+              <button name="guestLogin" ng-click="c.guestLogin()" class="btn btn-guest btn-lg btn-block login-button-old">
+                ${Continue as Guest}
+              </button>
+</div>]]></template>
+    </sp_widget>
+</record_update>
