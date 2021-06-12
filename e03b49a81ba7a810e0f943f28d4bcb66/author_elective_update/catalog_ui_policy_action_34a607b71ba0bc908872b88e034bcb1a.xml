@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item/>
+        <catalog_variable>IO:3555f16c1baba810e0f943f28d4bcb5e</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-12 02:09:08</sys_created_on>
+        <sys_id>34a607b71ba0bc908872b88e034bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>email</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_34a607b71ba0bc908872b88e034bcb1a</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-12 02:09:08</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Fields">8e46b9ac1baba810e0f943f28d4bcb40</ui_policy>
+        <variable>email</variable>
+        <variable_set display_value="Public Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>catalog_ui_policy_action_34a607b71ba0bc908872b88e034bcb1a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item/><catalog_variable>IO:3555f16c1baba810e0f943f28d4bcb5e</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-06-12 02:09:08</sys_created_on><sys_id>34a607b71ba0bc908872b88e034bcb1a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>email</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>catalog_ui_policy_action_34a607b71ba0bc908872b88e034bcb1a</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-06-12 02:09:08</sys_updated_on><table/><ui_policy display_value="Hide Fields">8e46b9ac1baba810e0f943f28d4bcb40</ui_policy><variable>email</variable><variable_set display_value="Public Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>876084994</payload_hash>
+        <record_name>email</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-12 02:09:08</sys_created_on>
+        <sys_id>efc6c3b71ba0bc908872b88e034bcb19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179fdfae3970000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-12 02:09:08</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>e7c6c3b75da0bc9018446bb035e8ba19</update_guid>
+        <update_guid_history>e7c6c3b75da0bc9018446bb035e8ba19:876084994</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="email">54f68bb71ba0bc908872b88e034bcb0f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-12 02:09:43</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>3a054850fd354642b56a97a14eeb0584</sys_id>
+        <sys_metadata>34a607b71ba0bc908872b88e034bcb1a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>email</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_34a607b71ba0bc908872b88e034bcb1a</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_34a607b71ba0bc908872b88e034bcb1a">efc6c3b71ba0bc908872b88e034bcb19</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-12 02:09:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

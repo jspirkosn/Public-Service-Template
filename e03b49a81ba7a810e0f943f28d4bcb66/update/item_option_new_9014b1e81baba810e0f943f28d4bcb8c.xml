@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
     <item_option_new action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <attributes/>
         <cat_item/>
         <category/>
@@ -68,14 +68,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-13 00:46:24</sys_created_on>
         <sys_id>9014b1e81baba810e0f943f28d4bcb8c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>consumer</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>item_option_new_9014b1e81baba810e0f943f28d4bcb8c</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-06-11 22:37:12</sys_updated_on>
+        <sys_updated_on>2021-06-12 01:44:28</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>
