@@ -152,136 +152,136 @@
 	//c.guestLogin();
 }]]></client_script>
         <controller_as>c</controller_as>
-        <css>.or-h5 { width:100%; text-align:center; border-bottom: 1px solid #000; line-height:0.1em; margin:10px 0 20px; } &#13;
-.or-h5 .or-span { background:#fff; padding:0 10px; }&#13;
-.btn-guest{&#13;
-    background-color: #aaa !important;&#13;
-    border: none !important;&#13;
-    color: #fff !important;&#13;
-    height: 20px;&#13;
-    padding-top: 5px;&#13;
-    padding-bottom: 30px;&#13;
-}&#13;
-.sp-login-widget { &#13;
-  &#13;
-  .panel-body {&#13;
-    padding: 15px 15px 10px;&#13;
-  }&#13;
-  &#13;
-  .form-control,&#13;
-  label[for="username"],&#13;
-  label[for="password"] {&#13;
-    color: black;&#13;
-  }&#13;
-  &#13;
-  .btn {&#13;
-    font-weight: 600;&#13;
-    font-size: 2.0rem;&#13;
-    background-color: $login-btn-bg;&#13;
-    border-color: $login-btn-border;&#13;
-  }&#13;
-  &#13;
-  .list-group {&#13;
-    margin-bottom: 12px;&#13;
-  }&#13;
-  &#13;
-  .login-button-old {&#13;
-    margin-top: 7px;&#13;
-  }&#13;
-  &#13;
-  .login-alert {&#13;
-    margin-left: 0px;&#13;
-    margin-right: 0px;&#13;
-  }&#13;
-&#13;
-}&#13;
-//STRY50033370: Forgot Password link in the login widget&#13;
-//Start -- login widget advanced view&#13;
-.sp-login-widget.advanced {  &#13;
-  .panel-title {&#13;
-    font-size: 25px;&#13;
-  }&#13;
-  &#13;
-  .panel-default &gt; .panel-heading {&#13;
-    background-color: $panel-bg; &#13;
-    border: 0px;    &#13;
-  }&#13;
-  &#13;
-  .panel-body {&#13;
-    padding: 0px 0px 10px;&#13;
-  }&#13;
-&#13;
-  [placeholder]::-webkit-input-placeholder { &#13;
-    transition: opacity 0.01s 0.01s ease !important; &#13;
-    opacity: 0 !important; &#13;
-  }&#13;
-&#13;
-  .form-signin {&#13;
-    .list-group-item { &#13;
-      border: 0px;&#13;
-    }&#13;
-    &#13;
-    .login-alert {&#13;
-    margin-left: 15px;&#13;
-    margin-right: 15px;&#13;
-    }&#13;
-    &#13;
-    .btn {&#13;
-      font-weight: 400 !important;&#13;
-      border-color: $brand-primary;&#13;
-      background-color: $brand-primary;&#13;
-      border-radius: 2px;&#13;
-    }&#13;
-&#13;
-    .forgot-pwd-div {&#13;
-      padding-right: 15px;&#13;
-      padding-left: 15px;&#13;
-      .forgot-text {&#13;
-        font-size: 16px;	&#13;
-        line-height: 20px;&#13;
-        padding-top: 8px;&#13;
-      }&#13;
-      &#13;
-      .btn {&#13;
-        line-height: 16px;&#13;
-        font-size: 14px;&#13;
-        margin-top: 0px;&#13;
-      }&#13;
-      &#13;
-    }&#13;
-    &#13;
-    .submit-btn {&#13;
-      padding-right: 15px;&#13;
-      padding-left: 15px;&#13;
-    }&#13;
-    &#13;
-    .input-advanced {&#13;
-      margin-top: 10px;&#13;
-      border: 1px solid $panel-default-border !important;&#13;
-      border-radius: 3px !important;&#13;
-      background-color: $panel-bg !important;&#13;
-    }&#13;
-    &#13;
-    .checkbox {&#13;
-      padding-left: 15px !important; &#13;
-    }&#13;
-   &#13;
-    .label-advanced {&#13;
-      position: relative;&#13;
-      width: 100%;&#13;
-      padding: 0;&#13;
-      overflow: visible;&#13;
-      border: 0;&#13;
-      height: 19px;&#13;
-      color: $text-color;&#13;
-      font-size: 16px;&#13;
-      line-height: 19px;&#13;
-    }&#13;
-&#13;
-  }&#13;
-&#13;
-}&#13;
-//End -- login widget advanced view&#13;
+        <css>.or-h5 { width:100%; text-align:center; border-bottom: 1px solid #000; line-height:0.1em; margin:10px 0 20px; } 
+.or-h5 .or-span { background:#fff; padding:0 10px; }
+.btn-guest{
+    background-color: #aaa !important;
+    border: none !important;
+    color: #fff !important;
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+.sp-login-widget { 
+  
+  .panel-body {
+    padding: 15px 15px 10px;
+  }
+  
+  .form-control,
+  label[for="username"],
+  label[for="password"] {
+    color: black;
+  }
+  
+  .btn {
+    font-weight: 600;
+    font-size: 2.0rem;
+    background-color: $login-btn-bg;
+    border-color: $login-btn-border;
+  }
+  
+  .list-group {
+    margin-bottom: 12px;
+  }
+  
+  .login-button-old {
+    margin-top: 7px;
+  }
+  
+  .login-alert {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+}
+//STRY50033370: Forgot Password link in the login widget
+//Start -- login widget advanced view
+.sp-login-widget.advanced {  
+  .panel-title {
+    font-size: 25px;
+  }
+  
+  .panel-default &gt; .panel-heading {
+    background-color: $panel-bg; 
+    border: 0px;    
+  }
+  
+  .panel-body {
+    padding: 0px 0px 10px;
+  }
+
+  [placeholder]::-webkit-input-placeholder { 
+    transition: opacity 0.01s 0.01s ease !important; 
+    opacity: 0 !important; 
+  }
+
+  .form-signin {
+    .list-group-item { 
+      border: 0px;
+    }
+    
+    .login-alert {
+    margin-left: 15px;
+    margin-right: 15px;
+    }
+    
+    .btn {
+      font-weight: 400 !important;
+      border-color: $brand-primary;
+      background-color: $brand-primary;
+      border-radius: 2px;
+    }
+
+    .forgot-pwd-div {
+      padding-right: 15px;
+      padding-left: 15px;
+      .forgot-text {
+        font-size: 16px;	
+        line-height: 20px;
+        padding-top: 8px;
+      }
+      
+      .btn {
+        line-height: 16px;
+        font-size: 14px;
+        margin-top: 0px;
+      }
+      
+    }
+    
+    .submit-btn {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    
+    .input-advanced {
+      margin-top: 10px;
+      border: 1px solid $panel-default-border !important;
+      border-radius: 3px !important;
+      background-color: $panel-bg !important;
+    }
+    
+    .checkbox {
+      padding-left: 15px !important; 
+    }
+   
+    .label-advanced {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      overflow: visible;
+      border: 0;
+      height: 19px;
+      color: $text-color;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+  }
+
+}
+//End -- login widget advanced view
 </css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -329,28 +329,28 @@
 	data.errorMsg2 = gs.getMessage("An error has occurred - please contact your system administrator");
 	data.passwordMsg = gs.getMessage("Password");
 	data.usernameMsg = gs.getMessage("User name");
-	data.forgetMe = GlideProperties.getBoolean("glide.ui.forgetme");
-	data.forgetMeDefault = GlideProperties.getBoolean('glide.ui.remember.me.default', true);
+	//data.forgetMe = GlideProperties.getBoolean("glide.ui.forgetme");
+	//data.forgetMeDefault = GlideProperties.getBoolean('glide.ui.remember.me.default', true);
 	data.is_logged_in = gs.getSession().isLoggedIn();
 	var bypass_sso = options.bypass_sso == "true";
-	data.multisso_enabled = !bypass_sso && GlideProperties.getBoolean("glide.authenticate.multisso.enabled");			
-	data.default_idp = GlideProperties.get("glide.authenticate.sso.redirect.idp");
+	//data.multisso_enabled = !bypass_sso && GlideProperties.getBoolean("glide.authenticate.multisso.enabled");			
+	//data.default_idp = GlideProperties.get("glide.authenticate.sso.redirect.idp");
 	data.pageURI = new GlideSPUtil().getPageUri();
-	data.multiFactorAuthEnabled = GlideProperties.getBoolean('glide.authenticate.multifactor', false);
+	//data.multiFactorAuthEnabled = GlideProperties.getBoolean('glide.authenticate.multifactor', false);
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-31 20:14:44</sys_created_on>
         <sys_id>72cb81541b2434508872b88e034bcb4b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Public Guest Login</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>sp_widget_72cb81541b2434508872b88e034bcb4b</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-06-06 22:29:01</sys_updated_on>
+        <sys_updated_on>2021-06-11 21:25:14</sys_updated_on>
         <template><![CDATA[<div ng-if="!data.is_logged_in" class="sp-login-widget" ng-class="::(c.options.use_advanced == 'true' ? 'advanced' : '')">
   <form ng-if="!c.externalLoginMode" class="form-signin" ng-submit="c.login(c.username, c.password)" method="post">
 		<div ng-class="::{'panel panel-default': c.options.show_panel}">
