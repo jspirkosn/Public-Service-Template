@@ -90,34 +90,16 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	- john.spirko@servicenow.com 
 </details>
 
-
+<details>
+<summary>Coming Soon - New things on-deck</summary>
 - **Service Builder Workflow**
-   - Status: Complete 
-   - Usage demo: {coming soon}  
-   - Instructions:
-   - Configuration demo:
-   - Contributors: john.spirko@servicenow.com
+
 - **Variable Sets (Map and Common)**
-   - Status: Complete 
-   - Usage demo: {coming soon}  
-   - Instructions:
-   - Configuration demo:
-   - Contributors: john.spirko@servicenow.com
+  
 - **Mobile API Endpoint for NewRocket Mobile**
-   - Status: Not Started 
-   - Usage demo: {coming soon}  
-   - Instructions:
-   - Configuration demo:
-   - Contributors: john.spirko@servicenow.com
+  
 - **NewRocket Mobile App**
-   - Status: Not Started 
-   - Usage demo: {coming soon}  
-   - Instructions:
-   - Configuration demo:
-   - Contributors: john.spirko@servicenow.com
+  
 - **Case Workflow**
-   - Status: 50% complete 
-   - Usage demo: {coming soon}  
-   - Instructions:
-   - Configuration demo:
-   - Contributors: john.spirko@servicenow.com
+
+  </details>
