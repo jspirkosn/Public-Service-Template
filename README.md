@@ -7,20 +7,24 @@ The Public Service Template repository is a collection of ServiceNow configurati
  		- Install the Consumer Service Portal(com.glide.service-portal.consumer-portal) plugin
    
 2. Create GitHub Access - use an existing account or <a href=https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home title="GitHub Create Account">Create a New GitHub Account</a>
-3. Create a ServiceNow Credential - if you have a GitHub credential for ServiceNow, skip to step 4
+3. Log into your GitHub Account
+4. In the browser where you logged in to GitHub, paste this URL: https://github.com/jspirkosn/Public-Service-Template
+5. In the upper right hand corner of the page you should see a button to fork the repo, click to create your own fork
+6. Once the fork is complete copy the URL, it shoudl be https://github.com/[your github user]/Public-Service-Template
+7. Create a ServiceNow Credential - if you have a GitHub credential for ServiceNow, skip to step 8
 	- In the ServiceNow Navigator go to "Connections & Credentials" -> "Credentials"
 		- Click on "New" to create a new credential
 		- Chose "Basic Auth Credential"
-		- Give it a name and enter your GitHub User Name and Password from step 3
-4. In the ServiceNow Navigator, go to "System Applications" -> "Studio"
-5. A dialog appears - click on "Import from Source Control"
-    - URL: https://github.com/jspirkosn/Public-Service-Template
+		- Give it a name and enter your **GitHub** User Name and Password
+8. In the ServiceNow Navigator, go to "System Applications" -> "Studio"
+9. A dialog appears - click on "Import from Source Control"
+    - URL: https://github.com/[your github user]/Public-Service-Template (the one you copied in step 6)
     - Branch: master 
-    - Credential: chose credential from step 3   
-6. Access the Public Service Portal - [your instance]/pub
+    - Credential: chose credential from step 7   
+10. Access the Public Service Portal - [your instance]/pub
 	- Click on the "Services" category
 	- Select "Report Streetlight Out"  
-7. Enjoy the configurations below!
+11. Enjoy the configurations below!
 
 # Configurations
 <details>
