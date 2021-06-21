@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description>Creates a public services Service Portfolio, its related Taxonomy layer, and the structure for the first service. </description>
+        <name>Unleash the Common Service Data Model!</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[// 1. Creates a Service Portfolio called "Public Services Portfolio" in the spm_service_portfolio table
+// 2. Creates a Taxonomy Layer Definition called "Pub Svcs Taxonomy Layer" in the spm_taxonomy_layer_definition table
+// 3. Creates one taxonomy node called "Services" in the spm_taxonomy_node table - matches the "Service" catalog category
+// 4. Creates a Business Service called "Non Emergency Issues" in the cmdb_ci_service table - matches the "Non Emergency Issues" catalog category
+// 5. Creates a Service Offering called "Report Streetlight Out" in the service_offering table - matches the "Report Streetlight Out" catalog item
+// 6. Creates an association between the "Report Streetlight Out" catalog item and service offering (#5)
+// 7. Creates an application service called "ServiceNow for PS - Prod"
+// 8. Creates a dependency between the service offering (#5) and the application service (#7)
+// 9. Creates a business application called "ServiceNow for PS"
+// 10. Creates a dependency between the application service (#7) and the business application (#9)
+// 11. Creates a business capability called "Digital Public Services"
+// 12. Creates a dependency between the business capability (#11) and the application service (#7)
+// 13. Creates a dependency between the business service (#4) and the service offering (#5)
+// Note: An automation flow will perform steps 5 - 7 for all new nodes as categories are created in the Public Service catalog
+
+var svcPort = new GlideRecord('spm_service_portfolio');
+svcPort.addQuery('name', "Public Services Portfolio");
+svcPort.query();
+
+// This makes sure the Service Portfolio isn't already created
+if (svcPort.getRowCount() == 0) {
+	// #1 Creates a Service Portfolio called "Public Services Portfolio" in the spm_service_portfolio table
+	svcPort.initialize();
+	svcPort.name = "Public Services Portfolio";
+	var svcPortRec = svcPort.insert();
+		
+	// #2 Creates a Taxonomy Layer Definition called "Pub Svcs Taxonomy Layer" in the spm_taxonomy_layer_definition table
+	var taxLayerDef = new GlideRecord('spm_taxonomy_layer_definition');	
+	taxLayerDef.name = "Pub Svcs Taxonomy Layer";
+	taxLayerDef.spm_service_portfolio = svcPortRec;
+	taxLayerDef.order = "100";
+	var taxLayerDefRec = taxLayerDef.insert();
+
+	// #3 Creates one taxonomy node called "Services" in the spm_taxonomy_node table - matches the "Service" catalog category
+	var taxNode = new GlideRecord('spm_taxonomy_node');	
+	taxNode.name = "Services";
+	taxNode.spm_service_portfolio = svcPortRec;
+	taxNode.spm_taxonomy_layer = taxLayerDefRec;
+	var taxNodeRec = taxNode.insert();
+
+	// #4 Creates a Business Service called "Non Emergency Issues" in the cmdb_ci_service table - matches the "Non Emergency Issues" catalog category
+	var busSvc = new GlideRecord('cmdb_ci_service');	
+	busSvc.name = "Non Emergency Issues";
+	busSvc.spm_service_portfolio = svcPortRec;
+	busSvc.spm_taxonomy_node = taxNodeRec;
+	busSvc.service_classification = "Business Service";
+	busSvc.consumer_type = "External";
+	var busSvcRec = busSvc.insert();
+	
+	// #5 Creates a Service Offering called "Report Streetlight Out" in the service_offering table - matches the "Report Streetlight Out" catalog item
+	var busSvcOff = new GlideRecord('service_offering');
+	busSvcOff.name = "Report Streetlight Out";
+	busSvcOff.parent = busSvcRec;
+	busSvcOff.service_classification = "Business Service";
+	busSvcOff.consumer_type = "External";
+	var busSvcOffRec = busSvcOff.insert();
+
+	// #6 Creates an association between the "Report Streetlight Out" catalog item and service offering (#5)
+	var newAssoc = new GlideRecord('sc_cat_item_subscribe_no_mtom');
+	newAssoc.sc_cat_item = 'a12a395f1b147c108872b88e034bcbff';
+	newAssoc.service_offering = busSvcOffRec;
+    newAssoc.insert();	
+	
+	// #7 Creates an application service called "ServiceNow for PS - Prod"
+	var appSvc = new GlideRecord('cmdb_ci_service_auto');
+	appSvc.name = "ServiceNow for PS - Prod";
+	appSvc.service_classification = "Application Service";
+	var appSvcRec = appSvc.insert();
+	
+	// #8 Creates a dependency between the service offering (#5) and the application service (#7) 
+	var newDpnd = new GlideRecord('cmdb_rel_ci');
+	newDpnd.parent = busSvcOffRec;
+	newDpnd.child = appSvcRec;
+	newDpnd.type.setDisplayValue("Depends on::Used by");
+	newDpnd.insert();
+
+	// #9 Creates a business application called "ServiceNow for PS"
+	var busApp = new GlideRecord('cmdb_ci_business_app');
+	busApp.name = "ServiceNow for PS";
+	busApp.application_category = "ad35db9bdba312003b9cffefbf96195b";
+	busApp.application_type = "cots";
+	busApp.install_type = "cloud";
+	busApp.platform = "servicenow";
+	busApp.short_description = "ServiceNow Cust Svc for Public Services Template";
+	busAppRec = busApp.insert();
+	
+	// #10 Creates a dependency between the application service (#7) and the business application (#9) 
+	newDpnd.initialize();
+	newDpnd.parent = busAppRec;
+	newDpnd.child = appSvcRec;
+	newDpnd.type.setDisplayValue("Consumes::Consumed by");
+	newDpnd.insert();
+	
+	// #11 Creates a business capability called "Digital Public Services"
+	var busCap = new GlideRecord('cmdb_ci_business_capability');
+	busCap.name = "Digital Public Services";
+	busCap.short_description = "Provide generic customer services";
+	busCapRec = busCap.insert();
+
+	// #12 Creates a dependency between the business capability (#11) and the application service (#7) 
+	newDpnd.initialize();
+	newDpnd.parent = busCapRec;
+	newDpnd.child = busAppRec;
+	newDpnd.type.setDisplayValue("Provided By::Provides");
+	newDpnd.insert();
+	
+	// #13 Creates a dependency between the business service (#4) and the service offering (#5) 
+	newDpnd.initialize();
+	newDpnd.parent = busSvcRec;
+	newDpnd.child = busSvcOffRec;
+	newDpnd.type.setDisplayValue("Contains::Contained by");
+	newDpnd.insert();
+	
+} else {
+	gs.info("Script Stopped: Public Services Portfolio Already Exists");
+}
+
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-12 18:21:40</sys_created_on>
+        <sys_id>cecbc2881b78fc908872b88e034bcb91</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Unleash the Common Service Data Model!</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_script_fix_cecbc2881b78fc908872b88e034bcb91</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-21 18:56:38</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

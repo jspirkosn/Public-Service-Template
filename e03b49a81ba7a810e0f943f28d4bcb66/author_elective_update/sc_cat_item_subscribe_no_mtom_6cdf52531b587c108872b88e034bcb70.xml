@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_subscribe_no_mtom">
+    <sc_cat_item_subscribe_no_mtom action="DELETE">
+        <sc_cat_item display_value="Base Template with Map">ad018b991ba6e8108872b88e034bcb7a</sc_cat_item>
+        <service_offering display_value="Base Template with Map">ecdf52531b587c108872b88e034bcb40</service_offering>
+        <sys_class_name>sc_cat_item_subscribe_no_mtom</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-28 23:46:09</sys_created_on>
+        <sys_id>6cdf52531b587c108872b88e034bcb70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Base Template with Map.Base Template with Map</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_subscribe_no_mtom_6cdf52531b587c108872b88e034bcb70</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-28 23:46:09</sys_updated_on>
+    </sc_cat_item_subscribe_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_subscribe_no_mtom_6cdf52531b587c108872b88e034bcb70</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_subscribe_no_mtom"><sc_cat_item_subscribe_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Base Template with Map">ad018b991ba6e8108872b88e034bcb7a</sc_cat_item><service_offering display_value="Base Template with Map">ecdf52531b587c108872b88e034bcb40</service_offering><sys_class_name>sc_cat_item_subscribe_no_mtom</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-05-28 23:46:09</sys_created_on><sys_id>6cdf52531b587c108872b88e034bcb70</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Base Template with Map.Base Template with Map</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_subscribe_no_mtom_6cdf52531b587c108872b88e034bcb70</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-05-28 23:46:09</sys_updated_on></sc_cat_item_subscribe_no_mtom></record_update>]]></payload>
+        <payload_hash>5198852</payload_hash>
+        <record_name>Base Template with Map.Base Template with Map</record_name>
+        <reverted_from/>
+        <source>ced986501be834508872b88e034bcb91</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-01 00:44:12</sys_created_on>
+        <sys_id>94e90a501be834508872b88e034bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179c5072ddc0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-01 00:44:12</sys_updated_on>
+        <type>Not Available for Subscribers</type>
+        <update_guid>2cdf52531c587c106116d60166dd1b72</update_guid>
+        <update_guid_history>2cdf52531c587c106116d60166dd1b72:5198852,48c90e1048e83450b8bcd46fb7b6d4f9:-1908150768,2cdf52531c587c106116d60166dd1b72:5198852</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Base Template with Map.Base Template with Map">49cc30b21bf8b050e0f943f28d4bcb04</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-20 23:47:47</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_subscribe_no_mtom">sc_cat_item_subscribe_no_mtom</sys_db_object>
+        <sys_id>c7fd11b9e3574fa2801a11fb05d8d104</sys_id>
+        <sys_metadata>6cdf52531b587c108872b88e034bcb70</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Base Template with Map.Base Template with Map</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_subscribe_no_mtom_6cdf52531b587c108872b88e034bcb70</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_subscribe_no_mtom_6cdf52531b587c108872b88e034bcb70">94e90a501be834508872b88e034bcb65</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-20 23:47:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
