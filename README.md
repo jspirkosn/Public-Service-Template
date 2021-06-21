@@ -95,20 +95,17 @@ The Public Service Template repository is a collection of ServiceNow configurati
 </details>
 
 <details>
-<summary>Unleash the Common Service Data Model (CSDM)!  - Lays the foundataion for the CSDM and teaches you about its power</summary>
+<summary>Unleash the Common Service Data Model (CSDM)!  - Lays the foundation for the CSDM and teaches you about its power</summary>
 
 - **Status:** Complete
 - **Setup:**
 	1. Go to [your instance] and login as an Admin user
-	2. In the ServiceNow Navigator, go to "Public Services Template" -> "Widgets to Make Public."
-	3. Make sure you are in the global scope
-	4. Change the Public field to "true" for all 4 of the widgets
-	5. In the ServiceNow Navigator, go to "Public Services Template" -> "Pages to Make Public."
-	6. Change the Public field to "true" for 1 page
-	5. Refresh the browser in step 1 - you should now see the search box and catalog navigations  
+	2. In the ServiceNow Navigator, go to "Public Services Template" -> "Scripts to Run"
+	3. Open the script called "Unleash the Common Service Data Model!" by clicking on it
+	4. Watch the Setup video for a detailed explanation
 	
 - **Setup Video:**
-	<a href=https://www.youtube.com/watch?v=wtkbx07DY5k title="Make the Portal Public - Setup">Make the Portal Public - Setup</a>
+	<a href=https://www.youtube.com/watch?v=wtkbx07DY5k title=" Unleash the Common Service Data Model (CSDM)!">CSDM Crash Course</a>
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
