@@ -95,7 +95,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 </details>
 
 <details>
-<summary>Unleash the Common Service Data Model (CSDM)!  - This section lays the foundataion for the CSDM and teaches you about its power and purpose</summary>
+<summary>Unleash the Common Service Data Model (CSDM)!  - Lays the foundataion for the CSDM and teaches you about its power</summary>
 
 - **Status:** Complete
 - **Setup:**
