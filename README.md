@@ -6,25 +6,25 @@ The Public Service Template repository is a collection of ServiceNow configurati
 		- Install the Customer Service(com.sn_customerservice) plugin
  		- Install the Consumer Service Portal(com.glide.service-portal.consumer-portal) plugin
    
-2. Create GitHub Access - use an existing account or <a href=https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home title="GitHub Create Account">Create a New GitHub Account</a>
-3. Log into your GitHub Account
-4. In the browser where you logged in to GitHub, paste this URL: https://github.com/jspirkosn/Public-Service-Template
-5. In the upper right hand corner of the page you should see a button to fork the repo, click to create your own fork
-6. Once the fork is complete copy the URL, it should be https://github.com/[your github user]/Public-Service-Template
-7. Create a ServiceNow Credential - if you have a GitHub credential for ServiceNow, skip to step 8
+2. Create GitHub Access - use an existing account or [GitHub Create Account](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
+4. Log into your GitHub Account
+5. In the browser where you logged in to GitHub, paste this URL: https://github.com/jspirkosn/Public-Service-Template
+6. In the upper right hand corner of the page you should see a button to fork the repo, click to create your own fork
+7. Once the fork is complete copy the URL, it should be https://github.com/[your github user]/Public-Service-Template
+8. Create a ServiceNow Credential - if you have a GitHub credential for ServiceNow, skip to step 8
 	- In the ServiceNow Navigator go to "Connections & Credentials" -> "Credentials"
 		- Click on "New" to create a new credential
 		- Chose "Basic Auth Credential"
 		- Give it a name and enter your **GitHub** User Name and Password
-8. In the ServiceNow Navigator, go to "System Applications" -> "Studio"
-9. A dialog appears - click on "Import from Source Control"
+9. In the ServiceNow Navigator, go to "System Applications" -> "Studio"
+10. A dialog appears - click on "Import from Source Control"
     - URL: https://github.com/[your github user]/Public-Service-Template (the one you copied in step 6)
     - Branch: master 
     - Credential: chose credential from step 7   
-10. Access the Public Service Portal - [your instance]/pub
+11. Access the Public Service Portal - [your instance]/pub
 	- Click on the "Services" category
 	- Select "Report Streetlight Out"  
-11. Enjoy the configurations below!
+12. Enjoy the configurations below!
 
 # Configurations
 <details>
@@ -39,7 +39,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	4. In the dialog box, select "Apply Remote Changes" again
 	5. This brings the most recent code into your instance	
 - **Setup Video:**
-	<a href=https://www.youtube.com/watch?v=aX22pNK14rY title="Public Services Template - Update the Public Services Template on Your Instance">Update the Public Services Template on Your Instance</a>
+	[Update the Public Services Template on Your Instance](https://www.youtube.com/watch?v=aX22pNK14rY)
 	
 - **Contributors:** 
 	- john.spirko@servicenow.com 
@@ -59,7 +59,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	5. Refresh the browser in step 1 - you should now see the search box and catalog navigations  
 	
 - **Setup Video:**
-	<a href=https://www.youtube.com/watch?v=wtkbx07DY5k title="Make the Portal Public - Setup">Make the Portal Public - Setup</a>
+	[Make the Portal Public - Setup](https://www.youtube.com/watch?v=wtkbx07DY5k)
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
@@ -89,7 +89,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	16. You should see a form and it should say "Public Guest" in the upper right-hand corner
 	
 - **Setup Video:**
-	<a href=https://www.youtube.com/watch?v=z80QPiMahpY title="Anonymous User - Setup">Anonymous User - Setup</a>
+	[Anonymous User - Setup](https://www.youtube.com/watch?v=z80QPiMahpY)
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
@@ -106,7 +106,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	4. Watch the Setup video for a detailed explanation
 	
 - **Setup Video:**
-	<a href=https://www.youtube.com/watch?v=FSbpdsAn0Fw title=" Unleash the Common Service Data Model (CSDM)!">CSDM Crash Course</a>
+	[Unleash the Common Service Data Model (CSDM)!](https://www.youtube.com/watch?v=FSbpdsAn0Fw)
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
