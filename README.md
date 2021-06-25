@@ -116,15 +116,17 @@ The Public Service Template repository is a collection of ServiceNow configurati
 
 - **Status:** Complete
 - **Setup:**
-	1. 
+	1. There is nothing to configure, this is an explaination of automation only
 	2. Go to [your instance] and login as an Admin user
-	3. In the ServiceNow Navigator, go to "Public Services Template" -> "Scripts to Run"
-	4. Open the script called "Unleash the Common Service Data Model!" by clicking on it
-	5. Run the script by clicking on "Run Fix Script" in the upper right
-	6. Watch the Setup video for a detailed explanation
+	3. In the ServiceNow Navigator, go to "Process Automation" -> "Flow Designer"
+	4. Open the flow called "Public Services Data Modeler" by clicking on it
+	5. In the Flow Designer click on the home icon
+	6. Selec the Actions menu
+	7. Open the action called "Public Service Catalog to Service Portfolio" by clicking on it
+	8. Watch the Setup video for a detailed explanation
 	
 - **Setup Video:**
-	[Unleash the Common Service Data Model (CSDM)!](https://www.youtube.com/watch?v=FSbpdsAn0Fw)
+	[Taming the Common Service Data Model (CSDM)!](https://www.youtube.com/watch?v=FSbpdsAn0Fw)
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
