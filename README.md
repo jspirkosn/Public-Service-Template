@@ -111,6 +111,22 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	- john.spirko@servicenow.com 
 </details>
 
+<summary>Taming the Common Service Data Model (CSDM)! - Stop designing and start getting value!</summary>
+
+- **Status:** Complete
+- **Setup:**
+	1. Go to [your instance] and login as an Admin user
+	2. In the ServiceNow Navigator, go to "Public Services Template" -> "Scripts to Run"
+	3. Open the script called "Unleash the Common Service Data Model!" by clicking on it
+	4. Run the script by clicking on "Run Fix Script" in the upper right
+	4. Watch the Setup video for a detailed explanation
+	
+- **Setup Video:**
+	[Unleash the Common Service Data Model (CSDM)!](https://www.youtube.com/watch?v=FSbpdsAn0Fw)
+- **Contributors:** 
+	- john.spirko@servicenow.com 
+</details>
+
 <details>
 <summary>Coming Soon - New things on-deck</summary>
 - **Service Builder Workflow**
