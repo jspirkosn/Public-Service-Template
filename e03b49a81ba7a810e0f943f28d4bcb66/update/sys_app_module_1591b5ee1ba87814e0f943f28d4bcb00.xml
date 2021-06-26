@@ -18,7 +18,7 @@
         <mobile_title>Widgets for Public Portal</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>sp_widget</name>
-        <order/>
+        <order>1200</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1591b5ee1ba87814e0f943f28d4bcb00</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Widgets to Make Public</sys_name>
         <sys_overrides/>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>sys_app_module_1591b5ee1ba87814e0f943f28d4bcb00</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-06-08 00:14:52</sys_updated_on>
+        <sys_updated_on>2021-06-25 21:47:04</sys_updated_on>
         <timeline_page/>
         <title>Widgets to Make Public</title>
         <uncancelable>false</uncancelable>
