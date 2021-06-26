@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Bus Late">10769e1c1b453010e0f943f28d4bcb96</sc_cat_item>
+        <sc_category display_value="Busline Matters">b4b6965c1b453010e0f943f28d4bcb5d</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-25 22:38:46</sys_created_on>
+        <sys_id>eeec9ed41b853010e0f943f28d4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Busline Matters.Bus Late</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_category_eeec9ed41b853010e0f943f28d4bcbe1</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-25 22:38:46</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_category_eeec9ed41b853010e0f943f28d4bcbe1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Bus Late">10769e1c1b453010e0f943f28d4bcb96</sc_cat_item><sc_category display_value="Busline Matters">b4b6965c1b453010e0f943f28d4bcb5d</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-06-25 22:38:46</sys_created_on><sys_id>eeec9ed41b853010e0f943f28d4bcbe1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Busline Matters.Bus Late</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_category_eeec9ed41b853010e0f943f28d4bcbe1</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-06-25 22:38:46</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>2130791865</payload_hash>
+        <record_name>Busline Matters.Bus Late</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-25 22:38:46</sys_created_on>
+        <sys_id>b6ec12181b853010e0f943f28d4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a455352a60000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-25 22:38:46</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>beec1218e2853010a134f10cc7861f47</update_guid>
+        <update_guid_history>beec1218e2853010a134f10cc7861f47:2130791865</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Busline Matters.Bus Late">8c88ab201bc5b010e0f943f28d4bcb30</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-26 22:47:28</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>00def4a8c66243e9bea7ae8b76dc4459</sys_id>
+        <sys_metadata>eeec9ed41b853010e0f943f28d4bcbe1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Busline Matters.Bus Late</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_eeec9ed41b853010e0f943f28d4bcbe1</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_eeec9ed41b853010e0f943f28d4bcbe1">b6ec12181b853010e0f943f28d4bcb48</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-26 22:47:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

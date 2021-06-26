@@ -32,7 +32,7 @@
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_b2f1cb261bffe410e0f943f28d4bcba6</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-06-01 00:44:15</sys_updated_on>
+        <sys_updated_on>2021-06-26 22:51:05</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -55,10 +55,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-01 22:28:54</sys_created_on>
         <sys_id>c63b43e21b332810e0f943f28d4bcbc9</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-28 23:55:10</sys_updated_on>
+        <sys_updated_on>2021-06-25 22:08:42</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c63b43e21b332810e0f943f28d4bcbc9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -69,9 +69,9 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-01 22:28:55</sys_created_on>
         <sys_id>0e3b43e21b332810e0f943f28d4bcbe1</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-28 23:55:10</sys_updated_on>
+        <sys_updated_on>2021-06-25 22:08:43</sys_updated_on>
         <value>// The main purpose of this Action is to copy a catalog taxomomy into a service taxonomy
 // Assumptions
 //   1. the Catalog Category has a parent Catagory (this is pre-validated in flow)
@@ -104,7 +104,6 @@
 (function execute(inputs, outputs) {
   
   // Get or create a taxonomy node the matches the parent catalog category 
-    
   var taxNodeId = getTaxNode(inputs.triggerCat.sc_category.parent.title, inputs.taxLayer);
   gs.error("TaxNode ID is: " + taxNodeId);
   
@@ -157,7 +156,7 @@
 	  newSvc.name = svcName;
       newSvc.service_classification = 'Business Service';
 	  newSvc.spm_taxonomy_node = taxNode;
-	  newSvc.sys_class_name = 'cmdb_ci_service';
+	  newSvc.consumer_type = "External";
 	  newSvc.used_for = 'Production';
 	  return newSvc.insert();	
 	} else {
@@ -179,6 +178,7 @@
 	  newOff.parent = parentSvc;
 	  newOff.name = offName;
       newOff.service_classification = 'Business Service';
+      newOff.consumer_type = "External";
 	  return newOff.insert();	
 	} else {
 	  newOff.next();
@@ -997,10 +997,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-02 20:33:53</sys_created_on>
         <sys_id>b67a7f321bf7a8108872b88e034bcbdd</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-29 23:30:32</sys_updated_on>
+        <sys_updated_on>2021-06-25 22:14:42</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b67a7f321bf7a8108872b88e034bcbdd"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1011,9 +1011,9 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-02 20:33:53</sys_created_on>
         <sys_id>0b7a7f321bf7a8108872b88e034bcbf5</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-05-29 23:30:32</sys_updated_on>
+        <sys_updated_on>2021-06-25 22:14:42</sys_updated_on>
         <value>// The main purpose of this Action is to copy a catalog taxomomy into a service taxonomy
 // Assumptions
 //   1. the Catalog Category has a parent Catagory (this is pre-validated in flow)
@@ -1046,7 +1046,6 @@
 (function execute(inputs, outputs) {
   
   // Get or create a taxonomy node the matches the parent catalog category 
-    
   var taxNodeId = getTaxNode(inputs.triggerCat.sc_category.parent.title, inputs.taxLayer);
   gs.error("TaxNode ID is: " + taxNodeId);
   
@@ -1099,7 +1098,7 @@
 	  newSvc.name = svcName;
       newSvc.service_classification = 'Business Service';
 	  newSvc.spm_taxonomy_node = taxNode;
-	  newSvc.sys_class_name = 'cmdb_ci_service';
+	  newSvc.consumer_type = "External";
 	  newSvc.used_for = 'Production';
 	  return newSvc.insert();	
 	} else {
@@ -1121,6 +1120,7 @@
 	  newOff.parent = parentSvc;
 	  newOff.name = offName;
       newOff.service_classification = 'Business Service';
+      newOff.consumer_type = "External";
 	  return newOff.insert();	
 	} else {
 	  newOff.next();
