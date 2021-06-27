@@ -114,7 +114,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 <details>
 <summary>Taming the Common Service Data Model (CSDM)! - Stop designing and start getting value!</summary>
 
-- **Status:** Complete
+- **Status:** In progress, this automates the build of the CSDM as record producers are added to the catalog
 - **Setup:**
 	1. There is nothing to configure, this is an explaination of automation only
 	2. Go to [your instance] and login as an Admin user
