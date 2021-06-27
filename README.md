@@ -126,7 +126,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	8. Watch the Setup video for a detailed explanation
 	
 - **Setup Video:**
-	[Taming the Common Service Data Model (CSDM)!](https://www.youtube.com/watch?v=FSbpdsAn0Fw)
+	Expected 6-28-2021
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
