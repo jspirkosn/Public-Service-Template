@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Copy of Copy of Hello">92331d381b41f010e0f943f28d4bcbb1</sc_cat_item>
+        <sc_category display_value="sdfas">9ba355b81b41f010e0f943f28d4bcb84</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-27 06:36:29</sys_created_on>
+        <sys_id>d2d399b81b41f010e0f943f28d4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sdfas.Copy of Copy of Hello</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_category_d2d399b81b41f010e0f943f28d4bcb71</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-27 06:36:29</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_category_d2d399b81b41f010e0f943f28d4bcb71</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Copy of Copy of Hello">92331d381b41f010e0f943f28d4bcbb1</sc_cat_item><sc_category display_value="sdfas">9ba355b81b41f010e0f943f28d4bcb84</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-06-27 06:36:29</sys_created_on><sys_id>d2d399b81b41f010e0f943f28d4bcb71</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sdfas.Copy of Copy of Hello</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_category_d2d399b81b41f010e0f943f28d4bcb71</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-06-27 06:36:29</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-144140337</payload_hash>
+        <record_name>sdfas.Copy of Copy of Hello</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-27 06:36:29</sys_created_on>
+        <sys_id>96d399b81b41f010e0f943f28d4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a4c2f0b9a0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-27 06:36:29</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>9ed399b83241f01076375d872d808088</update_guid>
+        <update_guid_history>9ed399b83241f01076375d872d808088:-144140337</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="sdfas.Copy of Copy of Hello">567a05dd1b45b410e0f943f28d4bcb49</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-28 19:12:30</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>5b78640083a64bf1b813729d91db1139</sys_id>
+        <sys_metadata>d2d399b81b41f010e0f943f28d4bcb71</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sdfas.Copy of Copy of Hello</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_d2d399b81b41f010e0f943f28d4bcb71</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_d2d399b81b41f010e0f943f28d4bcb71">96d399b81b41f010e0f943f28d4bcb89</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-28 19:12:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

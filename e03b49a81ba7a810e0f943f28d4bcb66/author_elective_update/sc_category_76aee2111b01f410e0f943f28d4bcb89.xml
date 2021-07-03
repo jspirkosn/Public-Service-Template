@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="DELETE">
+        <active>true</active>
+        <description/>
+        <entitlement_script/>
+        <header_icon/>
+        <homepage_image/>
+        <homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
+        <icon/>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture/>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent/>
+        <roles/>
+        <sc_catalog display_value="Public Service Catalog">b5a15ea81b6fa810e0f943f28d4bcbcb</sc_catalog>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-29 02:30:26</sys_created_on>
+        <sys_id>76aee2111b01f410e0f943f28d4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All Types</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_category_76aee2111b01f410e0f943f28d4bcb89</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-29 02:30:26</sys_updated_on>
+        <title>All Types</title>
+    </sc_category>
+    <sys_translated_text action="DELETE" query="documentkey=76aee2111b01f410e0f943f28d4bcb89"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_category_76aee2111b01f410e0f943f28d4bcb89</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category"><sc_category action="INSERT_OR_UPDATE"><active>true</active><description/><entitlement_script/><header_icon/><homepage_image/><homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer><icon/><image/><location/><mobile_hide_description>false</mobile_hide_description><mobile_picture/><mobile_subcategory_render_type>list</mobile_subcategory_render_type><module/><order>0</order><parent/><roles/><sc_catalog display_value="Public Service Catalog">b5a15ea81b6fa810e0f943f28d4bcbcb</sc_catalog><sys_class_name>sc_category</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-06-29 02:30:26</sys_created_on><sys_id>76aee2111b01f410e0f943f28d4bcb89</sys_id><sys_mod_count>0</sys_mod_count><sys_name>All Types</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_category_76aee2111b01f410e0f943f28d4bcb89</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-06-29 02:30:26</sys_updated_on><title>All Types</title></sc_category><sys_translated_text action="delete_multiple" query="documentkey=76aee2111b01f410e0f943f28d4bcb89"/></record_update>]]></payload>
+        <payload_hash>-175305497</payload_hash>
+        <record_name>All Types</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-29 02:30:26</sys_created_on>
+        <sys_id>21bea2111b01f410e0f943f28d4bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a559a7eff0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-29 02:30:26</sys_updated_on>
+        <type>Category</type>
+        <update_guid>29bea2114801f41034ea0802c0339ae2</update_guid>
+        <update_guid_history>29bea2114801f41034ea0802c0339ae2:-175305497</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="All Types">9e18072e1bc1fc10e0f943f28d4bcb27</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-03 01:33:46</sys_created_on>
+        <sys_db_object display_value="" name="sc_category">sc_category</sys_db_object>
+        <sys_id>213e85ce307a4bc0867f4f288c3a0c40</sys_id>
+        <sys_metadata>76aee2111b01f410e0f943f28d4bcb89</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All Types</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_category_76aee2111b01f410e0f943f28d4bcb89</sys_update_name>
+        <sys_update_version display_value="sc_category_76aee2111b01f410e0f943f28d4bcb89">21bea2111b01f410e0f943f28d4bcbe3</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-03 01:33:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

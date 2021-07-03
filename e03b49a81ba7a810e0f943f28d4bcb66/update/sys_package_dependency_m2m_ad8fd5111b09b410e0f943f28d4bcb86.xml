@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Service Catalog Platform" source="com.glideapp.servicecatalog.platform">5efd3bce1bc11010e0f943f28d4bcbb2</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-28 20:44:28</sys_created_on>
+        <sys_id>ad8fd5111b09b410e0f943f28d4bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-28 20:44:28</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

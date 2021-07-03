@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Report Class Needs">206f03951bc1f410e0f943f28d4bcbd5</sc_cat_item>
+        <sc_category display_value="Student Services">249ea2111b01f410e0f943f28d4bcb6d</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-29 04:57:36</sys_created_on>
+        <sys_id>dd609bd51bc1f410e0f943f28d4bcb03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Student Services.Report Class Needs</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_category_dd609bd51bc1f410e0f943f28d4bcb03</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-29 04:57:36</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_category_dd609bd51bc1f410e0f943f28d4bcb03</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Report Class Needs">206f03951bc1f410e0f943f28d4bcbd5</sc_cat_item><sc_category display_value="Student Services">249ea2111b01f410e0f943f28d4bcb6d</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-06-29 04:57:36</sys_created_on><sys_id>dd609bd51bc1f410e0f943f28d4bcb03</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Student Services.Report Class Needs</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_category_dd609bd51bc1f410e0f943f28d4bcb03</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-06-29 04:57:36</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-950523852</payload_hash>
+        <record_name>Student Services.Report Class Needs</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-29 04:57:37</sys_created_on>
+        <sys_id>2d609bd51bc1f410e0f943f28d4bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a56213e6c0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-29 04:57:37</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>25609bd517c1f4100758503f9ba49f07</update_guid>
+        <update_guid_history>25609bd517c1f4100758503f9ba49f07:-950523852</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Student Services.Report Class Needs">a0d1fae61b41fc10e0f943f28d4bcb6e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-02 23:56:26</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>0af30ea1f18548e8878ba5ebb4ae3c40</sys_id>
+        <sys_metadata>dd609bd51bc1f410e0f943f28d4bcb03</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Student Services.Report Class Needs</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_dd609bd51bc1f410e0f943f28d4bcb03</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_dd609bd51bc1f410e0f943f28d4bcb03">2d609bd51bc1f410e0f943f28d4bcb07</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-02 23:56:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

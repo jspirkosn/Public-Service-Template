@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="List new item">6d20af911b45f410e0f943f28d4bcb50</sc_cat_item>
+        <sc_category display_value="My Adds">c560abd11b45f410e0f943f28d4bcba9</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-29 06:08:00</sys_created_on>
+        <sys_id>ac80afd11b45f410e0f943f28d4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Adds.List new item</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_category_ac80afd11b45f410e0f943f28d4bcb69</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-29 06:08:00</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_category_ac80afd11b45f410e0f943f28d4bcb69</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="List new item">6d20af911b45f410e0f943f28d4bcb50</sc_cat_item><sc_category display_value="My Adds">c560abd11b45f410e0f943f28d4bcba9</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-06-29 06:08:00</sys_created_on><sys_id>ac80afd11b45f410e0f943f28d4bcb69</sys_id><sys_mod_count>0</sys_mod_count><sys_name>My Adds.List new item</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_category_ac80afd11b45f410e0f943f28d4bcb69</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-06-29 06:08:00</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>2138844238</payload_hash>
+        <record_name>My Adds.List new item</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-29 06:08:00</sys_created_on>
+        <sys_id>ac80afd11b45f410e0f943f28d4bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a5661b10b0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-29 06:08:00</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>a480afd12e45f410e62b943d45b5d19a</update_guid>
+        <update_guid_history>a480afd12e45f410e62b943d45b5d19a:2138844238</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="My Adds.List new item">aed17ee61b41fc10e0f943f28d4bcb86</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-02 23:56:33</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>10992740f551448e86da806171e134f1</sys_id>
+        <sys_metadata>ac80afd11b45f410e0f943f28d4bcb69</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Adds.List new item</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_ac80afd11b45f410e0f943f28d4bcb69</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_ac80afd11b45f410e0f943f28d4bcb69">ac80afd11b45f410e0f943f28d4bcb9a</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-02 23:56:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

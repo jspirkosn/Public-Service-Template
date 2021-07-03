@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Query Results" language="en" table="x_snc_311_template_u_cmdb_qb_result_9446a298057da611b011e1a8dc633f65dff44282">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Query Results</label>
+            <language>en</language>
+            <name>x_snc_311_template_u_cmdb_qb_result_9446a298057da611b011e1a8dc633f65dff44282</name>
+            <plural>Query Results</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jspirko</sys_created_by>
+            <sys_created_on>2021-07-03 01:37:49</sys_created_on>
+            <sys_id>b1098fae1bc1fc10e0f943f28d4bcb3d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Query Results</sys_name>
+            <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_311_template_u_cmdb_qb_result_9446a298057da611b011e1a8dc633f65dff44282__en</sys_update_name>
+            <sys_updated_by>jspirko</sys_updated_by>
+            <sys_updated_on>2021-07-03 01:37:49</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

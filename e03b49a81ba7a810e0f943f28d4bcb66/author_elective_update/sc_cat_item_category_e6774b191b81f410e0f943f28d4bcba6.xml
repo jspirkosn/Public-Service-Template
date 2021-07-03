@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Copy of Report Streetlight Out">f55707191b81f410e0f943f28d4bcbe6</sc_cat_item>
+        <sc_category display_value="Student Services">249ea2111b01f410e0f943f28d4bcb6d</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-29 04:18:38</sys_created_on>
+        <sys_id>e6774b191b81f410e0f943f28d4bcba6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Student Services.Copy of Report Streetlight Out</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_category_e6774b191b81f410e0f943f28d4bcba6</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-29 04:18:38</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_category_e6774b191b81f410e0f943f28d4bcba6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Copy of Report Streetlight Out">f55707191b81f410e0f943f28d4bcbe6</sc_cat_item><sc_category display_value="Student Services">249ea2111b01f410e0f943f28d4bcb6d</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-06-29 04:18:38</sys_created_on><sys_id>e6774b191b81f410e0f943f28d4bcba6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Student Services.Copy of Report Streetlight Out</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_category_e6774b191b81f410e0f943f28d4bcba6</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-06-29 04:18:38</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1136953606</payload_hash>
+        <record_name>Student Services.Copy of Report Streetlight Out</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-29 04:18:38</sys_created_on>
+        <sys_id>a2774b191b81f410e0f943f28d4bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a55fd8f470000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-29 04:18:38</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>aa774b198481f4104b860ed2a8953fa9</update_guid>
+        <update_guid_history>aa774b198481f4104b860ed2a8953fa9:1136953606</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Student Services.Copy of Report Streetlight Out">8e5883991b81f410e0f943f28d4bcb66</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-29 04:22:26</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>9da47c8a4fb24d45b7a971cf645c3cc9</sys_id>
+        <sys_metadata>e6774b191b81f410e0f943f28d4bcba6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Student Services.Copy of Report Streetlight Out</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_e6774b191b81f410e0f943f28d4bcba6</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_e6774b191b81f410e0f943f28d4bcba6">a2774b191b81f410e0f943f28d4bcbaa</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-29 04:22:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

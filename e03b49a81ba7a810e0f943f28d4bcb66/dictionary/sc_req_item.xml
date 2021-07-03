@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasWorkflow=true" audit="true" create_roles="catalog_admin" extends="task" label="Requested Item" max_length="40" name="sc_req_item" sizeclass="12325" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true" label="Requested Amount" max_length="20" name="x_snc_311_template_requested_amount" type="currency"/>
+    </element>
+</database>
