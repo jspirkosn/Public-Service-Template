@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="">206f03951bc1f410e0f943f28d4bcbd5</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-29 04:53:11</sys_created_on>
+        <sys_id>286f03951bc1f410e0f943f28d4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of Report Streetlight Out.SNC External</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_286f03951bc1f410e0f943f28d4bcbd6</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-29 04:53:11</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_286f03951bc1f410e0f943f28d4bcbd6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="">206f03951bc1f410e0f943f28d4bcbd5</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-06-29 04:53:11</sys_created_on><sys_id>286f03951bc1f410e0f943f28d4bcbd6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Copy of Report Streetlight Out.SNC External</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_286f03951bc1f410e0f943f28d4bcbd6</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-06-29 04:53:11</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>-833807551</payload_hash>
+        <record_name>Copy of Report Streetlight Out.SNC External</record_name>
+        <reverted_from/>
+        <source>e0ada8621b2320108872b88e034bcb8f</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by/>
+        <sys_created_on>2021-04-19 00:44:43</sys_created_on>
+        <sys_id>34d1fae61b41fc10e0f943f28d4bcb8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178e79630780000000</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-03 01:38:13</sys_updated_on>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>f0d1fae6da41fc10a95023c71463a88f</update_guid>
+        <update_guid_history>f0d1fae6da41fc10a95023c71463a88f:-833807551</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Copy of Report Streetlight Out.SNC External">fcd1fae61b41fc10e0f943f28d4bcb91</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-02 23:56:27</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>09da3f0385d649cbb9be6bbe79d2f8c9</sys_id>
+        <sys_metadata>286f03951bc1f410e0f943f28d4bcbd6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of Report Streetlight Out.SNC External</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_286f03951bc1f410e0f943f28d4bcbd6</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_286f03951bc1f410e0f943f28d4bcbd6">34d1fae61b41fc10e0f943f28d4bcb8f</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-02 23:56:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
