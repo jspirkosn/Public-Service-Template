@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b2f1cb261bffe410e0f943f28d4bcba6</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Public Service Catalog to Service Portfolio</sys_name>
         <sys_overrides/>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_b2f1cb261bffe410e0f943f28d4bcba6</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-07-07 01:20:43</sys_updated_on>
+        <sys_updated_on>2021-07-07 18:43:00</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -81,10 +81,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-01 22:28:54</sys_created_on>
         <sys_id>c63b43e21b332810e0f943f28d4bcbc9</sys_id>
-        <sys_mod_count>105</sys_mod_count>
+        <sys_mod_count>108</sys_mod_count>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-07-07 01:20:41</sys_updated_on>
+        <sys_updated_on>2021-07-07 18:42:57</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c63b43e21b332810e0f943f28d4bcbc9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -95,9 +95,9 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-01 22:28:55</sys_created_on>
         <sys_id>0e3b43e21b332810e0f943f28d4bcbe1</sys_id>
-        <sys_mod_count>104</sys_mod_count>
+        <sys_mod_count>107</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-07-07 01:20:41</sys_updated_on>
+        <sys_updated_on>2021-07-07 18:42:57</sys_updated_on>
         <value>// The main purpose of this Action is to copy a catalog taxomomy into a service taxonomy
 // Assumptions
 //   1. the Catalog Category has a parent Catagory (this is pre-validated in flow)
@@ -134,9 +134,9 @@
   
   // Get or create a Business Service the matches the catalog category 
   var busSvcId = getBusService(inputs.triggerCat.sc_category.title, taxNodeId);
+
   // See if the catalog item is already attached to a Service Offering
   var assocRec = new GlideRecord('sc_cat_item_subscribe_no_mtom'); 
-
   assocRec.addQuery('sc_cat_item', inputs.triggerCat.sc_cat_item.sys_id);
   assocRec.query();
   
@@ -147,6 +147,8 @@
     
     // If the offering parent has no other offerings, set it to retired
     // We can't leave the parent empty in the catalog/Operational State
+    // The offering   
+    
     var matchParent = new GlideRecord('service_offering');
   	matchParent.addQuery('parent', assocRec.service_offering.parent.sys_id);
   	matchParent.query();
@@ -198,7 +200,7 @@
     gr.update();
     
     if (gr.update() == null) {
-      gs.info("the update failed!");
+      gs.info("Update offering failed!");
 	}
   }  
      
@@ -233,6 +235,22 @@
 	newSvc.query();
 	
 	if (newSvc.getRowCount() == 0) {
+      //Make sure there isn't another service with this name already
+      var i = 0;
+      do {
+        newSvc.initialize();
+	    newSvc.addQuery('name',svcName);
+        newSvc.query();
+        if (newSvc.getRowCount() == 0) {
+          i = 5;
+        } else {
+          // Rename the offering and try again
+          i++;
+          svcName = offName + " " + i;
+          gs.info("Retry new service with name: " + svcName);
+        }
+      } while (i &lt; 5);
+      
 	  newSvc.initialize();
 	  newSvc.spm_service_portfolio = taxNode.spm_service_portfolio;
 	  newSvc.name = svcName;
@@ -251,20 +269,42 @@
 
   function getSvcOffering (offName, parentSvc) {
     
-	var newOff = new GlideRecord('service_offering');
+    var newOff = new GlideRecord('service_offering');    
+
+    // Make sure there isn't another offering with the same name or it will fail
+    var i = 0;
+    do {
+      newOff.initialize();
+	  newOff.addQuery('name',offName);
+      newOff.query();
+      if (newOff.getRowCount() == 0) {
+        i = 5;
+      } else {
+        // Rename the offering and try again
+        i++;
+        offName = offName + " " + i;
+        gs.info("Retry new offering with name: " + offName);
+      }
+    } while (i &lt; 5);
+
 	newOff.addQuery('parent', parentSvc);
 	newOff.addQuery('name',offName);
 	newOff.query();
-	    
+    
 	if (newOff.getRowCount() == 0) {
-      gs.info("Creating SO ");
-	  newOff.initialize();
+    
+      newOff.initialize();
 	  newOff.parent = parentSvc;
 	  newOff.name = offName;
       newOff.service_classification = 'Business Service';
       newOff.consumer_type = "External";
       gs.info("New Service Offering: " + newOff.name);
-	  return newOff.insert();	
+	  var newOffId = newOff.insert();
+      if ( newOffId == null) {
+        gs.info("Insert new offering failed!");
+	  } else {
+        return newOffId;
+      }   	
 	} else {
       gs.info("Found Service Offering: " + newOff.name);
       newOff.next();
@@ -1390,17 +1430,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Public Service Catalog to Service Portfolio">b2f1cb261bffe410e0f943f28d4bcba6</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"db7abf321bf7a8108872b88e034bcb39","name":"plan"}}</plan>
-        <snapshot>1e7babbb1b49f450e0f943f28d4bcb1f</snapshot>
+        <snapshot>8e0a53401b15f8508872b88e034bcbc9</snapshot>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-02 20:33:55</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>db7abf321bf7a8108872b88e034bcb39</sys_id>
-        <sys_mod_count>99</sys_mod_count>
+        <sys_mod_count>102</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-07-07 01:20:45</sys_updated_on>
+        <sys_updated_on>2021-07-07 18:43:01</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1482,10 +1522,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-02 20:33:53</sys_created_on>
         <sys_id>b67a7f321bf7a8108872b88e034bcbdd</sys_id>
-        <sys_mod_count>95</sys_mod_count>
+        <sys_mod_count>98</sys_mod_count>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-07-07 01:20:43</sys_updated_on>
+        <sys_updated_on>2021-07-07 18:42:59</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b67a7f321bf7a8108872b88e034bcbdd"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1496,9 +1536,9 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-05-02 20:33:53</sys_created_on>
         <sys_id>0b7a7f321bf7a8108872b88e034bcbf5</sys_id>
-        <sys_mod_count>94</sys_mod_count>
+        <sys_mod_count>97</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-07-07 01:20:43</sys_updated_on>
+        <sys_updated_on>2021-07-07 18:42:59</sys_updated_on>
         <value>// The main purpose of this Action is to copy a catalog taxomomy into a service taxonomy
 // Assumptions
 //   1. the Catalog Category has a parent Catagory (this is pre-validated in flow)
@@ -1535,9 +1575,9 @@
   
   // Get or create a Business Service the matches the catalog category 
   var busSvcId = getBusService(inputs.triggerCat.sc_category.title, taxNodeId);
+
   // See if the catalog item is already attached to a Service Offering
   var assocRec = new GlideRecord('sc_cat_item_subscribe_no_mtom'); 
-
   assocRec.addQuery('sc_cat_item', inputs.triggerCat.sc_cat_item.sys_id);
   assocRec.query();
   
@@ -1548,6 +1588,8 @@
     
     // If the offering parent has no other offerings, set it to retired
     // We can't leave the parent empty in the catalog/Operational State
+    // The offering   
+    
     var matchParent = new GlideRecord('service_offering');
   	matchParent.addQuery('parent', assocRec.service_offering.parent.sys_id);
   	matchParent.query();
@@ -1599,7 +1641,7 @@
     gr.update();
     
     if (gr.update() == null) {
-      gs.info("the update failed!");
+      gs.info("Update offering failed!");
 	}
   }  
      
@@ -1634,6 +1676,22 @@
 	newSvc.query();
 	
 	if (newSvc.getRowCount() == 0) {
+      //Make sure there isn't another service with this name already
+      var i = 0;
+      do {
+        newSvc.initialize();
+	    newSvc.addQuery('name',svcName);
+        newSvc.query();
+        if (newSvc.getRowCount() == 0) {
+          i = 5;
+        } else {
+          // Rename the offering and try again
+          i++;
+          svcName = offName + " " + i;
+          gs.info("Retry new service with name: " + svcName);
+        }
+      } while (i &lt; 5);
+      
 	  newSvc.initialize();
 	  newSvc.spm_service_portfolio = taxNode.spm_service_portfolio;
 	  newSvc.name = svcName;
@@ -1652,20 +1710,42 @@
 
   function getSvcOffering (offName, parentSvc) {
     
-	var newOff = new GlideRecord('service_offering');
+    var newOff = new GlideRecord('service_offering');    
+
+    // Make sure there isn't another offering with the same name or it will fail
+    var i = 0;
+    do {
+      newOff.initialize();
+	  newOff.addQuery('name',offName);
+      newOff.query();
+      if (newOff.getRowCount() == 0) {
+        i = 5;
+      } else {
+        // Rename the offering and try again
+        i++;
+        offName = offName + " " + i;
+        gs.info("Retry new offering with name: " + offName);
+      }
+    } while (i &lt; 5);
+
 	newOff.addQuery('parent', parentSvc);
 	newOff.addQuery('name',offName);
 	newOff.query();
-	    
+    
 	if (newOff.getRowCount() == 0) {
-      gs.info("Creating SO ");
-	  newOff.initialize();
+    
+      newOff.initialize();
 	  newOff.parent = parentSvc;
 	  newOff.name = offName;
       newOff.service_classification = 'Business Service';
       newOff.consumer_type = "External";
       gs.info("New Service Offering: " + newOff.name);
-	  return newOff.insert();	
+	  var newOffId = newOff.insert();
+      if ( newOffId == null) {
+        gs.info("Insert new offering failed!");
+	  } else {
+        return newOffId;
+      }   	
 	} else {
       gs.info("Found Service Offering: " + newOff.name);
       newOff.next();
