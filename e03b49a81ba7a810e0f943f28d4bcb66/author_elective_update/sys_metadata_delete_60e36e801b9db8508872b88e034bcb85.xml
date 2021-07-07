@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="Report Street Light Out">a12a395f1b147c108872b88e034bcbff</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-28 21:20:06</sys_created_on>
+        <sys_id>d16e79171b547c108872b88e034bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Report Street Light Out.SNC External</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_d16e79171b547c108872b88e034bcb0c</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-28 21:20:06</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_d16e79171b547c108872b88e034bcb0c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Report Street Light Out">a12a395f1b147c108872b88e034bcbff</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-05-28 21:20:06</sys_created_on><sys_id>d16e79171b547c108872b88e034bcb0c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Report Street Light Out.SNC External</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_d16e79171b547c108872b88e034bcb0c</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-05-28 21:20:06</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>-2069069651</payload_hash>
+        <record_name>Report Street Light Out.SNC External</record_name>
+        <reverted_from/>
+        <source>e0ada8621b2320108872b88e034bcb8f</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by/>
+        <sys_created_on>2021-04-19 00:44:43</sys_created_on>
+        <sys_id>19515df71bd830508872b88e034bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178e79630780000000</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-01 00:44:12</sys_updated_on>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>d5515df785d830509e1bb4d09357fac0</update_guid>
+        <update_guid_history>d5515df785d830509e1bb4d09357fac0:-2069069651</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Report Street Light Out.SNC External">1d515df71bd830508872b88e034bcbc3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-07 14:46:25</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>60e36e801b9db8508872b88e034bcb85</sys_id>
+        <sys_metadata>d16e79171b547c108872b88e034bcb0c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent display_value="Test 2">84e36a801b9db8508872b88e034bcb97</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sys_metadata_delete_60e36e801b9db8508872b88e034bcb85</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_d16e79171b547c108872b88e034bcb0c">19515df71bd830508872b88e034bcbc0</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-07 14:46:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
