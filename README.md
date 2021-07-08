@@ -116,14 +116,22 @@ The Public Service Template repository is a collection of ServiceNow configurati
 
 - **Status:** In progress, this automates the build of the CSDM as record producers are added to the catalog
 - **Setup:**
-	1. There is nothing to configure, this is an explaination of automation only
-	2. Go to [your instance] and login as an Admin user
-	3. In the ServiceNow Navigator, go to "Process Automation" -> "Flow Designer"
-	4. Open the flow called "Public Services Data Modeler" by clicking on it
-	5. In the Flow Designer click on the home icon
-	6. Selec the Actions menu
-	7. Open the action called "Public Service Catalog to Service Portfolio" by clicking on it
-	8. Watch the Setup video for a detailed explanation
+	1. Go to [your instance] and login as an Admin user
+	2. In the ServiceNow Navigator, go to System Definition -> Tables
+	3. Search for an open the table called "Not Available for Subscribers"
+	4. Open the "Application Access" tab
+	5. Make sure the table is accessible from "All application scopes" and all boxes are checked
+	6. This will allow our workflow to update this table from the "Public Service Template" scope
+- **Explanation:**
+	1. In the ServiceNow Navigator, go to "Process Automation" -> "Flow Designer"
+	2. Open the flow called "Public Services Data Modeler" by clicking on it
+	3. In the Flow Designer click on the home icon
+	4. Selec the Actions menu
+	5. Open the action called "Public Service Catalog to Service Portfolio" by clicking on it
+	6. Watch the Setup video for a detailed explanation
+	7. To try it copy the "Report Streelight Out" Public form. Navigation: Public Services Template -> Public Forms
+	8. Once copied go to Public Services Template -> Public Service Offerings 
+	9. Observe there is a new offering with the same name as your copied public form
 	
 - **Setup Video:**
 	[Taming the Common Service Data Model (CSDM)!](https://www.youtube.com/watch?v=FSbpdsAn0Fw)
