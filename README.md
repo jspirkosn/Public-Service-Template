@@ -118,7 +118,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 - **Setup:**
 	1. Go to [your instance] and login as an Admin user
 	2. In the ServiceNow Navigator, go to System Definition -> Tables
-	3. Search for an open the table called "Not Available for Subscribers"
+	3. Search for and open the table called "Not Available for Subscribers"
 	4. Open the "Application Access" tab
 	5. Make sure the table is accessible from "All application scopes" and all boxes are checked
 	6. This will allow our workflow to update this table from the "Public Service Template" scope
