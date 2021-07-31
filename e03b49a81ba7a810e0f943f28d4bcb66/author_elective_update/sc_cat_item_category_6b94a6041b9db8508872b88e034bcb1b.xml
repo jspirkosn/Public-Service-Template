@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Test 2">84e36a801b9db8508872b88e034bcb97</sc_cat_item>
+        <sc_category display_value="Second T">5e7462041b9db8508872b88e034bcb9b</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-07 14:49:37</sys_created_on>
+        <sys_id>6b94a6041b9db8508872b88e034bcb1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Second T.Test 2</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_category_6b94a6041b9db8508872b88e034bcb1b</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-07 14:49:37</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_category_6b94a6041b9db8508872b88e034bcb1b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Test 2">84e36a801b9db8508872b88e034bcb97</sc_cat_item><sc_category display_value="Second T">5e7462041b9db8508872b88e034bcb9b</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-07-07 14:49:37</sys_created_on><sys_id>6b94a6041b9db8508872b88e034bcb1b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Second T.Test 2</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_category_6b94a6041b9db8508872b88e034bcb1b</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-07-07 14:49:37</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1599291015</payload_hash>
+        <record_name>Second T.Test 2</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-07 14:49:37</sys_created_on>
+        <sys_id>a794a6041b9db8508872b88e034bcb27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a81721ef40000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-07 14:49:37</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>af94a604d89db8500274c99feca0c726</update_guid>
+        <update_guid_history>af94a604d89db8500274c99feca0c726:1599291015</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Second T.Test 2">ccfc3d281b91bc508872b88e034bcb1b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-09 01:13:13</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>421b5eb9be474d4498741ceef6159e99</sys_id>
+        <sys_metadata>6b94a6041b9db8508872b88e034bcb1b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Second T.Test 2</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_6b94a6041b9db8508872b88e034bcb1b</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_6b94a6041b9db8508872b88e034bcb1b">a794a6041b9db8508872b88e034bcb27</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-09 01:13:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

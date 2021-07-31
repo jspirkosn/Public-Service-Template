@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>200</order>
+        <sc_cat_item display_value="Report Street Light Out">a12a395f1b147c108872b88e034bcbff</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-05-30 08:01:34</sys_created_on>
+        <sys_id>23ca15fb1b1c30508872b88e034bcb6f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Public Common Variables.Report Street Light Out</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>io_set_item_23ca15fb1b1c30508872b88e034bcb6f</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:05:35</sys_updated_on>
+        <variable_set display_value="Public Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>io_set_item_23ca15fb1b1c30508872b88e034bcb6f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>200</order><sc_cat_item display_value="Report Street Light Out">a12a395f1b147c108872b88e034bcbff</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-05-30 08:01:34</sys_created_on><sys_id>23ca15fb1b1c30508872b88e034bcb6f</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Public Common Variables.Report Street Light Out</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>io_set_item_23ca15fb1b1c30508872b88e034bcb6f</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-05-30 08:05:35</sys_updated_on><variable_set display_value="Public Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>-1928377050</payload_hash>
+        <record_name>Public Common Variables.Report Street Light Out</record_name>
+        <reverted_from/>
+        <source>ced986501be834508872b88e034bcb91</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-06-01 00:44:11</sys_created_on>
+        <sys_id>8ce90a501be834508872b88e034bcb2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179c5072a480000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-06-01 00:44:11</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>16bb117fbf1c3050b3e63a922bc32f92</update_guid>
+        <update_guid_history>16bb117fbf1c3050b3e63a922bc32f92:-1928377050,ebb90e1013e8345056a9e6e61b55a380:1547496114,16bb117fbf1c3050b3e63a922bc32f92:-1928377050,7fca55fb651c3050c22916d9af61be9b:289144485</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Public Common Variables.Report Street Light Out">4421e2671b29b0108872b88e034bcb13</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-30 21:48:48</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>82bd306d1f844c2ea84b6ae790774769</sys_id>
+        <sys_metadata>23ca15fb1b1c30508872b88e034bcb6f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Public Common Variables.Report Street Light Out</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>io_set_item_23ca15fb1b1c30508872b88e034bcb6f</sys_update_name>
+        <sys_update_version display_value="io_set_item_23ca15fb1b1c30508872b88e034bcb6f">8ce90a501be834508872b88e034bcb2d</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-30 21:48:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

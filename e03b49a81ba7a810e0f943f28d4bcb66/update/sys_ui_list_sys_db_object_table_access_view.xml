@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sys_db_object" version="2" view="table_access_view">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>label</element>
+            <list_id display_value="sys_db_object" element="NULL" name="sys_db_object" parent="NULL" relationship="NULL" sys_domain="global" view="43ded2ef1be5b0108872b88e034bcbb2">c8956aaf1b29b0108872b88e034bcbe2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>jspirko</sys_created_by>
+            <sys_created_on>2021-07-30 22:08:11</sys_created_on>
+            <sys_id>0c956aaf1b29b0108872b88e034bcbe3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jspirko</sys_updated_by>
+            <sys_updated_on>2021-07-30 22:08:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="sys_db_object" element="NULL" name="sys_db_object" parent="NULL" relationship="NULL" sys_domain="global" view="43ded2ef1be5b0108872b88e034bcbb2">c8956aaf1b29b0108872b88e034bcbe2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>jspirko</sys_created_by>
+            <sys_created_on>2021-07-30 22:08:11</sys_created_on>
+            <sys_id>80956aaf1b29b0108872b88e034bcbe4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jspirko</sys_updated_by>
+            <sys_updated_on>2021-07-30 22:08:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>create_access</element>
+            <list_id display_value="sys_db_object" element="NULL" name="sys_db_object" parent="NULL" relationship="NULL" sys_domain="global" view="43ded2ef1be5b0108872b88e034bcbb2">c8956aaf1b29b0108872b88e034bcbe2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>jspirko</sys_created_by>
+            <sys_created_on>2021-07-30 22:08:11</sys_created_on>
+            <sys_id>04956aaf1b29b0108872b88e034bcbe4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jspirko</sys_updated_by>
+            <sys_updated_on>2021-07-30 22:08:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>update_access</element>
+            <list_id display_value="sys_db_object" element="NULL" name="sys_db_object" parent="NULL" relationship="NULL" sys_domain="global" view="43ded2ef1be5b0108872b88e034bcbb2">c8956aaf1b29b0108872b88e034bcbe2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jspirko</sys_created_by>
+            <sys_created_on>2021-07-30 22:08:11</sys_created_on>
+            <sys_id>84956aaf1b29b0108872b88e034bcbe4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jspirko</sys_updated_by>
+            <sys_updated_on>2021-07-30 22:08:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>read_access</element>
+            <list_id display_value="sys_db_object" element="NULL" name="sys_db_object" parent="NULL" relationship="NULL" sys_domain="global" view="43ded2ef1be5b0108872b88e034bcbb2">c8956aaf1b29b0108872b88e034bcbe2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>jspirko</sys_created_by>
+            <sys_created_on>2021-07-30 22:08:11</sys_created_on>
+            <sys_id>08956aaf1b29b0108872b88e034bcbe4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jspirko</sys_updated_by>
+            <sys_updated_on>2021-07-30 22:08:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>delete_access</element>
+            <list_id display_value="sys_db_object" element="NULL" name="sys_db_object" parent="NULL" relationship="NULL" sys_domain="global" view="43ded2ef1be5b0108872b88e034bcbb2">c8956aaf1b29b0108872b88e034bcbe2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>jspirko</sys_created_by>
+            <sys_created_on>2021-07-30 22:08:11</sys_created_on>
+            <sys_id>88956aaf1b29b0108872b88e034bcbe4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jspirko</sys_updated_by>
+            <sys_updated_on>2021-07-30 22:08:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_db_object</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jspirko</sys_created_by>
+            <sys_created_on>2021-07-30 22:08:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c8956aaf1b29b0108872b88e034bcbe2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_db_object</sys_name>
+            <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+            <sys_update_name>sys_ui_list_sys_db_object_table_access_view</sys_update_name>
+            <sys_updated_by>jspirko</sys_updated_by>
+            <sys_updated_on>2021-07-30 22:08:11</sys_updated_on>
+            <sys_user/>
+            <view display_value="Table Access View" name="table_access_view">43ded2ef1be5b0108872b88e034bcbb2</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

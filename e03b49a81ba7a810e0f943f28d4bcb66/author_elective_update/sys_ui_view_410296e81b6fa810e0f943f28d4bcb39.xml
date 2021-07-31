@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="DELETE">
+        <group/>
+        <hidden>false</hidden>
+        <name>catalog_311_catalog</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-13 02:55:26</sys_created_on>
+        <sys_id>410296e81b6fa810e0f943f28d4bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>311 Catalog View</sys_name>
+        <sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_ui_view_410296e81b6fa810e0f943f28d4bcb39</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-13 02:55:26</sys_updated_on>
+        <title>311 Catalog View</title>
+        <user/>
+    </sys_ui_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sys_ui_view_410296e81b6fa810e0f943f28d4bcb39</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view"><sys_ui_view action="INSERT_OR_UPDATE"><group/><hidden>false</hidden><name>catalog_311_catalog</name><roles/><sys_class_name>sys_ui_view</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-04-13 02:55:26</sys_created_on><sys_id>410296e81b6fa810e0f943f28d4bcb39</sys_id><sys_mod_count>0</sys_mod_count><sys_name>311 Catalog View</sys_name><sys_package display_value="311 Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="311 Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sys_ui_view_410296e81b6fa810e0f943f28d4bcb39</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-04-13 02:55:26</sys_updated_on><title>311 Catalog View</title><user/></sys_ui_view></record_update>]]></payload>
+        <payload_hash>-1655868366</payload_hash>
+        <record_name>311 Catalog View</record_name>
+        <reverted_from/>
+        <source>383b49a81ba7a810e0f943f28d4bcb6a</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-04-13 02:55:27</sys_created_on>
+        <sys_id>0d021ae81b6fa810e0f943f28d4bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178c927b9760000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-04-13 02:55:27</sys_updated_on>
+        <type>UI View</type>
+        <update_guid>410296e8d16fa8100d29bbaab6dff53b</update_guid>
+        <update_guid_history>410296e8d16fa8100d29bbaab6dff53b:-1655868366</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-30 23:50:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_view">sys_ui_view</sys_db_object>
+        <sys_id>77c0877b0a3d45a0bf5a83650bba0400</sys_id>
+        <sys_metadata>410296e81b6fa810e0f943f28d4bcb39</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>311 Catalog View</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sys_ui_view_410296e81b6fa810e0f943f28d4bcb39</sys_update_name>
+        <sys_update_version display_value="sys_ui_view_410296e81b6fa810e0f943f28d4bcb39">0d021ae81b6fa810e0f943f28d4bcb07</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-30 23:50:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

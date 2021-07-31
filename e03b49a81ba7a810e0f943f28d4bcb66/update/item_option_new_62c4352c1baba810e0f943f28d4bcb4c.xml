@@ -35,7 +35,7 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
@@ -68,14 +68,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-13 00:48:30</sys_created_on>
         <sys_id>62c4352c1baba810e0f943f28d4bcb4c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Describe Your Submission in Detail</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>item_option_new_62c4352c1baba810e0f943f28d4bcb4c</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-06-12 02:10:54</sys_updated_on>
+        <sys_updated_on>2021-04-13 00:48:30</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>

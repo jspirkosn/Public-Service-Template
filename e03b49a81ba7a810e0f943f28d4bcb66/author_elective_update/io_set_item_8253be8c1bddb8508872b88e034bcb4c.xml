@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>200</order>
+        <sc_cat_item display_value="Copy of Report Streetlight Out">3d53ba8c1bddb8508872b88e034bcb7d</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-07 15:53:58</sys_created_on>
+        <sys_id>8253be8c1bddb8508872b88e034bcb4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Public Common Variables.Copy of Report Streetlight Out</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>io_set_item_8253be8c1bddb8508872b88e034bcb4c</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-07 15:53:58</sys_updated_on>
+        <variable_set display_value="Public Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>io_set_item_8253be8c1bddb8508872b88e034bcb4c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>200</order><sc_cat_item display_value="Copy of Report Streetlight Out">3d53ba8c1bddb8508872b88e034bcb7d</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-07-07 15:53:58</sys_created_on><sys_id>8253be8c1bddb8508872b88e034bcb4c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Public Common Variables.Copy of Report Streetlight Out</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>io_set_item_8253be8c1bddb8508872b88e034bcb4c</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-07-07 15:53:58</sys_updated_on><variable_set display_value="Public Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>1715028917</payload_hash>
+        <record_name>Public Common Variables.Copy of Report Streetlight Out</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-07 15:53:58</sys_created_on>
+        <sys_id>ce53be8c1bddb8508872b88e034bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a81ad07f30000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-07 15:53:58</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>c653be8c22ddb850f78f829ee93b3453</update_guid>
+        <update_guid_history>c653be8c22ddb850f78f829ee93b3453:1715028917</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Public Common Variables.Copy of Report Streetlight Out">3fecf9281b91bc508872b88e034bcbba</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-09 01:13:12</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>01764900533c4fd884126a439ace5040</sys_id>
+        <sys_metadata>8253be8c1bddb8508872b88e034bcb4c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Public Common Variables.Copy of Report Streetlight Out</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>io_set_item_8253be8c1bddb8508872b88e034bcb4c</sys_update_name>
+        <sys_update_version display_value="io_set_item_8253be8c1bddb8508872b88e034bcb4c">ce53be8c1bddb8508872b88e034bcb53</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-09 01:13:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

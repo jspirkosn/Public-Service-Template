@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="test 4">050efaab1be9b0108872b88e034bcb24</sc_cat_item>
+        <sc_category display_value="Non Emergency Issues">067248cd1b7b2410e0f943f28d4bcbe0</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-30 23:55:57</sys_created_on>
+        <sys_id>363e32eb1be9b0108872b88e034bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Non Emergency Issues.test 4</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_category_363e32eb1be9b0108872b88e034bcbca</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-30 23:55:57</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_category_363e32eb1be9b0108872b88e034bcbca</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="test 4">050efaab1be9b0108872b88e034bcb24</sc_cat_item><sc_category display_value="Non Emergency Issues">067248cd1b7b2410e0f943f28d4bcbe0</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-07-30 23:55:57</sys_created_on><sys_id>363e32eb1be9b0108872b88e034bcbca</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Non Emergency Issues.test 4</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_category_363e32eb1be9b0108872b88e034bcbca</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-07-30 23:55:57</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>2059705372</payload_hash>
+        <record_name>Non Emergency Issues.test 4</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-30 23:55:57</sys_created_on>
+        <sys_id>323eb2eb1be9b0108872b88e034bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17af9d8922a0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-30 23:55:57</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>3a3eb2eb27e9b010ff476e28c35a93af</update_guid>
+        <update_guid_history>3a3eb2eb27e9b010ff476e28c35a93af:2059705372</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Non Emergency Issues.test 4">fb808f231b2db0108872b88e034bcbff</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-31 00:06:08</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>d32fdf3780f3400090afdf2390000000</sys_id>
+        <sys_metadata>363e32eb1be9b0108872b88e034bcbca</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Non Emergency Issues.test 4</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_363e32eb1be9b0108872b88e034bcbca</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_363e32eb1be9b0108872b88e034bcbca">323eb2eb1be9b0108872b88e034bcbb0</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-31 00:06:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

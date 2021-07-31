@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>100</order>
+        <sc_cat_item display_value="test">b71e82e31ba5b0108872b88e034bcb45</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-07-30 21:42:59</sys_created_on>
+        <sys_id>facfde631b29b0108872b88e034bcba9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Public Map.test</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>io_set_item_facfde631b29b0108872b88e034bcba9</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-07-30 21:42:59</sys_updated_on>
+        <variable_set display_value="Public Map">1d33d5e41be7a810e0f943f28d4bcbd7</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>io_set_item_facfde631b29b0108872b88e034bcba9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>100</order><sc_cat_item display_value="test">b71e82e31ba5b0108872b88e034bcb45</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2021-07-30 21:42:59</sys_created_on><sys_id>facfde631b29b0108872b88e034bcba9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Public Map.test</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>io_set_item_facfde631b29b0108872b88e034bcba9</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2021-07-30 21:42:59</sys_updated_on><variable_set display_value="Public Map">1d33d5e41be7a810e0f943f28d4bcbd7</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>-1588521719</payload_hash>
+        <record_name>Public Map.test</record_name>
+        <reverted_from/>
+        <source>3d911e6b1ba5b0108872b88e034bcba0</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-07-30 21:42:59</sys_created_on>
+        <sys_id>facfde631b29b0108872b88e034bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17af95ed4a10000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-07-30 21:42:59</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>f2cfde636429b0102fecfbe517d4bfad</update_guid>
+        <update_guid_history>f2cfde636429b0102fecfbe517d4bfad:-1588521719</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Public Map.test">d51162671b29b0108872b88e034bcb0e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-30 21:48:37</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>5c9bf2eb2ff04830ae0e1e8fdd94a390</sys_id>
+        <sys_metadata>facfde631b29b0108872b88e034bcba9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Public Map.test</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>io_set_item_facfde631b29b0108872b88e034bcba9</sys_update_name>
+        <sys_update_version display_value="io_set_item_facfde631b29b0108872b88e034bcba9">facfde631b29b0108872b88e034bcbad</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-30 21:48:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
