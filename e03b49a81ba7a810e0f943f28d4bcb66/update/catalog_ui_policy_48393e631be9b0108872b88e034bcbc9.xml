@@ -6,7 +6,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>set</applies_to>
-        <catalog_conditions>IO:9014b1e81baba810e0f943f28d4bcb8c!=dcc48fb31ba0bc908872b88e034bcbb2^EQ</catalog_conditions>
+        <catalog_conditions>IO:5adebf7f1b6d34108872b88e034bcb7a!=public.guest^EQ</catalog_conditions>
         <catalog_item/>
         <conditions/>
         <description/>
@@ -33,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>48393e631be9b0108872b88e034bcbc9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Hide when not Guest</sys_name>
         <sys_overrides/>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
@@ -41,7 +41,7 @@
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>catalog_ui_policy_48393e631be9b0108872b88e034bcbc9</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-07-30 23:34:30</sys_updated_on>
+        <sys_updated_on>2021-07-31 23:26:56</sys_updated_on>
         <table/>
         <ui_type>0</ui_type>
         <variable_set display_value="Public Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set>

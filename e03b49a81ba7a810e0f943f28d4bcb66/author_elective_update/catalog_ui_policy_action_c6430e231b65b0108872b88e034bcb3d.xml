@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item/>
+        <catalog_variable>IO:dc35792c1baba810e0f943f28d4bcbc9</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-30 19:38:33</sys_created_on>
+        <sys_id>c6430e231b65b0108872b88e034bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>last_name</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_c6430e231b65b0108872b88e034bcb3d</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-30 19:38:33</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Fields when Logged In">53c20eef1b25b0108872b88e034bcb6c</ui_policy>
+        <variable>last_name</variable>
+        <variable_set display_value="Public Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>catalog_ui_policy_action_c6430e231b65b0108872b88e034bcb3d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item/><catalog_variable>IO:dc35792c1baba810e0f943f28d4bcbc9</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-07-30 19:38:33</sys_created_on><sys_id>c6430e231b65b0108872b88e034bcb3d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>last_name</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>catalog_ui_policy_action_c6430e231b65b0108872b88e034bcb3d</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-07-30 19:38:33</sys_updated_on><table/><ui_policy display_value="Hide Fields when Logged In">53c20eef1b25b0108872b88e034bcb6c</ui_policy><variable>last_name</variable><variable_set display_value="Public Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1457123586</payload_hash>
+        <record_name>last_name</record_name>
+        <reverted_from/>
+        <source>6043cbb71be534108872b88e034bcbf9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-31 18:56:47</sys_created_on>
+        <sys_id>0a5387f71be534108872b88e034bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17afded08390000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-31 18:56:47</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>48530e236b65b0106003e1d5829e8b00</update_guid>
+        <update_guid_history>48530e236b65b0106003e1d5829e8b00:1457123586,b7138b7708e5341042c614229171ba39:-773493752,48530e236b65b0106003e1d5829e8b00:1457123586,98044efbc4213410166c24c6435734be:1459587503,48530e236b65b0106003e1d5829e8b00:1457123586,48530e236b65b0106003e1d5829e8b00:1457123586</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="last_name">4ad87f731b6d34108872b88e034bcb5b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-31 22:50:31</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>07451964c15846a58934497312b6c0d1</sys_id>
+        <sys_metadata>c6430e231b65b0108872b88e034bcb3d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>last_name</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_c6430e231b65b0108872b88e034bcb3d</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_c6430e231b65b0108872b88e034bcb3d">0a5387f71be534108872b88e034bcb83</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-31 22:50:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
