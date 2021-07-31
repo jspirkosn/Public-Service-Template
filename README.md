@@ -140,6 +140,39 @@ The Public Service Template repository is a collection of ServiceNow configurati
 </details>
 
 <details>
+<summary>Creating Public Forms Simplfied - How to remove hours of configuration time</summary>
+
+- **Status:** Complete, uses workflow to automate repetitive configutaiton tasks
+- **Setup:**
+	1. Go to [your instance] and login as an Admin user
+	2. In the ServiceNow Navigator, go to Public Services Template -> Accecc Producter Tables
+	3. Warning: This opens catalog item configration to all scopes, be sure you understand the implications
+	4. Make sure you are in the Global Scope
+	5. Set "Can Create", "Can Update" and "Can Read" to true for all 4 tables
+	6. Set "Can Delete" to true for sc_cat_item_subscribe_no_mtom and sc_cat_item_user_criteria_no_mtom
+- **Try it:**
+	1. Make sure you are in the "Public Service Template" scope 
+	2. In the ServiceNow Navigator, go to Public Services Template -> Public Forms
+	3. Click new
+	4. Enter a name for your public form
+	5. In the upper right of the form selec the three dots for more options and toggle template bar so its on
+	6. You should see a template bar at the bottom of the form
+	7. Click on the "Public Service Form" template
+	8. Save the record
+	9. At the bottom of the saved form click on the related list called Categories
+	10. Click edit and select the catagory called "Non Emergency Issues" 
+	11. Go to [your instance URL]/pub 
+	12. Navigate to Services -> Non Emergency Issues and open your new Public Form
+	13. Check out the map and the variables (the map may not work if the key has expired, this is covered in the next video)
+	14. Watch the Setup video for a detailed explanation
+	
+- **Setup Video:**
+	[Creating Public Forms Simplfied](https://www.youtube.com/watch?v=coRN-KzL4J4)
+- **Contributors:** 
+	- john.spirko@servicenow.com 
+</details>
+
+<details>	
 <summary>Coming Soon - New things on-deck</summary>
 - **Service Builder Workflow**
 
