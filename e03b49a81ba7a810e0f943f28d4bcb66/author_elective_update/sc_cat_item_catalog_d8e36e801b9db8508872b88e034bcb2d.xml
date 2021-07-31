@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Copy of Report Streetlight Out">84e36a801b9db8508872b88e034bcb97</sc_cat_item>
+        <sc_catalog display_value="Public Service Catalog">b5a15ea81b6fa810e0f943f28d4bcbcb</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-07 14:46:23</sys_created_on>
+        <sys_id>d8e36e801b9db8508872b88e034bcb2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Public Service Catalog.Copy of Report Streetlight Out</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_d8e36e801b9db8508872b88e034bcb2d</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-07 14:46:23</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_catalog_d8e36e801b9db8508872b88e034bcb2d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Copy of Report Streetlight Out">84e36a801b9db8508872b88e034bcb97</sc_cat_item><sc_catalog display_value="Public Service Catalog">b5a15ea81b6fa810e0f943f28d4bcbcb</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-07-07 14:46:23</sys_created_on><sys_id>d8e36e801b9db8508872b88e034bcb2d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Public Service Catalog.Copy of Report Streetlight Out</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_catalog_d8e36e801b9db8508872b88e034bcb2d</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-07-07 14:46:23</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-1500209618</payload_hash>
+        <record_name>Public Service Catalog.Copy of Report Streetlight Out</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-07 14:46:24</sys_created_on>
+        <sys_id>d4e36e801b9db8508872b88e034bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a816f2a5f0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-07 14:46:24</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>dce36e800d9db850d331974549c85630</update_guid>
+        <update_guid_history>dce36e800d9db850d331974549c85630:-1500209618</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Public Service Catalog.Copy of Report Streetlight Out">c4fc3d281b91bc508872b88e034bcb0c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-09 01:13:13</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>00195b43912845d480041981b1bdfd84</sys_id>
+        <sys_metadata>d8e36e801b9db8508872b88e034bcb2d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Public Service Catalog.Copy of Report Streetlight Out</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent display_value="">84e36a801b9db8508872b88e034bcb97</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_d8e36e801b9db8508872b88e034bcb2d</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_d8e36e801b9db8508872b88e034bcb2d">d4e36e801b9db8508872b88e034bcb31</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-09 01:13:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

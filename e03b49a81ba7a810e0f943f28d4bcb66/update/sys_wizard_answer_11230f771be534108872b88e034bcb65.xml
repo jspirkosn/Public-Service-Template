@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>x_snc_311_template_u_cmdb_qb_result_9446a298057da611b011e1a8dc633f65dff44282</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>x_snc_311_template_u_cmdb_qb_result_9446a298057da611b011e1a8dc633f65dff44282</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Query Builder Results" name="Query Builder Results">94b9b7c61b411010e0f943f28d4bcb7e</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-31 18:55:55</sys_created_on>
+        <sys_id>11230f771be534108872b88e034bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_311_template_u_cmdb_qb_result_9446a298057da611b011e1a8dc633f65dff44282</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sys_wizard_answer_11230f771be534108872b88e034bcb65</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-31 18:55:55</sys_updated_on>
+        <table/>
+        <target_url>x_snc_311_template_u_cmdb_qb_result_9446a298057da611b011e1a8dc633f65dff44282.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

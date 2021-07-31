@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="Report Streetlight Out">a12a395f1b147c108872b88e034bcbff</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-30 20:21:29</sys_created_on>
+        <sys_id>092d82631ba5b0108872b88e034bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Report Streetlight Out.AES Users</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_092d82631ba5b0108872b88e034bcbb4</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-30 20:21:29</sys_updated_on>
+        <user_criteria display_value="AES Users">7d5ddb1f53412010f2e9ddeeff7b12a6</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_092d82631ba5b0108872b88e034bcbb4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Report Streetlight Out">a12a395f1b147c108872b88e034bcbff</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-07-30 20:21:29</sys_created_on><sys_id>092d82631ba5b0108872b88e034bcbb4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Report Streetlight Out.AES Users</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_092d82631ba5b0108872b88e034bcbb4</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-07-30 20:21:29</sys_updated_on><user_criteria display_value="AES Users">7d5ddb1f53412010f2e9ddeeff7b12a6</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>1143028513</payload_hash>
+        <record_name>Report Streetlight Out.AES Users</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-30 20:21:30</sys_created_on>
+        <sys_id>5d2d82631ba5b0108872b88e034bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17af914396e0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-30 20:21:30</sys_updated_on>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>552d826355a5b0107a34711be28126b8</update_guid>
+        <update_guid_history>552d826355a5b0107a34711be28126b8:1143028513</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Report Streetlight Out.AES Users">3fd8f2631be9b0108872b88e034bcbde</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-30 23:32:32</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>31ee236f534140d09d0eb80a45907264</sys_id>
+        <sys_metadata>092d82631ba5b0108872b88e034bcbb4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Report Streetlight Out.AES Users</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent display_value="Report Streetlight Out">a12a395f1b147c108872b88e034bcbff</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_092d82631ba5b0108872b88e034bcbb4</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_092d82631ba5b0108872b88e034bcbb4">5d2d82631ba5b0108872b88e034bcbb8</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-30 23:32:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

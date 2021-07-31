@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>100</order>
+        <sc_cat_item display_value="test 4">050efaab1be9b0108872b88e034bcb24</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-30 23:55:17</sys_created_on>
+        <sys_id>491e7eab1be9b0108872b88e034bcba9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Public Common Variables.test 4</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>io_set_item_491e7eab1be9b0108872b88e034bcba9</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-30 23:55:18</sys_updated_on>
+        <variable_set display_value="Public Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>io_set_item_491e7eab1be9b0108872b88e034bcba9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>100</order><sc_cat_item display_value="test 4">050efaab1be9b0108872b88e034bcb24</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-07-30 23:55:17</sys_created_on><sys_id>491e7eab1be9b0108872b88e034bcba9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Public Common Variables.test 4</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>io_set_item_491e7eab1be9b0108872b88e034bcba9</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-07-30 23:55:18</sys_updated_on><variable_set display_value="Public Common Variables">5323f9681baba810e0f943f28d4bcb73</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>-1141593988</payload_hash>
+        <record_name>Public Common Variables.test 4</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-30 23:55:18</sys_created_on>
+        <sys_id>091e7eab1be9b0108872b88e034bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17af9d7f6ec0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-30 23:55:18</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>011e7eabf3e9b0103eae0e8980e041b0</update_guid>
+        <update_guid_history>011e7eabf3e9b0103eae0e8980e041b0:-1141593988</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Public Common Variables.test 4">c090cf231b2db0108872b88e034bcb40</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-07-31 00:06:09</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>2855a831535f4fdc8c6b86045aa4e891</sys_id>
+        <sys_metadata>491e7eab1be9b0108872b88e034bcba9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Public Common Variables.test 4</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>io_set_item_491e7eab1be9b0108872b88e034bcba9</sys_update_name>
+        <sys_update_version display_value="io_set_item_491e7eab1be9b0108872b88e034bcba9">091e7eab1be9b0108872b88e034bcbb0</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-07-31 00:06:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
