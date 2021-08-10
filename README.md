@@ -183,7 +183,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	2. In the ServiceNow Navigator, go to Service Catalog -> Variable Sets
 	3. You should see 2 varaible sets that are part of the "Public Service Template" Application
 	4. The public map uses a widget to render an ESRI map (license reguired for production)
-	5. The public map variable set, sends data back to public common variables
+	5. The public map variable set, sends data back to public common variables so these need to work as a set
 	6. There is a workflow that creates locations if they aren't in the ServiceNow table (covered in the next demo)
 	7. There are 2 UI policies that are part of the Public Common Variables Variable set
 	8. Watch the explainer video for more details
