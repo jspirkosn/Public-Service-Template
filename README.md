@@ -189,7 +189,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	8. Watch the explainer video for more details
 		
 - **Setup Video:**
-	[Creating Public Forms Simplfied](https://www.youtube.com/watch?v=coRN-KzL4J4)
+	[Variable Sets](https://www.youtube.com/watch?v=i-7c1I8wybc)
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
