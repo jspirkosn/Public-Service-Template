@@ -172,6 +172,30 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	- john.spirko@servicenow.com 
 </details>
 
+<details>
+<summary>Default Variable Sets - What you need to know about these</summary>
+
+- **Status:** Complete, public map and public common variables
+- **Setup:**
+	1. Nothing to do here these are already setup
+- **About these variable sets:**
+	1. Go to [your instance] and login as an Admin user
+	2. In the ServiceNow Navigator, go to Service Catalog -> Variable Sets
+	3. You should see 2 varaible sets that are part of the "Public Service Template" Application
+	4. The public map uses a widget to render an ESRI map (license reguired for production)
+	5. The public map variable set, sends data back to public common variables
+	6. There is a workflow that creates locations if they aren't in the ServiceNow table (covered in the next demo)
+	7. There are 2 UI policies that are part of the Public Common Variables Variable set
+	8. Watch the explainer video for more details
+		
+- **Setup Video:**
+	[Creating Public Forms Simplfied](https://www.youtube.com/watch?v=coRN-KzL4J4)
+- **Contributors:** 
+	- john.spirko@servicenow.com 
+</details>
+
+
+
 <details>	
 <summary>Coming Soon - New things on-deck</summary>
 - **Service Builder Workflow**
