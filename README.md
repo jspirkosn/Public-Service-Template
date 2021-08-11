@@ -194,19 +194,35 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	- john.spirko@servicenow.com 
 </details>
 
+<details>
+<summary>Case Workflow - What happens to a case once it's submitted?</summary>
 
+- **Status:** Complete, public map and public common variables
+- **Setup:**
+	1. Nothing to do here these are already setup
+- **About these variable sets:**
+	1. Go to [your instance] and login as an Admin user
+	2. In the ServiceNow Navigator, go to Service Catalog -> Variable Sets
+	3. You should see 2 varaible sets that are part of the "Public Service Template" Application
+	4. The public map uses a widget to render an ESRI map (license reguired for production)
+	5. The public map variable set, sends data back to public common variables so these need to work as a set
+	6. There is a workflow that creates locations if they aren't in the ServiceNow table (covered in the next demo)
+	7. There are 2 UI policies that are part of the Public Common Variables Variable set
+	8. Watch the explainer video for more details
+		
+- **Setup Video:**
+	[Variable Sets](https://www.youtube.com/watch?v=i-7c1I8wybc)
+- **Contributors:** 
+	- john.spirko@servicenow.com 
+</details>
 
 <details>	
 <summary>Coming Soon - New things on-deck</summary>
 - **Service Builder Workflow**
-
-- **Variable Sets (Map and Common)**
   
 - **Mobile API Endpoint for NewRocket Mobile**
   
 - **NewRocket Mobile App**
-  
-- **Case Workflow**
 
   </details>
 # Build Your Service Catalog (Coming Soon)
