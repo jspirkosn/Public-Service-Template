@@ -220,14 +220,10 @@ The Public Service Template repository is a collection of ServiceNow configurati
 <details>	
 <summary>Coming Soon - New things on-deck</summary>
 - **Service Builder Workflow**
-
-- **Variable Sets (Map and Common)**
   
 - **Mobile API Endpoint for NewRocket Mobile**
   
 - **NewRocket Mobile App**
-  
-- **Case Workflow**
 
   </details>
 # Build Your Service Catalog (Coming Soon)
