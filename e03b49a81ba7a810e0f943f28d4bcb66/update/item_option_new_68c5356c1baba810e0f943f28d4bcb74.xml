@@ -68,14 +68,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2021-04-13 00:52:37</sys_created_on>
         <sys_id>68c5356c1baba810e0f943f28d4bcb74</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Location</sys_name>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>item_option_new_68c5356c1baba810e0f943f28d4bcb74</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-08-06 00:32:30</sys_updated_on>
+        <sys_updated_on>2021-08-11 00:08:44</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>
@@ -91,7 +91,7 @@
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
-        <visible_summary>false</visible_summary>
+        <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
     <sys_translated_text action="delete_multiple" query="documentkey=68c5356c1baba810e0f943f28d4bcb74"/>
