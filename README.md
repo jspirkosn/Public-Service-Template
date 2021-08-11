@@ -188,13 +188,34 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	7. There are 2 UI policies that are part of the Public Common Variables Variable set
 	8. Watch the explainer video for more details
 		
-- **Setup Video:**
+- **Explainer Video:**
 	[Variable Sets](https://www.youtube.com/watch?v=i-7c1I8wybc)
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
 
+<details>
+<summary>Process case from Public Portal - The start of model drive automation</summary>
 
+- **Status:** Complete, flow designer flow
+- **Setup:**
+	1. Nothing to do here these are already setup
+- **About this flow:**
+	1. Go to [your instance] and login as an Admin user
+	2. In the ServiceNow Navigator, go to Process Automation -> Flow Designer
+	3. Open the flow called "Process case from Public Portal"
+	4. Take Note: Trigger is new case
+	5. Warning: Do not delete the "Report Street Light Out" example, this flow depends on it
+	6. Note how the flow handles the consumer determiniation
+	7. Note how we use the Service Structure from the common service data model to route the case
+	8. Note how the location gets created in ServiceNow when it doesn't exist
+	9. Watch the explainer video for more details
+		
+- **Explainer Video:**
+	[Process case from Public Portal](https://www.youtube.com/watch?v=i-7c1I8wybc)
+- **Contributors:** 
+	- john.spirko@servicenow.com 
+</details>
 
 <details>	
 <summary>Coming Soon - New things on-deck</summary>
