@@ -212,7 +212,7 @@ The Public Service Template repository is a collection of ServiceNow configurati
 	9. Watch the explainer video for more details
 		
 - **Explainer Video:**
-	[Process case from Public Portal](https://www.youtube.com/watch?v=i-7c1I8wybc)
+	[Process case from Public Portal](https://www.youtube.com/watch?v=rUTfgQnyIu8)
 - **Contributors:** 
 	- john.spirko@servicenow.com 
 </details>
