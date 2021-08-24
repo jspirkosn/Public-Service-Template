@@ -4,11 +4,12 @@
         <application display_value="Public Services Template">aa1139ae1ba87814e0f943f28d4bcb70</application>
         <assessment/>
         <device_type/>
-        <filter table="sys_db_object">name=io_set_item^ORname=sc_cat_item_catalog^ORname=sc_cat_item_user_criteria_no_mtom^ORname=sc_cat_item_subscribe_no_mtom^ORname=sc_cat_item_user_criteria_mtom^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="=" or="false" value="io_set_item"/>
+        <filter table="sys_db_object">name=io_set_item^ORname=sc_cat_item_catalog^ORname=sc_cat_item_user_criteria_no_mtom^ORname=sc_cat_item_subscribe_no_mtom^ORname=sc_cat_item_user_criteria_mtom^ORname=sc_category_user_criteria_mtom^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="=" or="false" value="io_set_item"/>
             <item endquery="false" field="name" goto="false" newquery="false" operator="=" or="true" value="sc_cat_item_catalog"/>
             <item endquery="false" field="name" goto="false" newquery="false" operator="=" or="true" value="sc_cat_item_user_criteria_no_mtom"/>
             <item endquery="false" field="name" goto="false" newquery="false" operator="=" or="true" value="sc_cat_item_subscribe_no_mtom"/>
             <item endquery="false" field="name" goto="false" newquery="false" operator="=" or="true" value="sc_cat_item_user_criteria_mtom"/>
+            <item endquery="false" field="name" goto="false" newquery="false" operator="=" or="true" value="sc_category_user_criteria_mtom"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
@@ -30,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7f1b1e6b1be5b0108872b88e034bcb55</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Access Producer Tables</sys_name>
         <sys_overrides/>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
@@ -38,7 +39,7 @@
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
         <sys_update_name>sys_app_module_7f1b1e6b1be5b0108872b88e034bcb55</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2021-07-31 21:30:33</sys_updated_on>
+        <sys_updated_on>2021-08-21 21:33:48</sys_updated_on>
         <timeline_page/>
         <title>Access Producer Tables</title>
         <uncancelable>false</uncancelable>

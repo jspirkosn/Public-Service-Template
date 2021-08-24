@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Car parked Illegally">005e63621bca78108872b88e034bcb45</sc_cat_item>
+        <sc_catalog display_value="Public Service Catalog">b5a15ea81b6fa810e0f943f28d4bcbcb</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-08-21 21:24:02</sys_created_on>
+        <sys_id>fb6e67621bca78108872b88e034bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Public Service Catalog.Car parked Illegally</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_fb6e67621bca78108872b88e034bcbb2</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-08-21 21:24:02</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_catalog_fb6e67621bca78108872b88e034bcbb2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Car parked Illegally">005e63621bca78108872b88e034bcb45</sc_cat_item><sc_catalog display_value="Public Service Catalog">b5a15ea81b6fa810e0f943f28d4bcbcb</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2021-08-21 21:24:02</sys_created_on><sys_id>fb6e67621bca78108872b88e034bcbb2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Public Service Catalog.Car parked Illegally</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_catalog_fb6e67621bca78108872b88e034bcbb2</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2021-08-21 21:24:02</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>108177679</payload_hash>
+        <record_name>Public Service Catalog.Car parked Illegally</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-08-21 21:24:02</sys_created_on>
+        <sys_id>336e67621bca78108872b88e034bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b6a9963960000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-08-21 21:24:02</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>3b6e6762f2ca7810003fd674b5323cd0</update_guid>
+        <update_guid_history>3b6e6762f2ca7810003fd674b5323cd0:108177679</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Public Service Catalog.Car parked Illegally">d0bb67df1b06bc108872b88e034bcbd9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2021-08-24 05:07:30</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>556c0056729441ac8b90d09dec0f4d90</sys_id>
+        <sys_metadata>fb6e67621bca78108872b88e034bcbb2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Public Service Catalog.Car parked Illegally</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent display_value="">005e63621bca78108872b88e034bcb45</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_fb6e67621bca78108872b88e034bcbb2</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_fb6e67621bca78108872b88e034bcbb2">336e67621bca78108872b88e034bcbd1</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2021-08-24 05:07:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
