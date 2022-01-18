@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Manage Citizen Cases">4f694c4adb418d10e62a41b9139619d2</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-15 18:34:53</sys_created_on>
+        <sys_id>9369848adb418d10e62a41b9139619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Manage Citizen Cases</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_9369848adb418d10e62a41b9139619cf</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-01-15 18:34:53</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_catalog_9369848adb418d10e62a41b9139619cf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Manage Citizen Cases">4f694c4adb418d10e62a41b9139619d2</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2022-01-15 18:34:53</sys_created_on><sys_id>9369848adb418d10e62a41b9139619cf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Manage Citizen Cases</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_catalog_9369848adb418d10e62a41b9139619cf</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2022-01-15 18:34:53</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-1143578788</payload_hash>
+        <record_name>Service Catalog.Manage Citizen Cases</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-15 18:34:53</sys_created_on>
+        <sys_id>5769848adb418d10e62a41b9139619d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e5f055a300000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-01-15 18:34:53</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>9b69848ae3418d108c8a6efde781a5d1</update_guid>
+        <update_guid_history>9b69848ae3418d108c8a6efde781a5d1:-1143578788</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Manage Citizen Cases">a2ffd082db058d10e62a41b913961959</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-01-15 20:13:24</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>4af4c9f73dcc4a3ca6342f6500aa7f90</sys_id>
+        <sys_metadata>9369848adb418d10e62a41b9139619cf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Manage Citizen Cases</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent display_value="Create a citizen case for my department">c4c0880adb018d10e62a41b913961901</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_9369848adb418d10e62a41b9139619cf</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_9369848adb418d10e62a41b9139619cf">5769848adb418d10e62a41b9139619d2</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-01-15 20:13:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

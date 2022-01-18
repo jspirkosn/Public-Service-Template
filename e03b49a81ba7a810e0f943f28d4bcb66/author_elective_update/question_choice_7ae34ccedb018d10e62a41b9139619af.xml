@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Please select fromo the list of options">c083088edb018d10e62a41b91396195a</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-15 18:11:38</sys_created_on>
+        <sys_id>7ae34ccedb018d10e62a41b9139619af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Include a map to accept location input</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>question_choice_7ae34ccedb018d10e62a41b9139619af</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-01-15 18:11:38</sys_updated_on>
+        <text>Include a map to accept location input</text>
+        <value>map</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=7ae34ccedb018d10e62a41b9139619af"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>7ae34ccedb018d10e62a41b9139619af</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-15 18:11:38</sys_created_on>
+        <sys_id>72144002db418d10e62a41b9139619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-01-15 18:11:38</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>7ae34ccedb018d10e62a41b9139619af</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-15 18:11:38</sys_created_on>
+        <sys_id>3a144002db418d10e62a41b9139619f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-01-15 18:11:38</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>question_choice_7ae34ccedb018d10e62a41b9139619af</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><misc>0</misc><order>100</order><published_ref/><question display_value="Please select fromo the list of options">c083088edb018d10e62a41b91396195a</question><rec_misc>0</rec_misc><sys_class_name>question_choice</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2022-01-15 18:11:38</sys_created_on><sys_id>7ae34ccedb018d10e62a41b9139619af</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Include a map to accept location input</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>question_choice_7ae34ccedb018d10e62a41b9139619af</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2022-01-15 18:11:38</sys_updated_on><text>Include a map to accept location input</text><value>map</value></question_choice><fx_price action="delete_multiple" query="id=7ae34ccedb018d10e62a41b9139619af"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>misc</field><id>7ae34ccedb018d10e62a41b9139619af</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>jspirko</sys_created_by><sys_created_on>2022-01-15 18:11:38</sys_created_on><sys_id>72144002db418d10e62a41b9139619f9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2022-01-15 18:11:38</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>rec_misc</field><id>7ae34ccedb018d10e62a41b9139619af</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>jspirko</sys_created_by><sys_created_on>2022-01-15 18:11:38</sys_created_on><sys_id>3a144002db418d10e62a41b9139619f8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2022-01-15 18:11:38</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-1278934271</payload_hash>
+        <record_name>Include a map to accept location input</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-15 18:11:39</sys_created_on>
+        <sys_id>76144002db418d10e62a41b9139619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e5ef013900000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-01-15 18:11:39</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>7e14400295418d101b363e703578fcfa</update_guid>
+        <update_guid_history>7e14400295418d101b363e703578fcfa:-1278934271</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Include a map to accept location input">0d09884adb418d10e62a41b91396194b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-15 18:33:05</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>96ec2baf3900401dbc20f12d79cd2861</sys_id>
+        <sys_metadata>7ae34ccedb018d10e62a41b9139619af</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Include a map to accept location input</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>question_choice_7ae34ccedb018d10e62a41b9139619af</sys_update_name>
+        <sys_update_version display_value="question_choice_7ae34ccedb018d10e62a41b9139619af">76144002db418d10e62a41b9139619fb</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-01-15 18:33:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

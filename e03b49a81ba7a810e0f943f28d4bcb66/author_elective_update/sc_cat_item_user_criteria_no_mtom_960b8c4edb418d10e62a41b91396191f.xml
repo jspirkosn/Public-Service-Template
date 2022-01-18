@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="Manage Citizen Cases">c4c0880adb018d10e62a41b913961901</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-01-15 18:41:55</sys_created_on>
+        <sys_id>960b8c4edb418d10e62a41b91396191f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Manage Citizen Cases.SNC External</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_960b8c4edb418d10e62a41b91396191f</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-01-15 18:41:55</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_960b8c4edb418d10e62a41b91396191f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Manage Citizen Cases">c4c0880adb018d10e62a41b913961901</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2022-01-15 18:41:55</sys_created_on><sys_id>960b8c4edb418d10e62a41b91396191f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Manage Citizen Cases.SNC External</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_960b8c4edb418d10e62a41b91396191f</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-01-15 18:41:55</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>-736740009</payload_hash>
+        <record_name>Manage Citizen Cases.SNC External</record_name>
+        <reverted_from/>
+        <source>25c64d411b3001108872b88e034bcb85</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2021-12-31 10:13:18</sys_created_on>
+        <sys_id>aeffd082db058d10e62a41b913961982</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>17e0ffabe300000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>6effd082a3058d1048c6a11b7d43fa82</update_guid>
+        <update_guid_history>6effd082a3058d1048c6a11b7d43fa82:-736740009</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Manage Citizen Cases.SNC External">eaffd082db058d10e62a41b913961987</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-01-15 20:13:24</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>35d5233ec6bf4a7f9a947db73bc8ee39</sys_id>
+        <sys_metadata>960b8c4edb418d10e62a41b91396191f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Manage Citizen Cases.SNC External</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent display_value="Create a citizen case for my department">c4c0880adb018d10e62a41b913961901</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_960b8c4edb418d10e62a41b91396191f</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_960b8c4edb418d10e62a41b91396191f">aeffd082db058d10e62a41b913961982</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-01-15 20:13:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Manage Citizen Cases">c4c0880adb018d10e62a41b913961901</catalog_item>
+        <catalog_variable>IO:893a4ccadb418d10e62a41b913961979</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-15 20:16:33</sys_created_on>
+        <sys_id>6f80e8c2db058d10e62a41b9139619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ask_for_user_info</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_6f80e8c2db058d10e62a41b9139619c9</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-01-15 20:16:33</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide user info when anonymous false">a25024c2db058d10e62a41b9139619ca</ui_policy>
+        <variable>ask_for_user_info</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>catalog_ui_policy_action_6f80e8c2db058d10e62a41b9139619c9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Manage Citizen Cases">c4c0880adb018d10e62a41b913961901</catalog_item><catalog_variable>IO:893a4ccadb418d10e62a41b913961979</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2022-01-15 20:16:33</sys_created_on><sys_id>6f80e8c2db058d10e62a41b9139619c9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ask_for_user_info</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>catalog_ui_policy_action_6f80e8c2db058d10e62a41b9139619c9</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2022-01-15 20:16:33</sys_updated_on><table/><ui_policy display_value="Hide user info when anonymous false">a25024c2db058d10e62a41b9139619ca</ui_policy><variable>ask_for_user_info</variable><variable_set/><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1816319063</payload_hash>
+        <record_name>ask_for_user_info</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-15 20:16:34</sys_created_on>
+        <sys_id>fcb0e8c2db058d10e62a41b913961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e5f6270ee0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-01-15 20:16:34</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>f4b0e8c23c058d1044223be602373e31</update_guid>
+        <update_guid_history>f4b0e8c23c058d1044223be602373e31:1816319063</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ask_for_user_info">bebe3326db0dc150e62a41b91396196f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-18 01:43:36</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>164414c02b8e4ad59aac19c4ebbcc4c9</sys_id>
+        <sys_metadata>6f80e8c2db058d10e62a41b9139619c9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ask_for_user_info</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_6f80e8c2db058d10e62a41b9139619c9</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_6f80e8c2db058d10e62a41b9139619c9">fcb0e8c2db058d10e62a41b913961931</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-01-18 01:43:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
