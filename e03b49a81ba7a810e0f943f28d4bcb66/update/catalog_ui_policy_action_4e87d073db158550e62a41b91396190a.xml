@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Create an internal facing service">a9879833db158550e62a41b9139619ce</catalog_item>
+        <catalog_variable>IO:7785b00adb858d10e62a41b913961918</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-02-02 16:21:35</sys_created_on>
+        <sys_id>4e87d073db158550e62a41b91396190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>selected_subcategory</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_4e87d073db158550e62a41b91396190a</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-02-02 16:21:35</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide sub category questions when top level blank">ca87d073db158550e62a41b913961901</ui_policy>
+        <variable>selected_subcategory</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>

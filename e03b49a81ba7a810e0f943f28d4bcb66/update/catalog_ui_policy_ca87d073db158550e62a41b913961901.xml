@@ -6,8 +6,8 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <catalog_conditions>IO:ff65399adbcd0150e62a41b913961928ISEMPTY^EQ</catalog_conditions>
-        <catalog_item display_value="Create a citizen case for my department">c4c0880adb018d10e62a41b913961901</catalog_item>
+        <catalog_conditions>IO:46879073db158550e62a41b9139619ecISEMPTY^EQ</catalog_conditions>
+        <catalog_item display_value="Create an internal facing service">a9879833db158550e62a41b9139619ce</catalog_item>
         <conditions/>
         <description/>
         <global>true</global>
@@ -29,19 +29,19 @@
         <short_description>Hide sub category questions when top level blank</short_description>
         <sys_class_name>catalog_ui_policy</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2022-01-16 22:25:55</sys_created_on>
+        <sys_created_on>2022-02-02 16:21:35</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>6bb7ce5adb414150e62a41b91396195c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_id>ca87d073db158550e62a41b913961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Hide sub category questions when top level blank</sys_name>
         <sys_overrides/>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
-        <sys_update_name>catalog_ui_policy_6bb7ce5adb414150e62a41b91396195c</sys_update_name>
+        <sys_update_name>catalog_ui_policy_ca87d073db158550e62a41b913961901</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2022-01-16 22:34:24</sys_updated_on>
+        <sys_updated_on>2022-02-02 16:21:35</sys_updated_on>
         <table/>
         <ui_type>0</ui_type>
         <variable_set/>

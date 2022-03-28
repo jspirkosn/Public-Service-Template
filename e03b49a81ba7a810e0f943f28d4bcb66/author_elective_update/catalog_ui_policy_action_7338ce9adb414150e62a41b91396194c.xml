@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Create a citizen case for my department">c4c0880adb018d10e62a41b913961901</catalog_item>
+        <catalog_variable>IO:66fb3cc2dbc58d10e62a41b9139619e6</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-16 22:27:42</sys_created_on>
+        <sys_id>7338ce9adb414150e62a41b91396194c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>new_subcategory</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_7338ce9adb414150e62a41b91396194c</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-01-16 22:39:10</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide sub category questions when top level blank">6bb7ce5adb414150e62a41b91396195c</ui_policy>
+        <variable>new_subcategory</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</application>
+        <file_path/>
+        <instance_id>36d3b7c2dbc1d850a667cac5059619ee</instance_id>
+        <instance_name>jspirkodemo</instance_name>
+        <name>catalog_ui_policy_action_7338ce9adb414150e62a41b91396194c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Create a citizen case for my department">c4c0880adb018d10e62a41b913961901</catalog_item><catalog_variable>IO:66fb3cc2dbc58d10e62a41b9139619e6</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2022-01-16 22:27:42</sys_created_on><sys_id>7338ce9adb414150e62a41b91396194c</sys_id><sys_mod_count>2</sys_mod_count><sys_name>new_subcategory</sys_name><sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package><sys_policy/><sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope><sys_update_name>catalog_ui_policy_action_7338ce9adb414150e62a41b91396194c</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2022-01-16 22:39:10</sys_updated_on><table/><ui_policy display_value="Hide sub category questions when top level blank">6bb7ce5adb414150e62a41b91396195c</ui_policy><variable>new_subcategory</variable><variable_set/><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1267207436</payload_hash>
+        <record_name>new_subcategory</record_name>
+        <reverted_from/>
+        <source>5a7bbfa81bb7e0108872b88e034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-16 22:39:10</sys_created_on>
+        <sys_id>13ea821a1b4d41108872b88e034bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e650b5df50000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-01-16 22:39:10</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>d7ea821a654d4110b91f5b8539cc7bc3</update_guid>
+        <update_guid_history>d7ea821a654d4110b91f5b8539cc7bc3:-1267207436,6a58ce9ad0414150495c89b614b46257:-1106065466,97488e9a954141503abf5d75b5487f13:-899889003</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="new_subcategory">9c94747e1bcd05108872b88e034bcb8b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-01-18 05:38:49</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>f76c7f7124334b9caffba4aabeda46e9</sys_id>
+        <sys_metadata>7338ce9adb414150e62a41b91396194c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>new_subcategory</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_scope_delete display_value="">260d0ab9f0c9423a9685d992f6eb5184</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_7338ce9adb414150e62a41b91396194c</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_7338ce9adb414150e62a41b91396194c">13ea821a1b4d41108872b88e034bcbc4</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-01-18 05:38:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

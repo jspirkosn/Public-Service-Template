@@ -6,8 +6,8 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <catalog_conditions>IO:0054b846db858d10e62a41b91396191f=true^EQ</catalog_conditions>
-        <catalog_item display_value="Create a citizen case for my department">c4c0880adb018d10e62a41b913961901</catalog_item>
+        <catalog_conditions>IO:ff65399adbcd0150e62a41b913961928ISEMPTY^EQ</catalog_conditions>
+        <catalog_item display_value="Create an external facing service">c4c0880adb018d10e62a41b913961901</catalog_item>
         <conditions/>
         <description/>
         <global>true</global>
@@ -16,7 +16,7 @@
         <model_id/>
         <model_table/>
         <on_load>true</on_load>
-        <order>50</order>
+        <order>100</order>
         <reverse_if_false>true</reverse_if_false>
         <run_scripts>false</run_scripts>
         <script_false><![CDATA[function onCondition() {
@@ -26,22 +26,22 @@
 
 }]]></script_true>
         <set_values/>
-        <short_description>Show new directory or existing</short_description>
+        <short_description>Hide sub category questions when top level blank</short_description>
         <sys_class_name>catalog_ui_policy</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2022-01-15 22:17:50</sys_created_on>
+        <sys_created_on>2022-01-18 05:36:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>745cf406dbc58d10e62a41b91396194a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Show new directory or existing</sys_name>
+        <sys_id>4c143072db810550e62a41b9139619dc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Hide sub category questions when top level blank</sys_name>
         <sys_overrides/>
         <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
         <sys_policy/>
         <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
-        <sys_update_name>catalog_ui_policy_745cf406dbc58d10e62a41b91396194a</sys_update_name>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2022-01-16 22:34:19</sys_updated_on>
+        <sys_update_name>catalog_ui_policy_4c143072db810550e62a41b9139619dc</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-01-18 05:38:50</sys_updated_on>
         <table/>
         <ui_type>0</ui_type>
         <variable_set/>

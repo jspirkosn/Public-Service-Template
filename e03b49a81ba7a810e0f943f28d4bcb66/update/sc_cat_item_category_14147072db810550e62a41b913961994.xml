@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Create an external facing service">c4c0880adb018d10e62a41b913961901</sc_cat_item>
+        <sc_category display_value="Agency Services">66e40c42db418d10e62a41b91396194f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-01-18 05:36:37</sys_created_on>
+        <sys_id>14147072db810550e62a41b913961994</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Agency Services.Create a citizen case for my department</sys_name>
+        <sys_package display_value="Public Service Template" source="x_snc_311_template">e03b49a81ba7a810e0f943f28d4bcb66</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Public Service Template">e03b49a81ba7a810e0f943f28d4bcb66</sys_scope>
+        <sys_update_name>sc_cat_item_category_14147072db810550e62a41b913961994</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-01-18 05:38:50</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>
